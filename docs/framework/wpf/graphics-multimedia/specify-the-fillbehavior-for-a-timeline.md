@@ -1,22 +1,10 @@
 ---
 title: "How to: Specify the FillBehavior for a Timeline that has Reached the End of Its Active Period"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "FillBehavior property for inactive timelines [WPF]"
   - "Timelines [WPF], FillBehavior property"
 ms.assetid: db805f59-d513-4dac-af15-47005dae3199
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # How to: Specify the FillBehavior for a Timeline that has Reached the End of Its Active Period
 This example shows how to specify the <xref:System.Windows.Media.Animation.Timeline.FillBehavior%2A> for the inactive <xref:System.Windows.Media.Animation.Timeline> of an animated property.  
@@ -40,5 +28,5 @@ This example shows how to specify the <xref:System.Windows.Media.Animation.Timel
  <xref:System.Windows.Media.Animation.FillBehavior.Stop>  
  <xref:System.Windows.Media.Animation.FillBehavior.HoldEnd>  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
- [Animation and Timing](http://msdn.microsoft.com/en-us/7d83765b-d5ae-41b1-b423-80206e1124aa)  
+ [Animation and Timing](http://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

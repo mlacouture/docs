@@ -1,19 +1,7 @@
 ---
 title: "FUNCTION (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0bb88992-37ed-4991-ace5-55be612a2c4d
-caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # FUNCTION (Entity SQL)
 Defines a function in the scope of an Entity SQL query command.  
@@ -67,7 +55,7 @@ FUNCTION function-name
   
  `A()`  
   
- For more information, see [How to: Call a User-Defined Function](http://msdn.microsoft.com/en-us/ad131b86-8b4e-4747-8605-d4fc64fb9d02).  
+ For more information, see [How to: Call a User-Defined Function](http://msdn.microsoft.com/library/ad131b86-8b4e-4747-8605-d4fc64fb9d02).  
   
  Functions can also be declared in the model itself. Functions declared in the model are executed in the same way as functions declared inline in the command. For more information, see [User-Defined Functions](../../../../../../docs/framework/data/adonet/ef/language-reference/user-defined-functions-entity-sql.md).  
   

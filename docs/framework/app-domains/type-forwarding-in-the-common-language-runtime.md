@@ -1,25 +1,15 @@
 ---
 title: "Type Forwarding in the Common Language Runtime"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "cpp"
 helpviewer_keywords: 
   - "assemblies [.NET Framework], type forwarding"
   - "type forwarding"
 ms.assetid: 51f8ffa3-c253-4201-a3d3-c4fad85ae097
-caps.latest.revision: 7
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Type Forwarding in the Common Language Runtime
 Type forwarding allows you to move a type to another assembly without having to recompile applications that use the original assembly.  

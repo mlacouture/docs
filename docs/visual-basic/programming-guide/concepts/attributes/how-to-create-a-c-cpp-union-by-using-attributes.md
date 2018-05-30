@@ -1,18 +1,7 @@
 ---
 title: "How to: Create a C-C++ Union by Using Attributes (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9352a7e4-c0da-4d07-aa14-55ed43736fcb
-caps.latest.revision: 4
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Create a C/C++ Union by Using Attributes (Visual Basic)
 By using attributes you can customize how structs are laid out in memory. For example, you can create what is known as a union in C/C++ by using the `StructLayout(LayoutKind.Explicit)` and `FieldOffset` attributes.  
@@ -75,7 +64,7 @@ Structure TestExplicit
  <xref:System.Reflection>  
  <xref:System.Attribute>  
  [Visual Basic Programming Guide](../../../../visual-basic/programming-guide/index.md)  
- [Attributes](https://msdn.microsoft.com/library/5x6cd29c)  
+ [Attributes](../../../../standard/attributes/index.md)  
  [Reflection (Visual Basic)](../../../../visual-basic/programming-guide/concepts/reflection.md)  
  [Attributes (Visual Basic)](../../../../visual-basic/language-reference/attributes.md)  
  [Creating Custom Attributes (Visual Basic)](../../../../visual-basic/programming-guide/concepts/attributes/creating-custom-attributes.md)  

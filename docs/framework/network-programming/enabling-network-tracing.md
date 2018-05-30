@@ -1,12 +1,6 @@
 ---
 title: "Enabling Network Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "trace destinations"
   - "sending traces to log file"
@@ -17,7 +11,6 @@ helpviewer_keywords:
   - "logs, trace"
   - "destination for tracing output"
 ms.assetid: 5fff458c-51a6-4134-ba47-8a6137ddc41e
-caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -52,4 +45,4 @@ Network tracing provides access to information about method invocations and netw
 ## See Also  
  [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)  
  [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)  
- [Introduction to Instrumentation and Tracing](http://msdn.microsoft.com/en-us/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)
+ [Introduction to Instrumentation and Tracing](http://msdn.microsoft.com/library/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)

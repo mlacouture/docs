@@ -1,16 +1,10 @@
 ---
 title: Hosting .NET Core
-description: Hosting the .NET Core runtime from native code 
-keywords: .NET, .NET Core, Hosting, Hosting .NET Core
+description: Hosting the .NET Core runtime from native code
 author: mjrousos
-ms.author: mikerou
+ms.author: mairaw
 ms.date: 2/3/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 13edec8b-614d-47ed-9e95-ed6d3b94ec0c
 ---
-
 # Hosting .NET Core
 
 Like all managed code, .NET Core applications are executed by a host. The host is responsible for starting the runtime (including components like the JIT and garbage collector), creating AppDomains, and invoking managed entry points.
@@ -21,7 +15,7 @@ This article gives an overview of the steps necessary to start the .NET Core run
 
 ## Prerequisites
 
-Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core. You will need a C++ development environment (such as that provided by [Visual Studio](https://www.visualstudio.com/downloads/)).
+Because hosts are native applications, this tutorial will cover constructing a C++ application to host .NET Core. You will need a C++ development environment (such as that provided by [Visual Studio](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)).
 
 You will also want a simple .NET Core application to test the host with, so you should install the [.NET Core SDK](https://www.microsoft.com/net/core) and [build a small .NET Core test app](../../core/tutorials/with-visual-studio.md) (such as a 'Hello World' app). The 'Hello World' app created by the new .NET Core console project template is sufficient.
 
@@ -29,7 +23,7 @@ This tutorial and its associated sample build a Windows host; see the notes at t
 
 ## Creating the host
 
-A [sample host](https://github.com/dotnet/docs/tree/master/samples/core/hosting) demonstrating the steps outlined in this article is available in the dotnet/docs GitHub repository. Comments in the sample's *host.cpp* file clearly associate the numbered steps from this tutorial with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+A [sample host](https://github.com/dotnet/samples/tree/master/core/hosting) demonstrating the steps outlined in this article is available in the dotnet/samples GitHub repository. Comments in the sample's *host.cpp* file clearly associate the numbered steps from this tutorial with where they're performed in the sample. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 Keep in mind that the sample host is meant to be used for learning purposes, so it is light on error checking and is designed to emphasize readability over efficiency. More real-world host samples are available in the [dotnet/coreclr](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts) repository. The [CoreRun host](https://github.com/dotnet/coreclr/tree/master/src/coreclr/hosts/corerun), in particular, is a good general-purpose host to study after reading through the simpler sample.
 
@@ -84,7 +78,7 @@ Common AppDomain properties include:
 *  `PLATFORM_RESOURCE_ROOTS` This list includes paths to probe in for resource satellite assemblies (in culture-specific sub-directories).
 *  `AppDomainCompatSwitch` This string specifies which compatibility quirks should be used for assemblies without an explicit Target Framework Moniker (an assembly-level attribute indicating which Framework an assembly is meant to run against). Typically, this should be set to `"UseLatestBehaviorWhenTFMNotSpecified"` but some hosts may prefer to get older Silverlight or Windows Phone compatibility quirks, instead.
 
-In our [simple sample host](https://github.com/dotnet/docs/tree/master/samples/core/hosting), these properties are set up as follows:
+In our [simple sample host](https://github.com/dotnet/samples/tree/master/core/hosting), these properties are set up as follows:
 
 [!code-cpp[NetCoreHost#6](../../../samples/core/hosting/host.cpp#6)]
 

@@ -1,14 +1,6 @@
 ---
 title: "How to: Specify the Security Context for Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Service applications, security"
   - "security [Visual Studio], contexts"
@@ -18,9 +10,7 @@ helpviewer_keywords:
   - "services, security"
   - "ServiceInstaller class, security context"
 ms.assetid: 02187c7b-dbf2-45f2-96c2-e11010225a22
-caps.latest.revision: 10
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
 ---
 # How to: Specify the Security Context for Services

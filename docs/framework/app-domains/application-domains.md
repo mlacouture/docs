@@ -1,14 +1,6 @@
 ---
 title: "Application Domains"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "process boundaries for isolation"
   - "application isolation"
@@ -20,10 +12,8 @@ helpviewer_keywords:
   - "code, verification process"
   - "verification testing code"
 ms.assetid: 113a8bbf-6875-4a72-a49d-ca2d92e19cc8
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Application Domains
 Operating systems and runtime environments typically provide some form of isolation between applications. For example, Windows uses processes to isolate applications. This isolation is necessary to ensure that code running in one application cannot adversely affect other, unrelated applications.  
@@ -59,7 +49,7 @@ Operating systems and runtime environments typically provide some form of isolat
     > [!NOTE]
     >  You cannot unload individual assemblies or types. Only a complete domain can be unloaded.  
   
--   Code running in one application cannot directly access code or resources from another application. The common language runtime enforces this isolation by preventing direct calls between objects in different application domains. Objects that pass between domains are either copied or accessed by proxy. If the object is copied, the call to the object is local. That is, both the caller and the object being referenced are in the same application domain. If the object is accessed through a proxy, the call to the object is remote. In this case, the caller and the object being referenced are in different application domains. Cross-domain calls use the same remote call infrastructure as calls between two processes or between two machines. As such, the metadata for the object being referenced must be available to both application domains to allow the method call to be JIT-compiled properly. If the calling domain does not have access to the metadata for the object being called, the compilation might fail with an exception of type **System.IO.FileNotFound**. See [Remote Objects](http://msdn.microsoft.com/en-us/515686e6-0a8d-42f7-8188-73abede57c58) for more details. The mechanism for determining how objects can be accessed across domains is determined by the object. For more information, see <xref:System.MarshalByRefObject?displayProperty=nameWithType>.  
+-   Code running in one application cannot directly access code or resources from another application. The common language runtime enforces this isolation by preventing direct calls between objects in different application domains. Objects that pass between domains are either copied or accessed by proxy. If the object is copied, the call to the object is local. That is, both the caller and the object being referenced are in the same application domain. If the object is accessed through a proxy, the call to the object is remote. In this case, the caller and the object being referenced are in different application domains. Cross-domain calls use the same remote call infrastructure as calls between two processes or between two machines. As such, the metadata for the object being referenced must be available to both application domains to allow the method call to be JIT-compiled properly. If the calling domain does not have access to the metadata for the object being called, the compilation might fail with an exception of type **System.IO.FileNotFound**. See [Remote Objects](http://msdn.microsoft.com/library/515686e6-0a8d-42f7-8188-73abede57c58) for more details. The mechanism for determining how objects can be accessed across domains is determined by the object. For more information, see <xref:System.MarshalByRefObject?displayProperty=nameWithType>.  
   
 -   The behavior of code is scoped by the application in which it runs. In other words, the application domain provides configuration settings such as application version policies, the location of any remote assemblies it accesses, and information about where to locate assemblies that are loaded into the domain.  
   
@@ -79,11 +69,11 @@ Operating systems and runtime environments typically provide some form of isolat
   
  There are three options for loading domain-neutral assemblies:  
   
--   <xref:System.LoaderOptimization> loads no assemblies as domain-neutral, except Mscorlib, which is always loaded domain-neutral. This setting is called single domain because it is commonly used when the host is running only a single application in the process.  
-  
--   <xref:System.LoaderOptimization> loads all assemblies as domain-neutral. Use this setting when there are multiple application domains in the process, all of which run the same code.  
-  
--   <xref:System.LoaderOptimization> loads strong-named assemblies as domain-neutral, if they and all their dependencies have been installed in the global assembly cache. Other assemblies are loaded and JIT-compiled separately for each application domain in which they are loaded, and thus can be unloaded from the process. Use this setting when running more than one application in the same process, or if you have a mixture of assemblies that are shared by many application domains and assemblies that need to be unloaded from the process.  
+- <xref:System.LoaderOptimization.SingleDomain?displayProperty=nameWithType> loads no assemblies as domain-neutral, except Mscorlib, which is always loaded domain-neutral. This setting is called single domain because it is commonly used when the host is running only a single application in the process.
+
+- <xref:System.LoaderOptimization.MultiDomain?displayProperty=nameWithType> loads all assemblies as domain-neutral. Use this setting when there are multiple application domains in the process, all of which run the same code.
+
+- <xref:System.LoaderOptimization.MultiDomainHost?displayProperty=nameWithType> loads strong-named assemblies as domain-neutral, if they and all their dependencies have been installed in the global assembly cache. Other assemblies are loaded and JIT-compiled separately for each application domain in which they are loaded, and thus can be unloaded from the process. Use this setting when running more than one application in the same process, or if you have a mixture of assemblies that are shared by many application domains and assemblies that need to be unloaded from the process.
   
  JIT-compiled code cannot be shared for assemblies loaded into the load-from context, using the <xref:System.Reflection.Assembly.LoadFrom%2A> method of the <xref:System.Reflection.Assembly> class, or loaded from images using overloads of the <xref:System.Reflection.Assembly.Load%2A> method that specify byte arrays.  
   

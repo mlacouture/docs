@@ -1,17 +1,12 @@
 ---
 title: LINQ (Language Integrated Query)
 description: Learn how LINQ provides language-level querying capabilities and an API to C# and VB as a way to write expressive, declarative code.
-keywords: .NET, .NET Core
 author: cartermp
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: c00939e1-59e3-4e61-8fe9-08ad6b3f1295
 ---
-
 # LINQ (Language Integrated Query)
 
 ## What is it?
@@ -76,7 +71,7 @@ public static IEnumerable<XElement> FindAllElementsWithAttribute(XElement docume
 
 Writing code to manually traverse the XML document to perform this task would be far more challenging.
 
-Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](https://msdn.microsoft.com/library/bb386976.aspx) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](http://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://msdn.microsoft.com/library/Bb546158.aspx)!
+Interacting with XML isn’t the only thing you can do with LINQ Providers. [Linq to SQL](../../docs/framework/data/adonet/sql/linq/index.md) is a fairly bare-bones Object-Relational Mapper (ORM) for an MSSQL Server Database. The [JSON.NET](https://www.newtonsoft.com/json/help/html/LINQtoJSON.htm) library provides efficient JSON Document traversal via LINQ. Furthermore, if there isn’t a library which does what you need, you can also [write your own LINQ Provider](https://msdn.microsoft.com/library/Bb546158.aspx)!
 
 ## Why Use the Query Syntax?
 
@@ -136,7 +131,7 @@ var cats = dogs.Select(dog => dog.TurnIntoACat());
 var queryCats = from dog in dogs
                 select dog.TurnIntoACat();
 
-// Summing then lengths of a set of strings
+// Summing the lengths of a set of strings
 int seed = 0;
 int sumOfStrings = strings.Aggregate(seed, (s1, s2) => s1.Length + s2.Length);
 ```
@@ -250,10 +245,10 @@ In diagram form:
 
 ![PLINQ diagram](./media/using-linq/plinq-diagram.png)
 
-Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](https://msdn.microsoft.com/library/dd460717.aspx).
+Parallelizable CPU-bound jobs which can be easily expressed via LINQ (in other words, are pure functions and have no side effects) are a great candidate for PLINQ. For jobs which _do_ have a side effect, consider using the [Task Parallel Library](./parallel-programming/task-parallel-library-tpl.md).
 
 ## Further Resources:
 
 *   [101 LINQ Samples](https://code.msdn.microsoft.com/101-LINQ-Samples-3fb9811b)
 *   [Linqpad](https://www.linqpad.net/), a playground environment and Database querying engine for C#/F#/VB
-*   [EduLinq](http://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented
+*   [EduLinq](https://codeblog.jonskeet.uk/2011/02/23/reimplementing-linq-to-objects-part-45-conclusion-and-list-of-posts/), an e-book for learning how LINQ-to-objects is implemented

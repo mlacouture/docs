@@ -1,15 +1,9 @@
 ---
 title: "Using UDP Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "protocols, UDP"
   - "network resources, UDP"
@@ -23,7 +17,6 @@ helpviewer_keywords:
   - "sending data, UDP"
   - "application protocols, UDP"
 ms.assetid: d5c3477a-e798-454c-a890-738ba14c5707
-caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

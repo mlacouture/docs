@@ -1,25 +1,15 @@
 ---
 title: "&lt;TimeSpan_LegacyFormatMode&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "<TimeSpan_LegacyFormatMode> element"
   - "TimeSpan_LegacyFormatMode element"
 ms.assetid: 865e7207-d050-4442-b574-57ea29d5e2d6
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # &lt;TimeSpan_LegacyFormatMode&gt; Element
 Determines whether the runtime preserves legacy behavior in formatting operations with <xref:System.TimeSpan?displayProperty=nameWithType> values.  

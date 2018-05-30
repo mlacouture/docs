@@ -1,19 +1,7 @@
 ---
 title: "&lt;userPrincipalName&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 68032f69-149e-4613-bae4-18314d4fd294
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # &lt;userPrincipalName&gt;
 Specifies the User Principal Name (UPN) of a service to be authenticated by the client.  
@@ -36,7 +24,7 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|value|A user account name (sometimes referred to as the user logon name) and a domain name identifying the domain in which the user account is located. This is the standard usage for logging on to a Windows domain. The format is: someone@example.com (as for an e-mail address).|  
+|value|A user account name (sometimes referred to as the user logon name) and a domain name identifying the domain in which the user account is located. This is the standard usage for logging on to a Windows domain. The format is: someone@example.com (as for an email address).|  
   
 ### Child Elements  
  None.  
@@ -48,7 +36,7 @@ Specifies the User Principal Name (UPN) of a service to be authenticated by the 
 |[\<identity>](../../../../../docs/framework/configure-apps/file-schema/wcf/identity.md)|Specifies the identity of the service to be authenticated by the client.|  
   
 ## Remarks  
- A secure [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
+ A secure Windows Communication Foundation (WCF) client that connects to an endpoint with this identity uses the UPN when performing SSPI authentication with the endpoint.  
   
 ## Example  
  The following configuration code specifies the UPN of the service to be authenticated by the client.  

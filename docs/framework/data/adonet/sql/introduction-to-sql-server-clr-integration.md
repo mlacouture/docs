@@ -1,19 +1,7 @@
 ---
 title: "Introduction to SQL Server CLR Integration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 551d2290-ed80-49be-b377-44b32444da1c
-caps.latest.revision: 6
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # Introduction to SQL Server CLR Integration
 The common language runtime (CLR) is the heart of the Microsoft .NET Framework and provides the execution environment for all .NET Framework code. Code that runs within the CLR is referred to as managed code. The CLR provides various functions and services required for program execution, including just-in-time (JIT) compilation, allocating and managing memory, enforcing type safety, exception handling, thread management, and security.  
@@ -72,6 +60,6 @@ GO
 -   [Debugging CLR Database Objects](http://go.microsoft.com/fwlink/?LinkId=115236)  
   
 ## See Also  
- [Creating SQL Server 2005 Objects In Managed Code](http://msdn.microsoft.com/en-us/5358a825-e19b-49aa-8214-674ce5fed1da)  
+ [Creating SQL Server 2005 Objects In Managed Code](http://msdn.microsoft.com/library/5358a825-e19b-49aa-8214-674ce5fed1da)  
  [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md)  
  [ADO.NET Managed Providers and DataSet Developer Center](http://go.microsoft.com/fwlink/?LinkId=217917)

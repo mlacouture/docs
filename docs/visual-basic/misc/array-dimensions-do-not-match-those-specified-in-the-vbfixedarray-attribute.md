@@ -1,16 +1,9 @@
 ---
 title: "Array dimensions do not match those specified in the &#39;VBFixedArray&#39; attribute"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_ArrayDimensionsDontMatch"
 ms.assetid: 71809e3b-8147-4314-9c4c-e4a5bc9a5530
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Array dimensions do not match those specified in the &#39;VBFixedArray&#39; attribute
 Your array's dimensions do not match the dimensions you have specified in the `VBFixedArray` attribute.  
@@ -22,4 +15,4 @@ Your array's dimensions do not match the dimensions you have specified in the `V
 ## See Also  
  [Arrays in Visual Basic](~/docs/visual-basic/programming-guide/language-features/arrays/index.md)  
  [ReDim Statement](../../visual-basic/language-reference/statements/redim-statement.md)  
- [VBFixedArrayAttribute Class](http://msdn.microsoft.com/en-us/7b7e9ef6-2854-4114-892e-e7ae45dd0b49)
+ <xref:Microsoft.VisualBasic.VBFixedArrayAttribute>

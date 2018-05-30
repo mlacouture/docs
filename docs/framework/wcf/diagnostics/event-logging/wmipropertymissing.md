@@ -1,19 +1,7 @@
 ---
 title: "WmiPropertyMissing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 109fa6b4-93dc-4785-bec4-5aa02c434a65
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # WmiPropertyMissing
 Id: 129  

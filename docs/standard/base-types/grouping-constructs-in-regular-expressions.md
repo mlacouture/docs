@@ -1,16 +1,10 @@
 ---
 title: "Grouping Constructs in Regular Expressions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "lookbehinds"
   - "regular expressions, grouping constructs"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "constructs, grouping"
   - "grouping constructs"
 ms.assetid: 0fc18634-f590-4062-8d5c-f0b71abe405b
-caps.latest.revision: 33
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Grouping Constructs in Regular Expressions
 Grouping constructs delineate the subexpressions of a regular expression and capture the substrings of an input string. You can use grouping constructs to do the following:  
@@ -293,7 +285,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
   
  The group options construct is not a capturing group. That is, although any portion of a string that is captured by *subexpression* is included in the match, it is not included in a captured group nor used to populate the <xref:System.Text.RegularExpressions.GroupCollection> object.  
   
- For example, the regular expression `\b(?ix: d \w+)\s` in the following example uses inline options in a grouping construct to enable case-insensitive matching and ignore pattern whitespace in identifying all words that begin with the letter "d". The regular expression is defined as shown in the following table.  
+ For example, the regular expression `\b(?ix: d \w+)\s` in the following example uses inline options in a grouping construct to enable case-insensitive matching and ignore pattern white space in identifying all words that begin with the letter "d". The regular expression is defined as shown in the following table.  
   
 |Pattern|Description|  
 |-------------|-----------------|  
@@ -385,7 +377,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |Pattern|Description|  
 |-------------|-----------------|  
 |`\d{2}`|Match two decimal digits.|  
-|`{?<=\b20)`|Continue the match if the two decimal digits are preceded by the decimal digits "20" on a word boundary.|  
+|`(?<=\b20)`|Continue the match if the two decimal digits are preceded by the decimal digits "20" on a word boundary.|  
 |`\b`|End the match at a word boundary.|  
   
  Zero-width positive lookbehind assertions are also used to limit backtracking when the last character or characters in a captured group must be a subset of the characters that match that group's regular expression pattern. For example, if a group captures all consecutive word characters, you can use a zero-width positive lookbehind assertion to require that the last character be alphabetical.  
@@ -413,7 +405,7 @@ Grouping constructs delineate the subexpressions of a regular expression and cap
 |`\w+`|Match one or more word characters followed by a white-space character.|  
 |`\d{1,2},`|Match either one or two decimal digits followed by a white-space character and a comma.|  
 |`\d{4}\b`|Match four decimal digits, and end the match at a word boundary.|  
-|`(?<!(Saturday&#124;Sunday) )`|If the match is preceded by something other than the strings "Saturday" or "Sunday" followed by a space, the match is successful.|  
+|<code>(?<!(Saturday&#124;Sunday) )</code>|If the match is preceded by something other than the strings "Saturday" or "Sunday" followed by a space, the match is successful.|  
   
 <a name="nonbacktracking_subexpression"></a>   
 ## Nonbacktracking Subexpressions  

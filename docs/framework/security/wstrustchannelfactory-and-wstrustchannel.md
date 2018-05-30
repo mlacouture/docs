@@ -1,18 +1,8 @@
 ---
 title: "WSTrustChannelFactory and WSTrustChannel"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 96cec467-e963-4132-b18b-7d0b3a2e979f
-caps.latest.revision: 9
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # WSTrustChannelFactory and WSTrustChannel

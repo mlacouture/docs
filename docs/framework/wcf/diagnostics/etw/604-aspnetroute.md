@@ -1,19 +1,7 @@
 ---
 title: "604 - AspNetRoute"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 761748b5-1b7c-4b17-98ba-0579876632f1
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # 604 - AspNetRoute
 ## Properties  

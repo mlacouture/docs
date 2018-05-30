@@ -1,24 +1,15 @@
 ---
 title: "Subscribe to UI Automation Events"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "UI Automation, subscribing to events"
   - "subscribing to UI Automation events"
   - "events, subscribing to"
   - "listening for events"
 ms.assetid: b688effa-b3e8-4b05-944d-05ed89a245aa
-caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"

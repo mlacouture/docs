@@ -1,19 +1,7 @@
 ---
 title: "ISNULL (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: dc7a0173-3664-4c90-a57b-5cbb0a8ed7ee
-caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # ISNULL (Entity SQL)
 Determines if a query expression is null.  

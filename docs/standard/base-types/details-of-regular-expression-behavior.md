@@ -1,24 +1,16 @@
 ---
 title: "Details of Regular Expression Behavior"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "regular expressions, behavior"
   - ".NET Framework regular expressions, behavior"
 ms.assetid: 0ee1a6b8-caac-41d2-917f-d35570021b10
-caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Details of Regular Expression Behavior
 The .NET Framework regular expression engine is a backtracking regular expression matcher that incorporates a traditional Nondeterministic Finite Automaton (NFA) engine such as that used by Perl, Python, Emacs, and Tcl. This distinguishes it from faster, but more limited, pure regular expression Deterministic Finite Automaton (DFA) engines such as those found in awk, egrep, or lex. This also distinguishes it from standardized, but slower, POSIX NFAs. The following section describes the three types of regular expression engines, and explains why regular expressions in the .NET Framework are implemented by using a traditional NFA engine.  
@@ -100,7 +92,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |`^`|Begin the match at the beginning of a line.|  
     |`(?<Pvt>\<PRIVATE\>\s)?`|Match zero or one occurrence of the string `<PRIVATE>` followed by a white-space character. Assign the match to a capturing group named `Pvt`.|  
     |`(?(Pvt)((\w+\p{P}?\s)+)`|If the `Pvt` capturing group exists, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the first capturing group.|  
-    |`&#124;((\w+\p{P}?\s)+))`|If the `Pvt` capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the third capturing group.|  
+    |<code>&#124;((\w+\p{P}?\s)+))<code>|If the `Pvt` capturing group does not exist, match one or more occurrences of one or more word characters followed by zero or one punctuation separator followed by a white-space character. Assign the substring to the third capturing group.|  
     |`\r?$`|Match the end of a line or the end of the string.|  
   
      For more information about conditional evaluation, see [Alternation Constructs](../../../docs/standard/base-types/alternation-constructs-in-regular-expressions.md).  
@@ -126,7 +118,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
   
      For more information about right-to-left matching, see [Regular Expression Options](../../../docs/standard/base-types/regular-expression-options.md).  
   
--   Positive and negative lookbehind: `(?<=`*subexpression*`)` for positive lookbehind, and `(?<!`*subexpression*`)` for negative lookbehind. This feature is similar to lookahead, which is discussed earlier in this topic. Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds. Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression. Regular expressions with such nested quantifiers often offer poor performance. For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset. It forms a portion of the regular expression used to validate e-mail addresses; for more information, see [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md).  
+-   Positive and negative lookbehind: `(?<=`*subexpression*`)` for positive lookbehind, and `(?<!`*subexpression*`)` for negative lookbehind. This feature is similar to lookahead, which is discussed earlier in this topic. Because the regular expression engine allows complete right-to-left matching, regular expressions allow unrestricted lookbehinds. Positive and negative lookbehind can also be used to avoid nesting quantifiers when the nested subexpression is a superset of an outer expression. Regular expressions with such nested quantifiers often offer poor performance. For example, the following example verifies that a string begins and ends with an alphanumeric character, and that any other character in the string is one of a larger subset. It forms a portion of the regular expression used to validate email addresses; for more information, see [How to: Verify that Strings Are in Valid Email Format](../../../docs/standard/base-types/how-to-verify-that-strings-are-in-valid-email-format.md).  
   
      [!code-csharp[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/csharp/VS_Snippets_CLR/conceptual.regularexpressions.design/cs/lookbehind1.cs#5)]
      [!code-vb[Conceptual.RegularExpressions.Design#5](../../../samples/snippets/visualbasic/VS_Snippets_CLR/conceptual.regularexpressions.design/vb/lookbehind1.vb#5)]  
@@ -137,7 +129,7 @@ The .NET Framework regular expression engine is a backtracking regular expressio
     |-------------|-----------------|  
     |`^`|Begin the match at the beginning of the string.|  
     |`[A-Z0-9]`|Match any numeric or alphanumeric character. (The comparison is case-insensitive.)|  
-    |`([-!#$%&'.*+/=?^`{}&#124;~\w])*`|Match zero or more occurrences of any word character, or any of the following characters:  -, !, #, $, %, &, ', ., *, +, /, =, ?, ^, `, {, }, &#124;, or ~.|  
+    |<code>([-!#$%&'.*+/=?^\`{}&#124;~\w])*<code>|Match zero or more occurrences of any word character, or any of the following characters:  -, !, #, $, %, &, ', ., *, +, /, =, ?, ^, \`, {, }, &#124;, or ~.|  
     |`(?<=[A-Z0-9])`|Look behind to the previous character, which must be numeric or alphanumeric. (The comparison is case-insensitive.)|  
     |`$`|End the match at the end of the string.|  
   

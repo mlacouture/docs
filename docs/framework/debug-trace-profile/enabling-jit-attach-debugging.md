@@ -1,22 +1,12 @@
 ---
 title: "Enabling JIT-Attach Debugging"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "JIT-attach debugging"
   - "debugging [.NET Framework], JIT-attach debugging"
 ms.assetid: f91fc5f7-de5a-4f23-b6ac-f450e63c662e
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # Enabling JIT-Attach Debugging
 JIT-attach debugging is the phrase used to describe attaching a debugger to a process when you encounter errors, or it can be triggered by specific methods or functions.  
@@ -42,4 +32,4 @@ JIT-attach debugging is the phrase used to describe attaching a debugger to a pr
 ## See Also  
  [Debugging, Tracing, and Profiling](../../../docs/framework/debug-trace-profile/index.md)  
  [Making an Image Easier to Debug](../../../docs/framework/debug-trace-profile/making-an-image-easier-to-debug.md)  
- [Enabling Profiling](http://msdn.microsoft.com/en-us/3b669676-f0e0-4ebf-8674-68986dd2020d)
+ [Enabling Profiling](http://msdn.microsoft.com/library/3b669676-f0e0-4ebf-8674-68986dd2020d)

@@ -1,12 +1,6 @@
 ---
 title: "Option Compare Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Compare"
   - "vb.OptionCompare"
@@ -24,9 +18,6 @@ helpviewer_keywords:
   - "Option Compare statement [Visual Basic]"
   - "text [Visual Basic], comparing"
 ms.assetid: 54e8eeeb-3b0d-4fb9-acce-fbfbd5975f6e
-caps.latest.revision: 37
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Option Compare Statement
 Declares the default comparison method to use when comparing string data.  
@@ -68,7 +59,7 @@ Option Compare { Binary | Text }
   
 #### To set Option Compare in the IDE  
   
-1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**. For more information, see [NIB: Managing Project Properties with the Project Designer](http://msdn.microsoft.com/en-us/983f3c18-832f-4666-afec-74b716ff3e0e).  
+1.  In **Solution Explorer**, select a project. On the **Project** menu, click **Properties**.  
   
 2.  Click the **Compile** tab.  
   

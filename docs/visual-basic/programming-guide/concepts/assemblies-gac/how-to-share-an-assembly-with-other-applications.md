@@ -1,18 +1,7 @@
 ---
 title: "How to: Share an Assembly with Other Applications (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5388aedc-cb42-4622-8b70-8e701eee057a
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Share an Assembly with Other Applications (Visual Basic)
 Assemblies can be private or shared: by default, most simple programs consist of a private assembly because they are not intended to be used by other applications.  
@@ -25,7 +14,7 @@ Assemblies can be private or shared: by default, most simple programs consist of
   
 2.  Assign a strong name to your assembly. For more information, see [How to: Sign an Assembly with a Strong Name](../../../../framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md).  
   
-3.  Assign version information to your assembly. For more information, see [Assembly Versioning](https://msdn.microsoft.com/library/51ket42z).  
+3.  Assign version information to your assembly. For more information, see [Assembly Versioning](../../../../framework/app-domains/assembly-versioning.md).  
   
 4.  Add your assembly to the Global Assembly Cache. For more information, see [How to: Install an Assembly into the Global Assembly Cache](../../../../framework/app-domains/how-to-install-an-assembly-into-the-gac.md).  
   

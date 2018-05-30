@@ -1,14 +1,6 @@
 ---
 title: "How the Runtime Locates Assemblies"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "app.config files, assembly locations"
   - "deploying applications [.NET Framework], assembly locations"
@@ -17,10 +9,8 @@ helpviewer_keywords:
   - "locating assemblies"
   - "assemblies [.NET Framework], location"
 ms.assetid: 772ac6f4-64d2-4cfb-92fd-58096dcd6c34
-caps.latest.revision: 20
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # How the Runtime Locates Assemblies
 To successfully deploy your .NET Framework application, you must understand how the common language runtime locates and binds to the assemblies that make up your application. By default, the runtime attempts to bind with the exact version of an assembly that the application was built with. This default behavior can be overridden by configuration file settings.  
@@ -182,7 +172,7 @@ Al.exe /link:asm6.exe.config /out:policy.3.0.asm6.dll /keyfile: compatkey.dat /v
   
 -   Name, which is the name of the referenced assembly.  
   
--   The `privatePath` attribute of the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element, which is the user-defined list of subdirectories under the root location. This location can be specified in the application configuration file and in managed code using the <xref:System.AppDomain.AppendPrivatePath%2A> property for an application domain. When specified in managed code, the managed code `privatePath` is probed first, followed by the path specified in the application configuration file.  
+-   The `privatePath` attribute of the [\<probing>](../../../docs/framework/configure-apps/file-schema/runtime/probing-element.md) element, which is the user-defined list of subdirectories under the root location. This location can be specified in the application configuration file and in managed code using the <xref:System.AppDomainSetup.PrivateBinPath?displayProperty=nameWithType> property for an application domain. When specified in managed code, the managed code `privatePath` is probed first, followed by the path specified in the application configuration file.  
   
 #### Probing the Application Base and Culture Directories  
  The runtime always begins probing in the application's base, which can be either a URL or the application's root directory on a computer. If the referenced assembly is not found in the application base and no culture information is provided, the runtime searches any subdirectories with the assembly name. The directories probed include:  

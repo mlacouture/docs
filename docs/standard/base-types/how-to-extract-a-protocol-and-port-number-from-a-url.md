@@ -1,16 +1,10 @@
 ---
 title: "How to: Extract a Protocol and Port Number from a URL"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "searching with regular expressions, examples"
   - "parsing text with regular expressions, examples"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "pattern-matching with regular expressions, examples"
 ms.assetid: ab7f62b3-6d2c-4efb-8ac6-28600df5fd5c
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # How to: Extract a Protocol and Port Number from a URL
 The following example extracts a protocol and port number from a URL.  

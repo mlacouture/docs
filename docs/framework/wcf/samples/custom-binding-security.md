@@ -1,18 +1,8 @@
 ---
 title: "Custom Binding Security"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a6383dff-4308-46d2-bc6d-acd4e18b4b8d
-caps.latest.revision: 30
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # Custom Binding Security
@@ -51,16 +41,16 @@ This sample demonstrates how to configure security by using a custom binding. It
   
 ```xml  
 <behaviors>  
-      <serviceBehaviors>  
-        <behavior name="CalculatorServiceBehavior">  
-          <serviceMetadata />  
-          <serviceDebug includeExceptionDetailInFaults="False" />  
-          <serviceCredentials>  
-            <serviceCertificate findValue="localhost" storeLocation="LocalMachine" storeName="My" x509FindType="FindBySubjectName"/>  
-          </serviceCredentials>  
-        </behavior>  
-      </serviceBehaviors>  
-    </behaviors>  
+    <serviceBehaviors>  
+    <behavior name="CalculatorServiceBehavior">  
+        <serviceMetadata />  
+        <serviceDebug includeExceptionDetailInFaults="False" />  
+        <serviceCredentials>  
+        <serviceCertificate findValue="localhost" storeLocation="LocalMachine" storeName="My" x509FindType="FindBySubjectName"/>  
+        </serviceCredentials>  
+    </behavior>  
+    </serviceBehaviors>  
+</behaviors>  
 ```  
   
  Additionally, the custom binding uses message security with Windows credential type - this is the default credential type. This is accomplished by the `security` binding element. Both client and service are authenticated using message-level security if the Kerberos authentication mechanism is available. This happens if the sample is run in the Active Directory environment. If the Kerberos authentication mechanism is not available, NTLM authentication is used. NTLM authenticates the client to the service but does not authenticate the service to the client. The `security` binding element is configured to use `SecureConversation``authenticationType`, which results in the creation of a security session on both the client and the service. This is required to enable the service's duplex contract to work.  
@@ -88,7 +78,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
      The certificate is stored in the CurrentUser store for the Web-hosted services.  
   
-    ```  
+    ```bat
     echo ************  
     echo Server cert setup starting  
     echo %SERVER_NAME%  
@@ -128,7 +118,7 @@ Equation(0 + 100 - 50 * 17.65 / 2 = 441.25)
   
 3.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 ### To run the sample across computers  
   

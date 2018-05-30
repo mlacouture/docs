@@ -1,19 +1,7 @@
 ---
 title: "Provider Manifest Specification"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: bb450b47-8951-4f99-9350-26f05a4d4e46
-caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # Provider Manifest Specification
 This section discusses how a data store provider can support the types and functions in the data store.  
@@ -97,7 +85,7 @@ public DbProviderManifest GetProviderManifest(string manifestToken);
 ```  
   
 #### Using a Provider Manifest Token  
- For the offline scenario, the token is picked from SSDL representation. The SSDL allows you to specify a ProviderManifestToken (see [Schema Element (SSDL)](http://msdn.microsoft.com/en-us/fec75ae4-7f16-4421-9265-9dac61509222) for more information). For example, if a connection cannot be opened, the SSDL has a provider manifest token that specifies information about the manifest.  
+ For the offline scenario, the token is picked from SSDL representation. The SSDL allows you to specify a ProviderManifestToken (see [Schema Element (SSDL)](http://msdn.microsoft.com/library/fec75ae4-7f16-4421-9265-9dac61509222) for more information). For example, if a connection cannot be opened, the SSDL has a provider manifest token that specifies information about the manifest.  
   
 ```  
 public DbProviderManifest GetProviderManifest(string manifestToken);  

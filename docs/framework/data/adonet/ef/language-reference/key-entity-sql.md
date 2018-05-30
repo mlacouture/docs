@@ -1,19 +1,7 @@
 ---
 title: "KEY (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cbaa97a8-c89c-4460-8c74-00474695789f
-caps.latest.revision: 3
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # KEY (Entity SQL)
 Extracts the key of a reference or of an entity expression.  

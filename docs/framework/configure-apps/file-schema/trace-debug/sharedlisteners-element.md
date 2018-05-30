@@ -1,14 +1,6 @@
 ---
 title: "&lt;sharedListeners&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#sharedListeners"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners"
@@ -19,7 +11,6 @@ helpviewer_keywords:
   - "trace listeners, <sharedListeners> element"
   - "sharedListeners element"
 ms.assetid: de200534-19dd-4156-86cf-c50521802c4c
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

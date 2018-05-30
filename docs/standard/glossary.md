@@ -1,16 +1,11 @@
 ---
 title: .NET Glossary
 description: Find out the meaning of selected terms used in the .NET documentation.
-keywords: .NET glossary, .NET dictionary, .NET terminology, .NET platform, .NET framework, .NET runtime
 author: tdykstra
 ms.author: tdykstra
 ms.date: 07/08/2017
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ---
-
 # .NET Glossary
 
 The primary goal of this glossary is to clarify meanings of selected terms and acronyms that appear frequently in the .NET documentation without definitions.
@@ -37,9 +32,9 @@ See [ASP.NET Core documentation](/aspnet/#pivot=core).
 
 ## assembly
 
-A *.dll* file that contains a collection of APIs that can be called by apps or other assemblies.
+A *.dll*/*.exe* file that can contain a collection of APIs that can be called by apps or other assemblies.
 
-A .NET assembly is a collection of types. An assembly includes interfaces, classes, structures, enumerations, and delegates.  Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
+An assembly may include types such as interfaces, classes, structures, enumerations, and delegates. Assemblies in a project's *bin* folder are sometimes referred to as *binaries*. See also [library](#library).
 
 ## CLR
 
@@ -143,7 +138,7 @@ Historically, Mono implemented the larger API of the .NET Framework and emulated
 
 Mono is typically used with a just-in-time compiler, but it also features a full static compiler (ahead-of-time compilation) that is used on platforms like iOS.
 
-To learn more about Mono, see the [Mono documentation](http://www.mono-project.com/docs/).
+To learn more about Mono, see the [Mono documentation](https://www.mono-project.com/docs/).
 
 ## .NET
 
@@ -203,7 +198,7 @@ You can think of this technology as a persistent JIT compiler. It usually compil
 
 A NuGet package &mdash; or just a package &mdash; is a *.zip* file with one or more assemblies of the same name along with additional metadata such as the author name.
 
-The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
+The *.zip* file has a *.nupkg* extension and may contain assets, such as *.dll* files and *.xml* files, for use with multiple target frameworks and versions. When installed in an app or library, the appropriate assets are selected based on the target framework specified by the app or library. The assets that define the interface are in the *ref* folder, and the assets that define the implementation are in the *lib* folder.
 
 ## platform
 

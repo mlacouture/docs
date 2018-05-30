@@ -1,18 +1,8 @@
 ---
 title: "Security Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 76d5e5cd-e4f4-404f-9a5a-ec3522494ad8
-caps.latest.revision: 6
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # Security Exceptions

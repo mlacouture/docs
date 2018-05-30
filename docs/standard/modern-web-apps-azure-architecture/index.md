@@ -1,13 +1,14 @@
 ---
-title: Architect modern web applications with ASP.NET Core and Azure  
+title: Architect modern web applications with ASP.NET Core and Azure
 description: Architect Modern Web Applications with ASP.NET Core and Azure | introduction
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
 ---
 # Architect Modern Web Applications with ASP.NET Core and Azure
+
+![cover image](./media/cover.jpg)
+
 
 .NET Core and ASP.NET Core offer several advantages over traditional .NET development. You should use .NET Core for your server applications if some or all of the following are important to your application's success:
 
@@ -63,7 +64,7 @@ Feel free to forward this guide to your team to help ensure a common understandi
 
 ## References
 - **Choosing between .NET Core and .NET Framework for server apps**  
-<https://docs.microsoft.com/dotnet/articles/standard/choosing-core-framework-server>
+<https://docs.microsoft.com/dotnet/standard/choosing-core-framework-server>
 
 >[!div class="step-by-step"]
 [Next] (modern-web-applications-characteristics.md)

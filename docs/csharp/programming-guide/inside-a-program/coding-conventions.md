@@ -1,22 +1,13 @@
 ---
 title: "C# Coding Conventions (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "coding conventions, C#"
   - "Visual C#, coding conventions"
   - "C# language, coding conventions"
 ms.assetid: f4f60de9-d49b-4fb6-bab1-20e19ea24710
-caps.latest.revision: 32
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# Coding Conventions (C# Programming Guide)
-The [C# Language Specification](http://go.microsoft.com/fwlink/?LinkId=199552) does not define a coding standard. However, the guidelines in this topic are used by Microsoft to develop samples and documentation.  
-  
  Coding conventions serve the following purposes:  
   
 -   They create a consistent look to the code, so that readers can focus on content, not layout.  
@@ -26,6 +17,8 @@ The [C# Language Specification](http://go.microsoft.com/fwlink/?LinkId=199552) d
 -   They facilitate copying, changing, and maintaining the code.  
   
 -   They demonstrate C# best practices.  
+
+ The guidelines in this topic are used by Microsoft to develop samples and documentation.  
   
 ## Naming Conventions  
   
@@ -71,7 +64,7 @@ The [C# Language Specification](http://go.microsoft.com/fwlink/?LinkId=199552) d
   
 ### String Data Type  
   
--   Use the `+` operator to concatenate short strings, as shown in the following code.  
+-   Use [string interpolation](../../language-reference/tokens/interpolated.md) to concatenate short strings, as shown in the following code.  
   
      [!code-csharp[csProgGuideCodingConventions#6](../../../../samples/snippets/csharp/VS_Snippets_VBCSharp/csprogguidecodingconventions/cs/program.cs#6)]  
   

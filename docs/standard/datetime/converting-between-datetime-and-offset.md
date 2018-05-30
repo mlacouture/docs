@@ -1,16 +1,10 @@
 ---
 title: "Converting between DateTime and DateTimeOffset"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "DateTime structure, converting"
   - "time zones [.NET Framework], conversions"
@@ -22,12 +16,9 @@ helpviewer_keywords:
   - "Date data type, converting"
   - "local time conversions"
 ms.assetid: b605ff97-0c45-4c24-833f-4c6a3e8be64c
-caps.latest.revision: 8
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
-
 # Converting between DateTime and DateTimeOffset
 
 Although the <xref:System.DateTimeOffset> structure provides a greater degree of time zone awareness than the <xref:System.DateTime> structure, <xref:System.DateTime> parameters are used more commonly in method calls. Because of this, the ability to convert <xref:System.DateTimeOffset> values to <xref:System.DateTime> values and vice versa is particularly important. This topic shows how to perform these conversions in a way that preserves as much time zone information as possible.

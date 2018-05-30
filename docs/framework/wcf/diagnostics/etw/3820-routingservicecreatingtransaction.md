@@ -1,19 +1,7 @@
 ---
 title: "3820 - RoutingServiceCreatingTransaction"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 11b15ba8-7d62-4235-8efd-bc6b60218247
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # 3820 - RoutingServiceCreatingTransaction
 ## Properties  

@@ -1,17 +1,7 @@
 ---
 title: "Creating Variant Generic Interfaces (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 30330ec4-9df2-4838-a535-6c406d0ed4df
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Creating Variant Generic Interfaces (C#)
 You can declare generic type parameters in interfaces as covariant or contravariant. *Covariance* allows interface methods to have more derived return types than that defined by the generic type parameters. *Contravariance* allows interface methods to have argument types that are less derived than that specified by the generic parameters. A generic interface that has covariant or contravariant generic type parameters is called *variant*.  
@@ -23,7 +13,7 @@ You can declare generic type parameters in interfaces as covariant or contravari
  You can declare variant generic interfaces by using the `in` and `out` keywords for generic type parameters.  
   
 > [!IMPORTANT]
->  `ref` and `out` parameters in C# cannot be variant. Value types also do not support variance.  
+>  `ref`, `in`, and `out` parameters in C# cannot be variant. Value types also do not support variance.  
   
  You can declare a generic type parameter covariant by using the `out` keyword. The covariant type must satisfy the following conditions:  
   

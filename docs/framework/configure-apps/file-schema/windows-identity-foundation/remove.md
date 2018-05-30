@@ -1,18 +1,8 @@
 ---
 title: "&lt;remove&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 4058e2f1-7db4-4d1a-84dd-1b52836f2ae6
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;remove&gt;
@@ -43,7 +33,7 @@ Removes the specified security token handler from the token handler collection.
   
 |Attribute|Description|  
 |---------------|-----------------|  
-|type|The CLR type name of the token handler to be removed. For more information about how to specify the `type` attribute, see [Custom Type References](http://msdn.microsoft.com/en-us/7286d2e3-c63d-49fd-abdc-ce2705f22c24). Required.|  
+|type|The CLR type name of the token handler to be removed. For more information about how to specify the `type` attribute, see [Custom Type References](http://msdn.microsoft.com/library/7286d2e3-c63d-49fd-abdc-ce2705f22c24). Required.|  
   
 ### Child Elements  
  None  

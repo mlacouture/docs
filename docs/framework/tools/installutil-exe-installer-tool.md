@@ -1,14 +1,6 @@
 ---
 title: "Installutil.exe (Installer Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "uninstalling server resources"
   - "removing server resources"
@@ -21,10 +13,8 @@ helpviewer_keywords:
   - "progress information for installation"
   - "reporting installation progress"
 ms.assetid: 3f9d0533-f895-4897-b4ea-528284e0241d
-caps.latest.revision: 40
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Installutil.exe (Installer Tool)
 The Installer tool is a command-line utility that allows you to install and uninstall server resources by executing the installer components in specified assemblies. This tool works in conjunction with classes in the <xref:System.Configuration.Install> namespace.  
@@ -153,7 +143,7 @@ installutil /LogFile=myLog.InstallLog myAssembly.exe
 installutil /LogFile=myLog.InstallLog /reg=true myAssembly.exe  
 ```  
   
- The following command executes the installers in the assembly `myAssembly.exe`, uses the installer's custom `/email` option to specify the user's e-mail address, and suppresses output to the log file.  
+ The following command executes the installers in the assembly `myAssembly.exe`, uses the installer's custom `/email` option to specify the user's email address, and suppresses output to the log file.  
   
 ```  
 installutil /LogFile= /email=admin@mycompany.com myAssembly.exe  

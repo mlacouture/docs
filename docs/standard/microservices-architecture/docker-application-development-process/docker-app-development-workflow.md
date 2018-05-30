@@ -1,13 +1,9 @@
 ---
 title: Development workflow for Docker apps
 description: .NET Microservices Architecture for Containerized .NET Applications | Development workflow for Docker apps
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 10/18/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
 ---
 # Development workflow for Docker apps
 
@@ -65,7 +61,7 @@ You can start coding your application in plain .NET (usually in .NET Core if you
     [*https://docs.docker.com/docker-for-windows/*](https://docs.docker.com/docker-for-windows/)
 
 -   **Visual Studio 2017**
-    [*https://www.visualstudio.com/vs/visual-studio-2017/*](https://www.visualstudio.com/vs/visual-studio-2017/)
+    [*https://www.visualstudio.com/downloads/*](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs)
 
 ![](./media/image4.png)
 
@@ -99,7 +95,7 @@ Using an official .NET image repository from Docker Hub with a version number en
 
 The following example shows a sample Dockerfile for an ASP.NET Core container.
 
-```
+```Dockerfile
 FROM microsoft/aspnetcore:2.0
   
 ARG source
@@ -120,7 +116,7 @@ You can specify additional configuration settings in the Dockerfile, depending o
 ### Additional resources
 
 -   **Building Docker Images for .NET Core Applications**
-    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images)
+    [*https://docs.microsoft.com/dotnet/core/docker/building-net-docker-images*](../../../core/docker/building-net-docker-images.md)
 
 -   **Build your own image**. In the official Docker documentation.
     [*https://docs.docker.com/engine/tutorials/dockerimages/*](https://docs.docker.com/engine/tutorials/dockerimages/)
@@ -288,7 +284,7 @@ If your application only has a single container, you can run it by deploying it 
 
 You can run a Docker container using the docker run command, as in Figure 5-9:
 
-```
+```console
   docker run -t -d -p 80:5000 cesardl/netcore-webapi-microservice-docker:first
 ```
 
@@ -343,7 +339,7 @@ For [DC/OS](https://mesosphere.com/blog/2015/09/02/dcos-cli-command-line-tool-da
 
 ## Step 6. Test your Docker application using your local Docker host
 
-This step will vary depending on what your application is doing. In a simple .NET Core Web application that is deployed as a single container or service, you can access the service by opening a browser on the Docker host and navigating to that site as shown in Figure 5-13. (If the configuration in the Dockerfile maps the container to a port on the host that is anything other than 80, include the host post in the URL.)
+This step will vary depending on what your application is doing. In a simple .NET Core Web application that is deployed as a single container or service, you can access the service by opening a browser on the Docker host and navigating to that site as shown in Figure 5-13. (If the configuration in the Dockerfile maps the container to a port on the host that is anything other than 80, include the host port in the URL.)
 
 ![](./media/image18.png)
 
@@ -397,7 +393,7 @@ In addition, you need to perform step 2 (adding Docker support to your projects)
 
 [Windows Containers](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/about/about_overview) allow you to convert your existing Windows applications into Docker images and deploy them with the same tools as the rest of the Docker ecosystem. To use Windows Containers, you run PowerShell commands in the Dockerfile, as shown in the following example:
 
-```
+```Dockerfile
 FROM microsoft/windowsservercore
   
 LABEL Description="IIS" Vendor="Microsoft" Version="10"
@@ -409,7 +405,7 @@ CMD [ "ping", "localhost", "-t" ]
 
 In this case, we are using a Windows Server Core base image (the FROM setting) and installing IIS with a PowerShell command (the RUN setting). In a similar way, you could also use PowerShell commands to set up additional components like ASP.NET 4.x, .NET 4.6, or any other Windows software. For example, the following command in a Dockerfile sets up ASP.NET 4.5:
 
-```
+```Dockerfile
 RUN powershell add-windowsfeature web-asp-net45
 ```
 

@@ -1,18 +1,8 @@
 ---
 title: "&lt;sessionSecurityTokenCache&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: d43e676c-0153-485c-ab31-0257a2db7507
-caps.latest.revision: 8
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;sessionSecurityTokenCache&gt;

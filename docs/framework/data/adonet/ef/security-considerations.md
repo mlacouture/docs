@@ -1,19 +1,7 @@
 ---
 title: "Security Considerations (Entity Framework)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 84758642-9b72-4447-86f9-f831fef46962
-caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # Security Considerations (Entity Framework)
 This topic describes security considerations that are specific to developing, deploying, and running [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] applications. You should also follow recommendations for creating secure [!INCLUDE[dnprdnshort](../../../../../includes/dnprdnshort-md.md)] applications. For more information, see [Security Overview](../../../../../docs/framework/data/adonet/security-overview.md).  
@@ -79,7 +67,7 @@ This topic describes security considerations that are specific to developing, de
   
 -   <xref:System.Security.Permissions.SecurityPermission>: <xref:System.Security.Permissions.SecurityPermissionFlag.SerializationFormatter> to serialize exceptions by using the <xref:System.Runtime.Serialization.ISerializable> interface.  
   
--   Permission to open a database connection and execute commands against the database, such as <xref:System.Data.SqlClient.SqlClientPermission> for a [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] database.  
+-   Permission to open a database connection and execute commands against the database, such as <xref:System.Data.SqlClient.SqlClientPermission> for a SQL Server database.  
   
  For more information, see [Code Access Security and ADO.NET](../../../../../docs/framework/data/adonet/code-access-security.md).  
   
@@ -104,7 +92,7 @@ This topic describes security considerations that are specific to developing, de
   
      SQL injection attacks can be performed in [!INCLUDE[esql](../../../../../includes/esql-md.md)] by supplying malicious input to values that are used in a query predicate and in parameter names. To avoid the risk of SQL injection, you should never combine user input with [!INCLUDE[esql](../../../../../includes/esql-md.md)] command text.  
   
-     [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries accept parameters everywhere that literals are accepted. You should use parameterized queries instead of injecting literals from an external agent directly into the query. You should also consider using query builder methods to safely construct [Entity SQL](http://msdn.microsoft.com/en-us/05685434-05e6-41c2-8d5e-8933b88a40b0).  
+     [!INCLUDE[esql](../../../../../includes/esql-md.md)] queries accept parameters everywhere that literals are accepted. You should use parameterized queries instead of injecting literals from an external agent directly into the query. You should also consider using query builder methods to safely construct [Entity SQL](http://msdn.microsoft.com/library/05685434-05e6-41c2-8d5e-8933b88a40b0).  
   
 -   [!INCLUDE[linq_entities](../../../../../includes/linq-entities-md.md)] injection attacks:  
   
@@ -138,7 +126,7 @@ This topic describes security considerations that are specific to developing, de
  The following security considerations apply when generating and working with entity types.  
   
 #### Do not share an ObjectContext across application domains.  
- Sharing an <xref:System.Data.Objects.ObjectContext> with more than one application domain may expose information in the connection string. Instead, you should transfer serialized objects or object graphs to the other application domain and then attach those objects to an <xref:System.Data.Objects.ObjectContext> in that application domain. For more information, see [Serializing Objects](http://msdn.microsoft.com/en-us/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
+ Sharing an <xref:System.Data.Objects.ObjectContext> with more than one application domain may expose information in the connection string. Instead, you should transfer serialized objects or object graphs to the other application domain and then attach those objects to an <xref:System.Data.Objects.ObjectContext> in that application domain. For more information, see [Serializing Objects](http://msdn.microsoft.com/library/06c77f9b-5b2e-4c78-b3e3-8c148ba0ea99).  
   
 #### Prevent type safety violations.  
  If type safety is violated, the [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] cannot guarantee the integrity of data in objects. Type safety violations could occur if you allow untrusted applications to run with full-trust code access security.  

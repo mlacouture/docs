@@ -1,17 +1,11 @@
 ---
 title: Getting started with .NET Core using the CLI
 description: A step-by-step tutorial showing how to get started with .NET Core on Windows, Linux, or macOS using the .NET Core command-line interface (CLI).
-keywords: .NET Core, CLI
 author: cartermp
 ms.author: mairaw
 ms.date: 03/08/2017
-ms.topic: get-started-article
-ms.prod: .net-core
 ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: 41632e63-d5c6-4427-a09e-51dc1116d45f
 ---
-
 # Getting started with .NET Core on Windows/Linux/macOS using the command line
 
 This topic will show you how to start developing cross-platforms apps in your machine using the .NET Core CLI tools.
@@ -25,7 +19,7 @@ If you're unfamiliar with the .NET Core CLI toolset, read the [.NET Core SDK ove
 
 ## Hello, Console App!
 
-You can [view or download the sample code](https://github.com/dotnet/docs/tree/master/samples/core/console-apps/HelloMsBuild) from the dotnet/docs GitHub repository. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+You can [view or download the sample code](https://github.com/dotnet/samples/tree/master/core/console-apps/HelloMsBuild) from the dotnet/samples GitHub repository. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 Open a command prompt and create a folder named *Hello*. Navigate to the folder you created and type the following:
 
@@ -48,7 +42,7 @@ Let's do a quick walkthrough:
    The project file specifies everything that's needed to restore dependencies and build the program.
 
    * The `OutputType` tag specifies that we're building an executable, in other words a console application.
-   * The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advance scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 1.0.
+   * The `TargetFramework` tag specifies what .NET implementation we're targeting. In an advanced scenario, you can specify multiple target frameworks and build to all those in a single operation. In this tutorial, we'll stick to building only for .NET Core 1.0.
 
    `Program.cs`:
 

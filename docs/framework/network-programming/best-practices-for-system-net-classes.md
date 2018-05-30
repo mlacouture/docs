@@ -1,12 +1,6 @@
 ---
 title: "Best Practices for System.Net Classes"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "sending data, best practices"
   - "requesting data from Internet, best practices"
@@ -16,7 +10,6 @@ helpviewer_keywords:
   - "best practices, data requests"
   - "receiving data, best practices"
 ms.assetid: 716decc6-5952-47b7-9c5a-ba6fc5698684
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -24,6 +17,8 @@ manager: "markl"
 # Best Practices for System.Net Classes
 The following recommendations will help you use the classes contained in <xref:System.Net> to their best advantage:  
   
+-   For Transport Layer Security (TLS) best practices, see [Transport Layer Security (TLS) best practices with .NET Framework](tls.md).
+
 -   Use <xref:System.Net.WebRequest> and <xref:System.Net.WebResponse> whenever possible instead of type casting to descendant classes. Applications that use **WebRequest** and **WebResponse** can take advantage of new Internet protocols without needing extensive code changes.  
   
 -   When writing ASP.NET applications that run on a server using the **System.Net** classes, it is often better, from a performance standpoint, to use the asynchronous methods for <xref:System.Net.WebRequest.GetResponse%2A> and <xref:System.Net.WebResponse.GetResponseStream%2A>.  

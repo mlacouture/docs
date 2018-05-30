@@ -1,18 +1,11 @@
 ---
 title: "Delimiters for Documentation Tags (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "XML [C#], delimiters"
   - "/** */ delimiters for C# documentation tags"
   - "/// delimiter for C# documentation"
 ms.assetid: 9b2bdd18-4f5c-4c0b-988e-fb992e0d233e
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Delimiters for Documentation Tags (C# Programming Guide)
 The use of XML doc comments requires delimiters, which indicate to the compiler where a documentation comment begins and ends. You can use the following kinds of delimiters with the XML documentation tags:  
@@ -21,7 +14,7 @@ The use of XML doc comments requires delimiters, which indicate to the compiler 
  Single-line delimiter. This is the form that is shown in documentation examples and used by the Visual C# project templates. If there is a white space character following the delimiter, that character is not included in the XML output.  
   
 > [!NOTE]
->  The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the \<summary> and \</summary> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. Access this feature from the [Options, Text Editor, C#, Formatting](/visualstudio/ide/reference/options-text-editor-csharp-formatting) in your project property pages.  
+>  The Visual Studio IDE has a feature called Smart Comment Editing that automatically inserts the \<summary> and \</summary> tags and moves your cursor within these tags after you type the `///` delimiter in the Code Editor. You can turn this feature on or off in the [Options dialog box](/visualstudio/ide/reference/options-text-editor-csharp-advanced).  
   
  `/** */`  
  Multiline delimiters.  

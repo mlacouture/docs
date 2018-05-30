@@ -1,14 +1,7 @@
 ---
 title: "How to: Modify the Computer Configuration File to Enable IPv6 Support"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5611b677-b9cc-43b8-a434-60e18d89aada
-caps.latest.revision: 18
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

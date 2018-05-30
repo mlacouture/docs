@@ -1,16 +1,9 @@
 ---
 title: "Configuring Caching in Network Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "cache [.NET Framework], configuring"
 ms.assetid: 3f694a1c-de5d-47cf-a6eb-cfc369fb8a9f
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

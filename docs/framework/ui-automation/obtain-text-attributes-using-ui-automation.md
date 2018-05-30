@@ -1,23 +1,14 @@
 ---
 title: "Obtain Text Attributes Using UI Automation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "getting, text attributes"
   - "UI Automation, getting text attributes"
   - "text attributes, getting"
 ms.assetid: fdefc6c3-b836-4cfe-8dec-1484bfdc5551
-caps.latest.revision: 13
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"

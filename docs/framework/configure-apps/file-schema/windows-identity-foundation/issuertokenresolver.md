@@ -1,18 +1,8 @@
 ---
 title: "&lt;issuerTokenResolver&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f74392f6-3f5b-4880-bd8a-3a9130d31e65
-caps.latest.revision: 9
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;issuerTokenResolver&gt;

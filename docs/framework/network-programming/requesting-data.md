@@ -1,15 +1,9 @@
 ---
 title: "Requesting Data"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "sending data"
   - "WebRequest class, sending and receiving data"
@@ -23,7 +17,6 @@ helpviewer_keywords:
   - "receiving data, about receiving data"
   - "Internet, requesting data"
 ms.assetid: df6f1e1d-6f2a-45dd-8141-4a85c3dafe1d
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

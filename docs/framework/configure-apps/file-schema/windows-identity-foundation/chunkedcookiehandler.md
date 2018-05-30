@@ -1,18 +1,8 @@
 ---
 title: "&lt;chunkedCookieHandler&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 7220de45-1d14-4aec-a29e-4a2ea8ac861f
-caps.latest.revision: 5
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;chunkedCookieHandler&gt;

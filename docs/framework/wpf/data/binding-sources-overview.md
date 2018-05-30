@@ -1,23 +1,11 @@
 ---
 title: "Binding Sources Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "binding data [WPF], binding sources"
   - "data binding [WPF], binding source"
   - "binding sources [WPF]"
 ms.assetid: 2df2cd11-6aac-4bdf-ab7b-ea5f464cd5ca
-caps.latest.revision: 25
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Binding Sources Overview
 In data binding, the binding source object refers to the object you obtain data from. This topic discusses the types of objects you can use as the binding source.  
@@ -34,7 +22,7 @@ In data binding, the binding source object refers to the object you obtain data 
 |dynamic objects|You can bind to available properties and indexers of an object that implements the <xref:System.Dynamic.IDynamicMetaObjectProvider> interface. If you can access the member in code, you can bind to it. For example, if a dynamic object enables you to access a member in code via `someObjet.AProperty`, you can bind to it by setting the binding path to `AProperty`.|  
 |[!INCLUDE[TLA#tla_adonet](../../../../includes/tlasharptla-adonet-md.md)] objects|You can bind to [!INCLUDE[TLA2#tla_adonet](../../../../includes/tla2sharptla-adonet-md.md)] objects, such as <xref:System.Data.DataTable>. The [!INCLUDE[TLA2#tla_adonet](../../../../includes/tla2sharptla-adonet-md.md)] <xref:System.Data.DataView> implements the <xref:System.ComponentModel.IBindingList> interface, which provides change notifications that the binding engine listens for.|  
 |[!INCLUDE[TLA#tla_xml](../../../../includes/tlasharptla-xml-md.md)] objects|You can bind to and run `XPath` queries on an <xref:System.Xml.XmlNode>, <xref:System.Xml.XmlDocument>, or <xref:System.Xml.XmlElement>. A convenient way to access [!INCLUDE[TLA2#tla_xml](../../../../includes/tla2sharptla-xml-md.md)] data that is the binding source in markup is to use an <xref:System.Windows.Data.XmlDataProvider> object. For more information, see [Bind to XML Data Using an XMLDataProvider and XPath Queries](../../../../docs/framework/wpf/data/how-to-bind-to-xml-data-using-an-xmldataprovider-and-xpath-queries.md).<br /><br /> You can also bind to an <xref:System.Xml.Linq.XElement> or <xref:System.Xml.Linq.XDocument>, or bind to the results of queries run on objects of these types by using LINQ to XML. A convenient way to use LINQ to XML to access XML data that is the binding source in markup is to use an <xref:System.Windows.Data.ObjectDataProvider> object. For more information, see [Bind to XDocument, XElement, or LINQ for XML Query Results](../../../../docs/framework/wpf/data/how-to-bind-to-xdocument-xelement-or-linq-for-xml-query-results.md).|  
-|<xref:System.Windows.DependencyObject> objects|You can bind to dependency propertiesof any <xref:System.Windows.DependencyObject>. For an example, see [Bind the Properties of Two Controls](../../../../docs/framework/wpf/data/how-to-bind-the-properties-of-two-controls.md).|  
+|<xref:System.Windows.DependencyObject> objects|You can bind to dependency properties of any <xref:System.Windows.DependencyObject>. For an example, see [Bind the Properties of Two Controls](../../../../docs/framework/wpf/data/how-to-bind-the-properties-of-two-controls.md).|  
   
 <a name="classes"></a>   
 ## Implementing a Class for the Binding Source  
@@ -50,7 +38,7 @@ In data binding, the binding source object refers to the object you obtain data 
 ### Other Characteristics  
  The following list provides other important points to note:  
   
--   If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a default constructor. In some [!INCLUDE[TLA2#tla_net](../../../../includes/tla2sharptla-net-md.md)] languages, such as [!INCLUDE[TLA#tla_cshrp](../../../../includes/tlasharptla-cshrp-md.md)], the default constructor might be created for you.  
+-   If you want to create the object in [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)], the class must have a default constructor. In some [!INCLUDE[TLA2#tla_net](../../../../includes/tla2sharptla-net-md.md)] languages, such as C#, the default constructor might be created for you.  
   
 -   The properties you use as binding source properties for a binding must be public properties of your class. Explicitly defined interface properties cannot be accessed for binding purposes, nor can protected, private, internal, or virtual properties that have no base implementation.  
   

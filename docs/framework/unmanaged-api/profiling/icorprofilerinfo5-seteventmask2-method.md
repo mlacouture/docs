@@ -1,16 +1,8 @@
 ---
 title: "ICorProfilerInfo5::SetEventMask2 Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "IcorProfilerInfo5.SetEventMask2"
 api_location: 
@@ -20,10 +12,8 @@ api_type:
 ms.assetid: 05dbbe2b-049c-4a60-be69-2ad7a949405e
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # ICorProfilerInfo5::SetEventMask2 Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

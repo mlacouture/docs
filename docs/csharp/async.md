@@ -1,14 +1,8 @@
 ---
 title: Asynchronous programming
 description: Learn about the C# language-level asynchronous programming model provided by .NET Core.
-keywords: .NET, .NET Core
 author: cartermp
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: b878c34c-a78f-419e-a594-a2b44fa521a4
 ---
 
@@ -133,7 +127,7 @@ public async Task<int> GetDotNetCountAsync()
 {
     // Suspends GetDotNetCountAsync() to allow the caller (the web server)
     // to accept another request, rather than blocking on this one.
-    var html = await _httpClient.DownloadStringAsync("http://dotnetfoundation.org");
+    var html = await _httpClient.GetStringAsync("http://dotnetfoundation.org");
 
     return Regex.Matches(html, @"\.NET").Count;
 }
@@ -163,7 +157,7 @@ private async void SeeTheDotNets_Click(object sender, RoutedEventArgs e)
     DotNetCountLabel.Text = $"Number of .NETs on dotnetfoundation.org: {count}";
 
     NetworkProgressBar.IsEnabled = false;
-    NetworkProgressBar.Visbility = Visibility.Collapsed;
+    NetworkProgressBar.Visibility = Visibility.Collapsed;
 }
 ```
 
@@ -265,4 +259,5 @@ A recommended goal is to achieve complete or near-complete [Referential Transpar
 ## Other Resources
 
 * [Async in-depth](../standard/async-in-depth.md) provides more information about how Tasks work.
+* [Asynchronous programming with async and await (C#)](../csharp/programming-guide/concepts/async/index.md)
 * Lucian Wischik's [Six Essential Tips for Async](https://channel9.msdn.com/Series/Three-Essential-Tips-for-Async) are a wonderful resource for async programming

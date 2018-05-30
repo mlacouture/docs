@@ -1,11 +1,6 @@
 ---
 title: "Keywords (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "reserved keywords, Visual Basic"
   - "keywords [Visual Basic]"
@@ -15,12 +10,9 @@ helpviewer_keywords:
   - "reserved words, Visual Basic keywords"
   - "Visual Basic, keywords"
 ms.assetid: b5a65ef0-c408-4836-afb6-e6828c0771ca
-caps.latest.revision: 43
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Keywords (Visual Basic)
-The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] language keywords.  
+The following tables list all Visual Basic language keywords.  
   
 ## Reserved Keywords  
  The following keywords are *reserved*, which means that you cannot use them as names for programming elements such as variables or procedures. You can bypass this restriction by enclosing the name in brackets (`[]`). For more information, see "Escaped Names" in [Declared Element Names](../../../visual-basic/programming-guide/language-features/declared-elements/declared-element-names.md).  
@@ -79,7 +71,7 @@ The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] langua
 |[>> Operator](../../../visual-basic/language-reference/operators/right-shift-operator.md)|[>>= Operator](../../../visual-basic/language-reference/operators/right-shift-assignment-operator.md)|[<<](../../../visual-basic/language-reference/operators/left-shift-operator.md)|[<\<=](../../../visual-basic/language-reference/operators/left-shift-assignment-operator.md)|  
   
 > [!NOTE]
->  `EndIf`, `GoSub`, `Variant`, and `Wend` are retained as reserved keywords, although they are no longer used in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)]. The meaning of the `Let` keyword has changed. `Let` is now used in LINQ queries. For more information, see [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md).  
+>  `EndIf`, `GoSub`, `Variant`, and `Wend` are retained as reserved keywords, although they are no longer used in Visual Basic. The meaning of the `Let` keyword has changed. `Let` is now used in LINQ queries. For more information, see [Let Clause](../../../visual-basic/language-reference/queries/let-clause.md).  
   
 ## Unreserved Keywords  
  The following keywords are not reserved, which means you can use them as names for your programming elements. However, doing this is not recommended, because it can make your code hard to read and can lead to subtle errors that can be difficult to find.  
@@ -103,7 +95,6 @@ The following tables list all [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] langua
 |-----------|-----------------|  
 |[Arrays Summary](../../../visual-basic/language-reference/keywords/arrays-summary.md)|Lists language elements that are used to create, define, and use arrays.|  
 |[Collection Object Summary](../../../visual-basic/language-reference/keywords/collection-object-summary.md)|Lists language elements that are used for collections.|  
-|[Compiler Directive Summary (Visual Basic)](http://msdn.microsoft.com/en-us/874dad02-d4a5-4a9d-8a48-0191a0ac794a)|Lists directives that control compiler behavior.|  
 |[Control Flow Summary](../../../visual-basic/language-reference/keywords/control-flow-summary.md)|Lists statements that are used for looping and controlling procedure flow.|  
 |[Conversion Summary](../../../visual-basic/language-reference/keywords/conversion-summary.md)|Lists functions that are used to convert numbers, dates, times, and strings.|  
 |[Data Types Summary](../../../visual-basic/language-reference/keywords/data-types-summary.md)|Lists data types. Also lists functions that are used to convert between data types and verify data types.|  

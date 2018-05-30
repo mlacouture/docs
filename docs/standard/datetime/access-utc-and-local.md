@@ -1,16 +1,10 @@
 ---
 title: "How to: Access the predefined UTC and local time zone objects"
-ms.custom: ""
 ms.date: "04/10/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "time zones [.NET Framework], local"
   - "predefined time zones"
@@ -19,12 +13,9 @@ helpviewer_keywords:
   - "time zones [.NET Framework], retrieving"
   - "time zones [.NET Framework], UTC"
 ms.assetid: 961fb70b-83f0-4dab-a042-cb5fcd817cf5
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
-
 # How to: Access the predefined UTC and local time zone objects
 
 The <xref:System.TimeZoneInfo> class provides two properties, <xref:System.TimeZoneInfo.Utc%2A> and <xref:System.TimeZoneInfo.Local%2A>, that give your code access to predefined time zone objects. This topic discusses how to access the <xref:System.TimeZoneInfo> objects returned by those properties.

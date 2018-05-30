@@ -1,13 +1,7 @@
 ---
-title: The relationship between language features and library types | Microsoft Docs 
+title: The relationship between language features and library types | Microsoft Docs
 description: Language features often rely on library types for implementation. Understand that relationship.
-keywords: C# language design, standard library
-author: billwagner
-ms.author: wiwagn
 ms.date: 07/20/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: devlang-csharp
 ---
 
 # Relationships between language features and library types
@@ -47,7 +41,7 @@ how to manage those dependencies in your work.
 
 C# compiler tools are now decoupled from the release cycle of the .NET libraries
 on supported platforms. In fact, different .NET libraries have different release
-cycles: the .NET Framework on Windows is relesed as a Windows Update, .NET Core ships on
+cycles: the .NET Framework on Windows is released as a Windows Update, .NET Core ships on
 a separate schedule, and the Xamarin versions of library updates ship with the Xamarin tools
 for each target platform.
 

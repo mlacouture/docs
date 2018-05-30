@@ -1,16 +1,10 @@
 ---
 title: Porting to .NET Core - Libraries
 description: Learn how to port library projects from the .NET Framework to .NET Core.
-keywords: .NET, .NET Core
 author: cartermp
 ms.author: mairaw
 ms.date: 07/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: a0fd860d-d6b6-4659-b325-8a6e6f5fa4a1
 ---
-
 # Porting to .NET Core - Libraries
 
 This article discusses porting library code to .NET Core so that it runs cross-platform.
@@ -118,7 +112,7 @@ Because your projects now target .NET Framework 4.6.2, use that version of the .
 
 The next step is to run the API Portability Analyzer (ApiPort) to generate a portability report for analysis.
 
-Make sure you understand the [API Portability Analyzer (ApiPort)](~/docs/standard/portability-analyzer.md) and how to generate portability reports for targeting .NET Core. How you do this likely varies based on your needs and personal tastes. What follows are a few different approaches. You may find yourself mixing steps of these approaches depending on how your code is structured.
+Make sure you understand the [API Portability Analyzer (ApiPort)](../../standard/analyzers/portability-analyzer.md) and how to generate portability reports for targeting .NET Core. How you do this likely varies based on your needs and personal tastes. What follows are a few different approaches. You may find yourself mixing steps of these approaches depending on how your code is structured.
 
 ### Dealing primarily with the compiler
 

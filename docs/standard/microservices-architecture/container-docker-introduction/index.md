@@ -1,13 +1,9 @@
 ---
 title: Introduction to Containers and Docker
 description: .NET Microservices Architecture for Containerized .NET Applications | Introduction to Containers and Docker
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
 ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
 ---
 # Introduction to Containers and Docker
 

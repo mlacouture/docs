@@ -1,21 +1,15 @@
 ---
 title: Building a complete .NET Core solution on macOS using Visual Studio for Mac
 description: This topic walks you through building a .NET Core solution that includes a reusable library and unit testing.
-keywords: .NET, .NET Core, macOS, Mac
 author: guardrex
 ms.author: mairaw
 ms.date: 06/12/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 6945bedf-5bf3-4955-8588-83fb87511b79
 ---
-
 # Building a complete .NET Core solution on macOS using Visual Studio for Mac
 
 Visual Studio for Mac provides a full-featured Integrated Development Environment (IDE) for developing .NET Core applications. This topic walks you through building a .NET Core solution that includes a reusable library and unit testing.
 
-This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to test-driven development (TDD) concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/docs/blob/master/samples/core/tutorials/using-on-mac-vs-full-solution/WordCounter). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+This tutorial shows you how to create an application that accepts a search word and a string of text from the user, counts the number of times the search word appears in the string using a method in a class library, and returns the result to the user. The solution also includes unit testing for the class library as an introduction to test-driven development (TDD) concepts. If you prefer to proceed through the tutorial with a complete sample, download the [sample solution](https://github.com/dotnet/samples/blob/master/core/tutorials/using-on-mac-vs-full-solution/WordCounter). For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 > [!NOTE]
 > Your feedback is highly valued. There are two ways you can provide feedback to the development team on Visual Studio for Mac:
@@ -28,7 +22,7 @@ This tutorial shows you how to create an application that accepts a search word 
 - [.NET Core SDK 1.1 or later](https://www.microsoft.com/net/core#macos)
 - [Visual Studio 2017 for Mac](https://www.visualstudio.com/vs/visual-studio-mac/)
 
-For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md). For the full system requirements of Visual Studio 2017 for Mac, see [Visual Studio 2017 for Mac Product Family System Requirements](https://www.visualstudio.com/productinfo/vs2017-system-requirements-mac).
+For more information on prerequisites, see the [Prerequisites for .NET Core on Mac](../../core/macos-prerequisites.md). For the full system requirements of Visual Studio 2017 for Mac, see [Visual Studio 2017 for Mac Product Family System Requirements](/visualstudio/productinfo/vs2017-system-requirements-mac).
 
 ## Building a library
 
@@ -192,4 +186,4 @@ Unit tests provide automated software testing during your development and publis
 
 ## See also
 
-[Visual Studio 2017 for Mac Release Notes](https://www.visualstudio.com/news/releasenotes/vs2017-mac-relnotes)
+[Visual Studio 2017 for Mac Release Notes](/visualstudio/releasenotes/vs2017-mac-relnotes)

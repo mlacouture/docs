@@ -1,18 +1,8 @@
 ---
 title: "Getting Started With WIF"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a3e13659-2efd-457b-ab54-c8fc0bd89f67
-caps.latest.revision: 2
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # Getting Started With WIF

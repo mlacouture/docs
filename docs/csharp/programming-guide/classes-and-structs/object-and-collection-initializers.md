@@ -1,17 +1,10 @@
 ---
 title: "Object and Collection Initializers (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "object initializers [C#]"
   - "collection initializers [C#]"
 ms.assetid: c58f3db5-d7d4-4651-bd2d-5a3a97357f61
-caps.latest.revision: 27
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Object and Collection Initializers (C# Programming Guide)
 Object initializers let you assign values to any accessible fields or properties of an object at creation time without having to invoke a constructor followed by lines of assignment statements. The object initializer syntax enables you to specify arguments for a constructor or omit the arguments (and parentheses syntax).  The following example shows how to use an object initializer with a named type, `Cat` and how to invoke the default constructor. Note the use of auto-implemented properties in the `Cat` class. For more information, see [Auto-Implemented Properties](../../../csharp/programming-guide/classes-and-structs/auto-implemented-properties.md).  
@@ -76,9 +69,20 @@ var numbers = new Dictionary<int, string> {
 };  
 ```  
   
-## Example  
+## Examples
+
+ The following example combines the concepts of object and collection initializers.
+
  [!code-csharp[csProgGuideLINQ#46](../../../csharp/programming-guide/arrays/codesnippet/CSharp/object-and-collection-initializers_6.cs)]  
-  
+ 
+ Shown in the following example, an object which implements <xref:System.Collections.IEnumerable> containing an `Add` method with multiple parameters allows for collection initializers with multiple elements per item in the list corresponding to the signature of the `Add` method. 
+ 
+ [!code-csharp[csProgGuideLINQ#84](../../../csharp/programming-guide/arrays/codesnippet/CSharp/object-and-collection-initializers_7.cs)]
+ 
+ `Add` methods can use the `params` keyword to take a variable number of arguments as shown in the following example. This example demonstrates the custom implementation of an indexer as well to initialize a collection using indexes.
+ 
+ [!code-csharp[csProgGuideLINQ#85](../../../csharp/programming-guide/arrays/codesnippet/CSharp/object-and-collection-initializers_8.cs)]
+ 
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [LINQ Query Expressions](../../../csharp/programming-guide/linq-query-expressions/index.md)  

@@ -1,14 +1,6 @@
 ---
 title: "&lt;system.web&gt; Element (Web Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Web.config configuration file [ASP.NET]"
   - "system.Web element"
@@ -16,7 +8,6 @@ helpviewer_keywords:
   - "ASP.NET configuration system"
   - "configuration files [ASP.NET]"
 ms.assetid: 24c4cf4f-ad32-42b2-b040-8e4549e2855e
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

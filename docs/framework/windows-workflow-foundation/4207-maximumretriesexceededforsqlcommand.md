@@ -1,17 +1,7 @@
 ---
 title: "4207 - MaximumRetriesExceededForSqlCommand"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 8c8bee26-9ad4-4e01-bd16-0e1fd510fb6b
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # 4207 - MaximumRetriesExceededForSqlCommand
 ## Properties  

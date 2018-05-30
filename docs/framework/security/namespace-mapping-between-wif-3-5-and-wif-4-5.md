@@ -1,18 +1,8 @@
 ---
 title: "Namespace Mapping between WIF 3.5 and WIF 4.5"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: a092d98c-444d-4336-a644-63c2e11e96c8
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # Namespace Mapping between WIF 3.5 and WIF 4.5

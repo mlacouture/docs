@@ -1,14 +1,7 @@
 ---
 title: Executing Expression Trees
 description: Learn about executing expression trees by converting them into executable Intermediate Language (IL) instructions.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 109e0ac5-2a9c-48b4-ac68-9b6219cdbccf
 ---
 
@@ -46,7 +39,7 @@ for the executable code represented by that lamdba expression.
 
 The `LamdbaExpression` type contains `Compile` and `CompileToMethod`
 members that you would use to convert an expression tree to executable
-code. The `Compile` method creates a delegate. The `ConmpileToMethod`
+code. The `Compile` method creates a delegate. The `CompileToMethod`
 method updates a `MethodBuilder` object with the IL that represents
 the compiled output of the expression tree. Note that `CompileToMethod`
 is only available on the full desktop framework, not on the 

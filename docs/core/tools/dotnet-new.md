@@ -1,15 +1,9 @@
 ---
 title: dotnet new command - .NET Core CLI
 description: The dotnet new command creates new .NET Core projects based on the specified template.
-keywords: dotnet-new, CLI, CLI command, .NET Core
 author: mairaw
 ms.author: mairaw
-ms.date: 08/13/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
-ms.devlang: dotnet
-ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
+ms.date: 03/26/2018
 ---
 # dotnet new
 
@@ -21,7 +15,7 @@ ms.assetid: fcc3ed2e-9265-4d50-b59e-dc2e5c190b34
 
 ## Synopsis
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.0](#tab/netcore2x)
 ```
 dotnet new <TEMPLATE> [--force] [-i|--install] [-lang|--language] [-n|--name] [-o|--output] [-u|--uninstall] [Template options]
 dotnet new <TEMPLATE> [-l|--list] [--type]
@@ -38,7 +32,7 @@ dotnet new [-h|--help]
 
 ## Description
 
-The `dotnet new` command provides a convenient way to initialize a valid .NET Core project. 
+The `dotnet new` command provides a convenient way to initialize a valid .NET Core project.
 
 The command calls the [template engine](https://github.com/dotnet/templating) to create the artifacts on disk based on the specified template and options.
 
@@ -48,53 +42,53 @@ The command calls the [template engine](https://github.com/dotnet/templating) to
 
 The template to instantiate when the command is invoked. Each template might have specific options you can pass. For more information, see [Template options](#template-options).
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.0](#tab/netcore2x)
 
 The command contains a default list of templates. Use `dotnet new -l` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core 2.0 SDK. The default language for the template is shown inside the brackets.
 
-|Template description                          | Template name  | Languages     |
-|----------------------------------------------|----------------|---------------|
-| Console application                          | console        | [C#], F#, VB  |
-| Class library                                | classlib       | [C#], F#, VB  |
-| Unit test project                            | mstest         | [C#], F#, VB  |
-| xUnit test project                           | xunit          | [C#], F#, VB  |
-| ASP.NET Core empty                           | web            | [C#], F#      |
-| ASP.NET Core Web App (Model-View-Controller) | mvc            | [C#], F#      |
-| ASP.NET Core Web App                         | razor          | [C#]          |
-| ASP.NET Core with Angular                    | angular        | [C#]          |
-| ASP.NET Core with React.js                   | react          | [C#]          |
-| ASP.NET Core with React.js and Redux         | reactredux     | [C#]          |
-| ASP.NET Core Web API                         | webapi         | [C#], F#      |
-| global.json file                             | globaljson     |               |
-| Nuget config                                 | nugetconfig    |               |
-| Web config                                   | webconfig      |               |
-| Solution file                                | sln            |               |
-| Razor page                                   | page           |               |
-| MVC/ViewImports                              | viewimports    |               |
-| MVC ViewStart                                | viewstart      |               |
+|Template description                          | Template name | Languages     |
+|----------------------------------------------|---------------|---------------|
+| Console application                          | `console`     | [C#], F#, VB  |
+| Class library                                | `classlib`    | [C#], F#, VB  |
+| Unit test project                            | `mstest`      | [C#], F#, VB  |
+| xUnit test project                           | `xunit`       | [C#], F#, VB  |
+| ASP.NET Core empty                           | `web`         | [C#], F#      |
+| ASP.NET Core Web App (Model-View-Controller) | `mvc`         | [C#], F#      |
+| ASP.NET Core Web App                         | `razor`       | [C#]          |
+| ASP.NET Core with Angular                    | `angular`     | [C#]          |
+| ASP.NET Core with React.js                   | `react`       | [C#]          |
+| ASP.NET Core with React.js and Redux         | `reactredux`  | [C#]          |
+| ASP.NET Core Web API                         | `webapi`      | [C#], F#      |
+| global.json file                             | `globaljson`  |               |
+| Nuget config                                 | `nugetconfig` |               |
+| Web config                                   | `webconfig`   |               |
+| Solution file                                | `sln`         |               |
+| Razor page                                   | `page`        |               |
+| MVC ViewImports                              | `viewimports` |               |
+| MVC ViewStart                                | `viewstart`   |               |
 
 # [.NET Core 1.x](#tab/netcore1x)
 
 The command contains a default list of templates. Use `dotnet new -all` to obtain a list of the available templates. The following table shows the templates that come pre-installed with the .NET Core 1.x SDK. The default language for the template is shown inside the brackets.
 
-|Template description  | Template name  | Languages |
-|----------------------|----------------|-----------|
-| Console application  | console        | [C#], F#  |
-| Class library        | classlib       | [C#], F#  |
-| Unit test project    | mstest         | [C#], F#  |
-| xUnit test project   | xunit          | [C#], F#  |
-| ASP.NET Core empty   | web            | [C#]      |
-| ASP.NET Core Web App | mvc            | [C#], F#  |
-| ASP.NET Core Web API | webapi         | [C#]      |
-| Nuget config         | nugetconfig    |           |
-| Web config           | webconfig      |           |
-| Solution file        | sln            |           |
+|Template description  | Template name | Languages |
+|----------------------|---------------|-----------|
+| Console application  | `console`     | [C#], F#  |
+| Class library        | `classlib`    | [C#], F#  |
+| Unit test project    | `mstest`      | [C#], F#  |
+| xUnit test project   | `xunit`       | [C#], F#  |
+| ASP.NET Core empty   | `web`         | [C#]      |
+| ASP.NET Core Web App | `mvc`         | [C#], F#  |
+| ASP.NET Core Web API | `webapi`      | [C#]      |
+| Nuget config         | `nugetconfig` |           |
+| Web config           | `webconfig`   |           |
+| Solution file        | `sln`         |           |
 
 ---
 
 ## Options
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.0](#tab/netcore2x)
 
 `--force`
 
@@ -106,7 +100,9 @@ Prints out help for the command. It can be invoked for the `dotnet new` command 
 
 `-i|--install <PATH|NUGET_ID>`
 
-Installs a source or template pack from the `PATH` or `NUGET_ID` provided. For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
+Installs a source or template pack from the `PATH` or `NUGET_ID` provided. If you want to install a prerelease version of a template package, you need to specify the version in the format of `<package-name>::<package-version>`. By default, `dotnet new` passes \* for the version, which represents the last stable package version. See an example at the [Examples](#examples) section.
+
+For information on creating custom templates, see [Custom templates for dotnet new](custom-templates.md).
 
 `-l|--list`
 
@@ -115,6 +111,9 @@ Lists templates containing the specified name. If invoked for the `dotnet new` c
 `-lang|--language {C#|F#|VB}`
 
 The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
+
+    > [!NOTE]
+    > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
 
 `-n|--name <OUTPUT_NAME>`
 
@@ -154,6 +153,9 @@ Lists templates containing the specified name. If invoked for the `dotnet new` c
 
 The language of the template to create. The language accepted varies by the template (see defaults in the [arguments](#arguments) section). Not valid for some templates.
 
+    > [!NOTE]
+    > Some shells interpret `#` as a special character. In those cases, you need to enclose the language parameter value, such as `dotnet new console -lang "F#"`.
+
 `-n|--name <OUTPUT_NAME>`
 
 The name for the created output. If no name is specified, the name of the current directory is used.
@@ -168,11 +170,11 @@ Location to place the generated output. The default is the current directory.
 
 Each project template may have additional options available. The core templates have the following additional options:
 
-# [.NET Core 2.x](#tab/netcore2x)
+# [.NET Core 2.0](#tab/netcore2x)
 
 **console, angular, react, reactredux**
 
-`--no-restore` - Doesn't perform an implicit restore during project creation.
+  `--no-restore` - Doesn't perform an implicit restore during project creation.
 
 **classlib**
 
@@ -298,7 +300,7 @@ Each project template may have additional options available. The core templates 
 
 Create an F# console application project in the current directory:
 
-`dotnet new console -lang f#`
+`dotnet new console -lang F#`
 
 Create a .NET Standard class library project in the specified directory (available only with .NET Core 2.0 SDK or later versions):
 
@@ -315,6 +317,10 @@ Create a new xUnit application targeting .NET Core 2.0:
 List all templates available for MVC:
 
 `dotnet new mvc -l`
+
+Install version 2.0 of the Single Page Application templates for ASP.NET Core (command option available for .NET Core SDK 1.1 and later versions only):
+
+`dotnet new -i Microsoft.DotNet.Web.Spa.ProjectTemplates::2.0.0`
 
 ## See also
 

@@ -1,12 +1,9 @@
 ---
 title: dotnet publish command - .NET Core CLI
-description: The dotnet publish command publishes your .NET Core project into a directory. 
+description: The dotnet publish command publishes your .NET Core project into a directory.
 author: mairaw
 ms.author: mairaw
-ms.date: 09/01/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
+ms.date: 03/10/2018
 ---
 # dotnet publish
 
@@ -21,7 +18,7 @@ ms.technology: dotnet-cli
 # [.NET Core 2.x](#tab/netcore2x)
 
 ```
-dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [no-dependencies] [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
+dotnet publish [<PROJECT>] [-c|--configuration] [-f|--framework] [--force] [--manifest] [--no-dependencies] [--no-restore] [-o|--output] [-r|--runtime] [--self-contained] [-v|--verbosity] [--version-suffix]
 dotnet publish [-h|--help]
 ```
 
@@ -44,6 +41,8 @@ dotnet publish [-h|--help]
 * The application's dependencies. These are copied from the NuGet cache into the output folder.
 
 The `dotnet publish` command's output is ready for deployment to a hosting system (for example, a server, PC, Mac, laptop) for execution and is the only officially supported way to prepare the application for deployment. Depending on the type of deployment that the project specifies, the hosting system may or may not have the .NET Core shared runtime installed on it. For more information, see [.NET Core Application Deployment](../deploying/index.md). For the directory structure of a published application, see [Directory structure](/aspnet/core/hosting/directory-structure).
+
+[!INCLUDE[dotnet restore note + options](~/includes/dotnet-restore-note-options.md)]
 
 ## Arguments
 
@@ -85,8 +84,8 @@ Doesn't perform an implicit restore when running the command.
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
-Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
-If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
+Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/publish/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained deployment.
+If the path is relative, the output directory generated is relative to the project file location, not to the current working directory.
 
 `--self-contained`
 
@@ -124,8 +123,8 @@ Specifies one or several [target manifests](../deploying/runtime-store.md) to us
 
 `-o|--output <OUTPUT_DIRECTORY>`
 
-Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]* for a self-contained deployment.
-If a relative path is provided, the output directory generated is relative to the project file location, not to the current working directory.
+Specifies the path for the output directory. If not specified, it defaults to *./bin/[configuration]/[framework]/publish/* for a framework-dependent deployment or *./bin/[configuration]/[framework]/[runtime]/publish/* for a self-contained deployment.
+If the path is relative, the output directory generated is relative to the project file location, not to the current working directory.
 
 `-r|--runtime <RUNTIME_IDENTIFIER>`
 
@@ -150,14 +149,18 @@ Publish the project in the current directory:
 Publish the application using the specified project file:
 
 `dotnet publish ~/projects/app1/app1.csproj`
-	
+
 Publish the project in the current directory using the `netcoreapp1.1` framework:
 
 `dotnet publish --framework netcoreapp1.1`
-	
+
 Publish the current application using the `netcoreapp1.1` framework and the runtime for `OS X 10.10` (you must list this RID in the project file).
 
 `dotnet publish --framework netcoreapp1.1 --runtime osx.10.11-x64`
+
+Publish the current application but don't restore project-to-project (P2P) references, just the root project during the restore operation (.NET Core SDK 2.0 and later versions):
+
+`dotnet publish --no-dependencies`
 
 ## See also
 

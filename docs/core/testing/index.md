@@ -1,16 +1,10 @@
 ---
 title: Unit Testing in .NET Core
 description: Unit testing has never been easier. See how to use unit testing in .NET Core and .NET Standard projects.
-keywords: .NET, .NET Core, .NET Standard, unit testing
 author: ardalis
 ms.author: wiwagn
 ms.date: 08/30/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 815ac74c-4bd9-4a94-a87c-78288b27c0e2
 ---
-
 # Unit Testing in .NET Core and .NET Standard
 
 .NET Core has been designed with testability in mind, so that creating unit tests for your applications is easier than ever before. This article briefly introduces unit tests (and how they differ from other kinds of tests). Linked resources demonstrate how to add a test project to your solution and then run unit tests using either the command line or Visual Studio.
@@ -30,15 +24,18 @@ When writing unit tests, be careful you don’t accidentally introduce dependenc
 
 Learn more about unit testing in .NET Core projects:
 
-Unit Test projects for .NET Core are supported for [C#](../../csharp/index.md), [F#](../../fsharp/index.md) and [Visual Basic](../../visual-basic/index.md). You can also choose between [xUnit](http://xunit.github.io) and [MSTest](https://github.com/Microsoft/vstest-docs).
+Unit Test projects for .NET Core are supported for [C#](../../csharp/index.md), [F#](../../fsharp/index.md) and [Visual Basic](../../visual-basic/index.md). You can also choose between [xUnit](http://xunit.github.io), [NUnit](http://nunit.org) and [MSTest](https://github.com/Microsoft/vstest-docs).
 
 You can read about those combinations in these walkthroughs:
 
 * Create unit tests using [*XUnit* and *C#* with the .NET Core CLI](unit-testing-with-dotnet-test.md).
+* Create unit tests using [*NUnit* and *C#* with the .NET Core CLI](unit-testing-with-nunit.md).
 * Create unit tests using [*MSTest* and *C#* with the .NET Core CLI](unit-testing-with-mstest.md).
 * Create unit tests using [*XUnit* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-dotnet-test.md).
+* Create unit tests using [*NUnit* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-nunit.md).
 * Create unit tests using [*MSTest* and *F#* with the .NET Core CLI](unit-testing-fsharp-with-mstest.md).
 * Create unit tests using [*XUnit* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-dotnet-test.md).
+* Create unit tests using [*NUnit* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-nunit.md).
 * Create unit tests using [*MSTest* and *Visual Basic* with the .NET Core CLI](unit-testing-visual-basic-with-mstest.md).
 
 You can choose different languages for your class libraries and your unit test libraries. You can learn how by mixing and matching the walkthroughs referenced above.

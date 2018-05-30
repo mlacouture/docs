@@ -1,14 +1,6 @@
 ---
 title: "ICorRuntimeHost::SwitchOutLogicalThreadState Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "ICorRuntimeHost.SwitchOutLogicalThreadState"
 api_location: 
@@ -23,10 +15,8 @@ helpviewer_keywords:
 ms.assetid: e1968f0b-2675-4dc2-8507-46164e1df154
 topic_type: 
   - "apiref"
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # ICorRuntimeHost::SwitchOutLogicalThreadState Method
 This method supports the .NET Framework infrastructure and is not intended to be used directly from your code.  

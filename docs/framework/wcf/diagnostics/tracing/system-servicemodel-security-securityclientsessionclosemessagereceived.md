@@ -1,18 +1,8 @@
 ---
 title: "System.ServiceModel.Security.SecurityClientSessionCloseMessageReceived"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 2be97eac-798a-48bc-bba8-a8753a28aeb7
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityClientSessionCloseMessageReceived

@@ -4,9 +4,6 @@ description: The dotnet test command is used to execute unit tests in a given pr
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
 ---
 # dotnet test
 
@@ -36,9 +33,9 @@ dotnet test [-h|--help]
 
 ## Description
 
-The `dotnet test` command is used to execute unit tests in a given project. Unit tests are console application projects that have dependencies on the unit test framework (for example, MSTest, NUnit, or xUnit) and the dotnet test runner for the unit testing framework. These are packaged as NuGet packages and are restored as ordinary dependencies for the project.
+The `dotnet test` command is used to execute unit tests in a given project. The `dotnet test` command launches the test runner console application specified for a project. The test runner executes the tests defined for a unit test framework (for example, MSTest, NUnit, or xUnit) and reports the success or failure of each test. The test runner and the unit test library are packaged as NuGet packages and are restored as ordinary dependencies for the project.
 
-Test projects also must specify the test runner. This is specified using an ordinary `<PackageReference>` element, as seen in the following sample project file:
+Test projects specify the test runner using an ordinary `<PackageReference>` element, as seen in the following sample project file:
 
 [!code-xml[XUnit Basic Template](../../../samples/snippets/csharp/xunit-test/xunit-test.csproj)]
 

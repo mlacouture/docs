@@ -1,22 +1,12 @@
 ---
 title: "Walkthrough: Writing Queries in C# (LINQ)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "get-started-article"
 helpviewer_keywords: 
   - "LINQ [C#], walkthroughs"
   - "LINQ [C#], writing queries"
   - "queries [LINQ in C#], writing"
   - "writing LINQ queries"
 ms.assetid: 2962a610-419a-4276-9ec8-4b7f2af0c081
-caps.latest.revision: 32
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Walkthrough: Writing Queries in C# (LINQ)
 This walkthrough demonstrates the C# language features that are used to write LINQ query expressions.  
@@ -178,7 +168,7 @@ This walkthrough demonstrates the C# language features that are used to write LI
 ## Next Steps  
  After you are familiar with the basic aspects of working with queries in C#, you are ready to read the documentation and samples for the specific type of LINQ provider you are interested in:  
   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
+ [LINQ to SQL](../../../../../docs/framework/data/adonet/sql/linq/index.md)  
   
  [LINQ to DataSet](../../../../framework/data/adonet/linq-to-dataset.md)  
   

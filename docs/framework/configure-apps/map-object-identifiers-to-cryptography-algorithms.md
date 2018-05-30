@@ -1,14 +1,6 @@
 ---
 title: "Mapping Object Identifiers to Cryptography Algorithms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "digital signatures"
   - "identifiers, mapping object identifiers"
@@ -16,7 +8,6 @@ helpviewer_keywords:
   - "mapping object identifiers"
   - "cryptography, mapping object identifiers"
 ms.assetid: c9673f81-bf9e-47fd-bc6f-6bc1c1c4c15e
-caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

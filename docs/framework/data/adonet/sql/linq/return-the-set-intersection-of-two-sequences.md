@@ -1,22 +1,10 @@
 ---
 title: "Return the Set Intersection of Two Sequences"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 ms.assetid: d09c344e-3548-4944-a3ed-051880e3f5b8
-caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # Return the Set Intersection of Two Sequences
 Use the <xref:System.Linq.Queryable.Intersect%2A> operator to return the set intersection of two sequences.  

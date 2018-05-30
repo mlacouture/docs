@@ -1,15 +1,9 @@
 ---
 title: "NTLM and Kerberos Authentication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "authentication [.NET Framework], NTLM"
   - "authentication [.NET Framework], Kerberos"
@@ -25,7 +19,6 @@ helpviewer_keywords:
   - "classes [.NET Framework], authentication"
   - "client authentication, NTLM"
 ms.assetid: 9ef65560-f596-4469-bcce-f4d5407b55cd
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

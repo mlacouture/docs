@@ -1,24 +1,14 @@
 ---
 title: "How to: Write Services Programmatically"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "services, creating"
   - "Windows Service applications, creating"
 ms.assetid: 3abbb2ec-78d2-41e6-b9f9-6662d4e2cdc7
-caps.latest.revision: 21
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
 ---
 # How to: Write Services Programmatically

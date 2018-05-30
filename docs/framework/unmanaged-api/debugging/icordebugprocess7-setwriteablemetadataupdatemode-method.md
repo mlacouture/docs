@@ -1,16 +1,8 @@
 ---
 title: "ICorDebugProcess7::SetWriteableMetadataUpdateMode Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorDebugProcess7.SetWriteableMetadataUpdateMode"
 api_location: 
@@ -20,10 +12,8 @@ api_type:
 ms.assetid: 8589bba7-7304-45ba-9e31-7bf43dfd5c19
 topic_type: 
   - "apiref"
-caps.latest.revision: 4
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # ICorDebugProcess7::SetWriteableMetadataUpdateMode Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

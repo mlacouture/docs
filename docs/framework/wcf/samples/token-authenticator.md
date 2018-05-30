@@ -1,22 +1,10 @@
 ---
 title: "Token Authenticator"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 84382f2c-f6b1-4c32-82fa-aebc8f6064db
-caps.latest.revision: 22
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # Token Authenticator
-This sample demonstrates how to implement a custom token authenticator. A token authenticator in [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] is used for validating the token used with the message, verifying that it is self-consistent, and authenticating the identity associated with the token.  
+This sample demonstrates how to implement a custom token authenticator. A token authenticator in Windows Communication Foundation (WCF) is used for validating the token used with the message, verifying that it is self-consistent, and authenticating the identity associated with the token.  
   
  Custom token authenticators are useful in a variety of cases, such as:  
   
@@ -30,11 +18,11 @@ This sample demonstrates how to implement a custom token authenticator. A token 
   
 -   How the server can validate the client credentials using a custom token authenticator.  
   
--   How the [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] service code ties in with the custom token authenticator.  
+-   How the WCF service code ties in with the custom token authenticator.  
   
 -   How the server can be authenticated using the server's X.509 certificate.  
   
- This sample also shows how the caller's identity is accessible from [!INCLUDE[indigo2](../../../../includes/indigo2-md.md)] after the custom token authentication process.  
+ This sample also shows how the caller's identity is accessible from WCF after the custom token authentication process.  
   
  The service exposes a single endpoint for communicating with the service, defined using the App.config configuration file. The endpoint consists of an address, a binding, and a contract. The binding is configured with a standard `wsHttpBinding`, with the security mode set to message - the default mode of the `wsHttpBinding`. This sample sets the standard `wsHttpBinding` to use client username authentication. The service also configures the service certificate using `serviceCredentials` behavior. The `securityCredentials` behavior allows you to specify a service certificate. A service certificate is used by a client to authenticate the service and provide message protection. The following configuration references the localhost certificate installed during the sample setup as described in the following setup instructions.  
   
@@ -345,7 +333,7 @@ static void DisplayIdentityInformation()
   
 3.  Launch client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-4.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+4.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 #### To run the sample across computers  
   
@@ -367,7 +355,7 @@ static void DisplayIdentityInformation()
   
 9. On the client computer, launch Client.exe from a command prompt.  
   
-10. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+10. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 #### To clean up after the sample  
   

@@ -1,14 +1,6 @@
 ---
 title: "&lt;socket&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/settings/socket"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#socket"
@@ -16,7 +8,6 @@ helpviewer_keywords:
   - "<socket> element"
   - "socket element"
 ms.assetid: 366c634c-7d16-478f-aedf-053eda94a1a0
-caps.latest.revision: 21
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

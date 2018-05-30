@@ -1,17 +1,12 @@
 ---
 title: Delegates and lambdas
 description: Learn how delegates define a type, which specify a particular method signature, that can be called directly or passed to another method and called.
-keywords: .NET, .NET Core
 author: richlander
 ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: fe2e4b4c-6483-4106-a4b4-a33e2e306591
 ---
-
 # Delegates and lambdas
 
 Delegates define a type, which specify a particular method signature. A method (static or instance) that satisfies this signature can be assigned to a variable of that type, then called directly (with the appropriate arguments) or passed as an argument itself to another method and then called. The following example demonstrates delegate use.
@@ -148,6 +143,6 @@ public MainWindow()
 
 ## Further reading and resources
 
-*   [Delegates](https://msdn.microsoft.com/library/ms173171.aspx)
-*   [Anonymous Functions](https://msdn.microsoft.com/library/bb882516.aspx)
-*   [Lambda expressions](https://msdn.microsoft.com/library/bb397687.aspx)
+*   [Delegates](../../docs/csharp/programming-guide/delegates/index.md)
+*   [Anonymous Functions](../../docs/csharp/programming-guide/statements-expressions-operators/anonymous-functions.md)
+*   [Lambda expressions](../../docs/csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)

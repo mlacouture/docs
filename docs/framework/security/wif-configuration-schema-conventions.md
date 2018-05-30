@@ -1,18 +1,8 @@
 ---
 title: "WIF Configuration Schema Conventions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f7864356-f72f-4cae-995c-18e0431f8a58
-caps.latest.revision: 3
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # WIF Configuration Schema Conventions

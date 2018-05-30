@@ -1,21 +1,14 @@
 ---
 title: "Asynchronous Server Socket Example"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "sockets, asynchronous server sockets"
   - "sockets, code examples"
   - "asynchronous server sockets"
 ms.assetid: 13624cd3-f5c5-4950-8cda-31273b1fa6d1
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -1,13 +1,7 @@
 ---
 title: What's new in C# 7.2
 description: An overview of new features in C# 7.2.
-keywords: C# language design, 7.2, Visual Studio 2017, 
-author: billwagner
-ms.author: wiwagn
 ms.date: 08/16/2017
-ms.topic: article
-ms.prod: .net
-ms.devlang: devlang-csharp
 ---
 # What's new in C# 7.2
 
@@ -17,7 +11,7 @@ avoiding unnecessary copies or allocations.
 
 The remaining features are small, nice-to-have features.
 
-C# 7.2 uses the [language version selection](csharp-7-1.md#language-version-selection)
+C# 7.2 uses the [language version selection](../language-reference/configure-language-version.md)
 configuration element to select the compiler language version.
 
 The new language features in this release are:
@@ -28,7 +22,7 @@ The new language features in this release are:
   - Named arguments can be followed by positional arguments.
 * [Leading underscores in numeric literals](#leading-underscores-in-numeric-literals)
   - Numeric literals can now have leading underscores before any printed digits.
-* [`private protected` access modifier](#private-protected)
+* [`private protected` access modifier](#private-protected-access-modifier)
   - The `private protected` access modifier enables access for derived classes in the same assembly.
 
 ## Reference semantics with value types
@@ -64,10 +58,10 @@ For example:
 int binaryValue = 0b_0101_0101;
 ```
 
-## `private protected`
+## _private protected_ access modifier
 
 Finally, a new compound access modifier: `private protected` indicates that a member may be
-accessed by derived classes that are declared in the same assembly. While `protected internal`
+accessed by containing class or derived classes that are declared in the same assembly. While `protected internal`
 allows access by derived classes or classes that are in the same assembly, `private protected`
 limits access to derived types declared in the same assembly.
 

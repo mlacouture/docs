@@ -1,17 +1,11 @@
 ---
 title: "How to: Anticipate Out-of-Space Conditions with Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "data stores, quotas"
   - "isolated storage, quotas"
@@ -28,10 +22,8 @@ helpviewer_keywords:
   - "isolated storage, out of space conditions"
   - "data storage using isolated storage, out of space conditions"
 ms.assetid: e35d4535-3732-421e-b1a3-37412e036145
-caps.latest.revision: 17
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # How to: Anticipate Out-of-Space Conditions with Isolated Storage
 Code that uses isolated storage is constrained by a [quota](../../../docs/standard/io/isolated-storage.md#quotas) that specifies the maximum size for the data compartment in which isolated storage files and directories exist. The quota is defined by security policy and is configurable by administrators. If the maximum allowed size is exceeded when you try to write data, an <xref:System.IO.IsolatedStorage.IsolatedStorageException> exception is thrown and the operation fails. This helps prevent malicious denial-of-service attacks that could cause the application to refuse requests because data storage is filled.  

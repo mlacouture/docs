@@ -1,10 +1,6 @@
 ---
 title: "What's new for Visual Basic"
-ms.date: 04/27/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 02/15/2018
 f1_keywords: 
   - "VB.StartPage.WhatsNew"
 helpviewer_keywords: 
@@ -12,7 +8,6 @@ helpviewer_keywords:
   - "what's new [Visual Basic]"
   - "Visual Basic, what's new"
 ms.assetid: d7e97396-7f42-4873-a81c-4ebcc4b6ca02
-caps.latest.revision: 145
 author: rpetrusha
 ms.author: ronpet
 ---
@@ -22,10 +17,16 @@ This topic lists key feature names for each version of Visual Basic, with detail
   
 ## Current Version
 
-Visual Basic / Visual Studio .NET 2017   
-For new features, see [Visual Basic 2017](#visual-basic-2017)
+Visual Basic 15.5   
+For new features, see [Visual Basic 15.5](#visual-basic-155)
 
 ## Previous versions
+
+Visual Basic 15.3   
+For new features, see [Visual Basic 15.3](#visual-basic-153)
+
+Visual Basic 2017   
+For new features, see [Visual Basic 2017](#visual-basic-2017)
 
 Visual Basic / Visual Studio .NET 2015   
 For new features, see [Visual Basic 14](#visual-basic-14)
@@ -51,9 +52,48 @@ Bit-shift operators, loop variable declaration
 Visual Basic / Visual Studio .NET 2002   
 The first release of Visual Basic .NET
 
+## Visual Basic 15.5
+
+[Non-trailing named arguments](../programming-guide/language-features/procedures/passing-arguments-by-position-and-by-name.md#mixing-arguments-by-position-and-by-name)
+
+In Visual Basic 15.3 and earlier versions, when a method call included arguments both by position and by name, positional arguments had to precede named arguments. Starting with Visual Basic 15.5, positional and named arguments can appear in any order as long as all arguments up to the last positional argument are in the correct position. This is particularly useful when named arguments are used to make code more readable.
+
+For example, the following method call has two positional arguments between a named argument. The named argument makes it clear that the value 19 represents an age.
+
+```vb
+StudentInfo.Display("Mary", age:=19, #9/21/1998#)
+```
+
+**Leading hex/binary/octal separator**
+
+Visual Basic 2017 added support for the underscore character (`_`) as a digit separator. Starting with Visual Basic 15.5, you can use the underscore character as a leading separator between the prefix and hexadecimal, binary, or octal digits. The following example uses a leading digit separator to define 3,271,948,384 as a hexadecimal number:
+
+```vb
+Dim number As Integer = &H_C305_F860
+``` 
+To use the underscore character as a leading separator, you must add the following element to your Visual Basic project (\*.vbproj) file:
+
+```xml
+<PropertyGroup>
+  <LangVersion>15.5</LangVersion>
+</PropertyGroup>
+```
+
+## Visual Basic 15.3
+
+[**Named tuple inference**](../programming-guide/language-features/data-types/tuples.md#inferred-tuple-element-names)
+
+When you assign the value of tuple elements from variables, Visual Basic infers the name of tuple elements from the corresponding variable names; you do not have to explicitly name a tuple element. The following example uses inference to create a tuple with three named elements, `state`, `stateName`, and `capital`.
+
+[!code-vb[Inferred tuple names](../../../samples/snippets/visualbasic/programming-guide/language-features/data-types/named-tuples/program.vb#2)]
+
+**Additional compiler switches**  
+
+The Visual Basic command-line compiler now supports the [**-refout**](../reference/command-line-compiler/refout-compiler-option.md) and [**-refonly**](../reference/command-line-compiler/refonly-compiler-option.md) compiler options to control the output of reference assemblies. **-refout** defines the output directory of the reference assembly, and **-refonly** specifies that only a reference assembly is to be output by compilation.
+
 ## Visual Basic 2017
 
-[Tuples](../programming-guide/language-features/data-types/tuples.md)
+[**Tuples**](../programming-guide/language-features/data-types/tuples.md)
 
 Tuples are a lightweight data structure that most commonly is used to return multiple values from a single method call. Ordinarily, to return multiple values from a method, you have to do one of the following:
 
@@ -79,7 +119,7 @@ For more information, see the "Literal assignments" section of the [Byte](../lan
 
 **Support for C# reference return values**
 
-Starting with C# 7, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
+Starting with C# 7.0, C# supports reference return values. That is, when the calling method receives a value returned by reference, it can change the value of the reference. Visual Basic does not allow you to author methods with reference return values, but it does allow you to consume and modify the reference return values.
 
 For example, the following `Sentence` class written in C# includes a `FindNext` method that finds the next word in a sentence that begins with a specified substring. The string is returned as a reference return value, and a `Boolean` variable passed by reference to the method indicates whether the search was successful. This means that the caller can not only read the returned value; he or she can also modify it, and that modification is reflected in the `Sentence` class.
 
@@ -104,7 +144,7 @@ For more information, see [Reference Return Values](../programming-guide/languag
 [Nameof](../../csharp/language-reference/keywords/nameof.md)  
  You can get the unqualified string name of a type or member for use in an error message without hard coding a string.  This allows your code to remain correct when refactoring.  This feature is also useful for hooking up model-view-controller MVC links and firing property changed events.  
   
-[String Interpolation](../../csharp/language-reference/keywords/interpolated-strings.md)  
+[String Interpolation](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md)  
  You can use string interpolation expressions to construct strings.  An interpolated string expression looks like a template string that contains expressions.  An interpolated string is easier to understand with respect to arguments than [Composite Formatting](../../standard/base-types/composite-format.md).  
   
 [Null-conditional Member Access and Indexing](../../csharp/language-reference/operators/null-conditional-operators.md)  

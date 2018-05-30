@@ -1,14 +1,6 @@
 ---
 title: "Configuration file schema for the .NET Framework"
-ms.custom: ""
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - ".NET Framework application configuration, configuration schema"
   - "machine configuration files"
@@ -29,7 +21,6 @@ helpviewer_keywords:
   - "configuration settings [.NET Framework], applications"
   - "configuration file reference [.NET Framework]"
 ms.assetid: 69003d39-dc8a-460c-a6be-e6d93e690b38
-caps.latest.revision: 20
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -99,14 +90,14 @@ All elements of the Windows Identity Foundation (WIF) configuration schema.
 
 ## Related sections
 
-[Remoting Settings Schema](http://msdn.microsoft.com/en-us/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e)
+[Remoting Settings Schema](http://msdn.microsoft.com/library/dc2d1e62-9af7-4ca1-99fd-98b93bb4db9e)
 Describes the elements that configure client and server applications that implement remoting.
 
 [ASP.NET Settings Schema](http://msdn.microsoft.com/library/b5ysx397\(v=vs.100\).aspx)
 Describes the elements that control the behavior of ASP.NET Web applications.
 
-[Web Services Settings Schema](http://msdn.microsoft.com/en-us/f84d6d55-1add-4eb7-ae46-33df5833ea2e)
+[Web Services Settings Schema](http://msdn.microsoft.com/library/f84d6d55-1add-4eb7-ae46-33df5833ea2e)
 Describes the elements that control the behavior of ASP.NET Web services and their clients.
 
-[Configuring .NET Framework Apps](http://msdn.microsoft.com/en-us/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
+[Configuring .NET Framework Apps](http://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)
 Describes how to configure security, assembly binding, and remoting in the .NET Framework.

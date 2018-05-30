@@ -1,12 +1,6 @@
 ---
 title: "Configuring Internet Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "downloading Internet resources, default proxy"
   - "sending data, default proxy"
@@ -27,7 +21,6 @@ helpviewer_keywords:
   - "network resources, configuring Internet applications"
   - "Internet, default proxy"
 ms.assetid: bb707c72-eed2-4a82-8800-c9e68df2fd4f
-caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

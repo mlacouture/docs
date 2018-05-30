@@ -1,17 +1,7 @@
 ---
 title: "Absolute Delay"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b483139a-39bb-4560-8003-8969a8fc2cd1
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # Absolute Delay
 The main scenario for this sample is to delay until a specified <xref:System.DateTime> using durable timers in a workflow application. This is different from using the built-in <xref:System.Activities.Statements.Delay> activity as this will only allow you to delay for a given <xref:System.TimeSpan> (or number of minutes/seconds).  
@@ -43,7 +33,7 @@ The main scenario for this sample is to delay until a specified <xref:System.Dat
   
  This sample also demonstrates how to turn on persistence for a <xref:System.Activities.WorkflowApplication>. For this particular sample, we will be using durable timers in which the workflow data will be unloaded into the persistence database during the idle time while waiting for timer to expire. This implementation can also be used for other persistence actions. This sample shows how to set up the persistence connection string with SQL Server, and how to create the instance store in order to persist the data for workflow instances. Logic is provided on how to resume the workflow once an event is raised which makes the workflow instance runnable.  
   
- As you step through this sample, you will see the time in which the built-in delay begins and completes, which in turn will cause an e-mail message to be sent. From there, the AbsoluteDelay activity will halt until a specified <xref:System.DateTime> (or 0 seconds if the <xref:System.DateTime> has expired) which in turn will send out an email upon expiration. This will show the two different use cases of the built-in <xref:System.Activities.Statements.Delay> functionality versus using an AbsoluteDelay activity.  
+ As you step through this sample, you will see the time in which the built-in delay begins and completes, which in turn will cause an email message to be sent. From there, the AbsoluteDelay activity will halt until a specified <xref:System.DateTime> (or 0 seconds if the <xref:System.DateTime> has expired) which in turn will send out an email upon expiration. This will show the two different use cases of the built-in <xref:System.Activities.Statements.Delay> functionality versus using an AbsoluteDelay activity.  
   
 #### To set up, build, and run the sample  
   
@@ -71,6 +61,6 @@ The main scenario for this sample is to delay until a specified <xref:System.Dat
 >   
 >  `<InstallDrive>:\WF_WCF_Samples`  
 >   
->  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
+>  If this directory does not exist, go to [Windows Communication Foundation (WCF) and Windows Workflow Foundation (WF) Samples for .NET Framework 4](http://go.microsoft.com/fwlink/?LinkId=150780) to download all Windows Communication Foundation (WCF) and [!INCLUDE[wf1](../../../../includes/wf1-md.md)] samples. This sample is located in the following directory.  
 >   
 >  `<InstallDrive>:\WF_WCF_Samples\WF\Basic\Services\AbsoluteDelay`

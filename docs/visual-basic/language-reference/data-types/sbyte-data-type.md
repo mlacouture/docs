@@ -1,11 +1,6 @@
 ---
 title: "SByte Data Type (Visual Basic)"
 ms.date: 04/20/2017
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.sbyte"
 helpviewer_keywords: 
@@ -19,7 +14,6 @@ helpviewer_keywords:
   - "data types [Visual Basic], integral"
   - "SByte data type"
 ms.assetid: 5c38374a-18a1-4cc2-b493-299e3dcaa60f
-caps.latest.revision: 18
 author: "rpetrusha"
 ms.author: "ronpet"
 ---
@@ -47,6 +41,14 @@ In the following example, integers equal to -102 that are represented as decimal
 Starting with Visual Basic 2017, you can also use the underscore character, `_`, as a digit separator to enhance readability, as the following example shows.
 
 [!code-vb[SByteSeparator](../../../../samples/snippets/visualbasic/language-reference/data-types/numeric-literals.vb#SByteS)]  
+
+Starting with Visual Basic 15.5, you can also use the underscore character (`_`) as a leading separator between the prefix and the hexadecimal, binary, or octal digits. For example:
+
+```vb
+Dim number As SByte = &H_F9
+```
+
+[!INCLUDE [supporting-underscores](../../../../includes/vb-separator-langversion.md)]
 
 If the integer literal is outside the range of `SByte` (that is, if it is less than <xref:System.SByte.MinValue?displayProperty=nameWithType> or greater than <xref:System.SByte.MaxValue?displayProperty=nameWithType>, a compilation error occurs. When an integer literal has no suffix, an [Integer](integer-data-type.md) is inferred. If the integer literal is outside the range of the `Integer` type, a [Long](long-data-type.md) is inferred. This means that, in the previous examples, the numeric literals `0x9A` and `0b10011010` are interpreted as 32-bit signed integers with a value of 156, which exceeds <xref:System.SByte.MaxValue?displayProperty=nameWithType>. To successfully compile code like this that assigns a non-decimal integer to an `SByte`, you can do either of the following:
 

@@ -1,19 +1,7 @@
 ---
 title: "System.ServiceModel.UnhandledExceptionInUserOperation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b00612e4-84c7-4a53-849a-e693cdce7fca
-caps.latest.revision: 5
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # System.ServiceModel.UnhandledExceptionInUserOperation
 System.ServiceModel.UnhandledExceptionInUserOperation  

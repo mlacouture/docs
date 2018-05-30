@@ -2,10 +2,6 @@
 title: CloneEnumWbemClassObject function (Unmanaged API Reference)
 description: The CloneEnumWbemClassObject function makes a logical copy of an enumerator.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "CloneEnumWbemClassObject"
 api_location: 
@@ -20,7 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # CloneEnumWbemClassObject function
 Makes a logical copy of an enumerator, retaining its current position in an enumeration.  

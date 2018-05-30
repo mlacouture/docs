@@ -1,15 +1,9 @@
 ---
 title: "Using Client Sockets"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -22,7 +16,6 @@ helpviewer_keywords:
   - "sockets, client sockets"
   - "client sockets"
 ms.assetid: 81de9f59-8177-4d98-b25d-43fc32a98383
-caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

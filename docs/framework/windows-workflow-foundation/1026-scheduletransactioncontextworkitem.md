@@ -1,17 +1,7 @@
 ---
 title: "1026 - ScheduleTransactionContextWorkItem"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0d5f86ba-ec21-4129-a726-5432e425384c
-caps.latest.revision: 3
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # 1026 - ScheduleTransactionContextWorkItem
 ## Properties  

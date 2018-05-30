@@ -1,16 +1,10 @@
 ---
 title: "The Regular Expression Object Model"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "searching with regular expressions, backreferences"
   - "Regex class"
@@ -41,10 +35,8 @@ helpviewer_keywords:
   - "pattern-matching with regular expressions, classes"
   - "GroupCollection class"
 ms.assetid: 49a21470-64ca-4b5a-a889-8e24e3c0af7e
-caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # The Regular Expression Object Model
 <a name="introduction"></a> This topic describes the object model used in working with .NET regular expressions. It contains the following sections:  
@@ -202,7 +194,7 @@ manager: "wpickett"
   
 -   The `Match.Captures` property returns a <xref:System.Text.RegularExpressions.CaptureCollection> object that is of limited use. The collection is not populated for a <xref:System.Text.RegularExpressions.Match> object whose `Success` property is `false`. Otherwise, it contains a single <xref:System.Text.RegularExpressions.Capture> object that has the same information as the <xref:System.Text.RegularExpressions.Match> object.  
   
- For more information about these objects, see the [The Group Collection](#GroupCollection) and [The Capture Collection](#CaptureCollection) sections later in this topic.  
+ For more information about these objects, see [The Group Collection](#GroupCollection) and [The Capture Collection](#CaptureCollection) sections later in this topic.  
   
  Two additional properties of the <xref:System.Text.RegularExpressions.Match> class provide information about the match. The `Match.Value` property returns the substring in the input string that matches the regular expression pattern. The `Match.Index` property returns the zero-based starting position of the matched string in the input string.  
   

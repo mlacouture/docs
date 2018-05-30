@@ -1,10 +1,6 @@
 ---
 title: "Casting and Type Conversions (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "type conversion [C#]"
   - "data type conversion [C#]"
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "casting [C#]"
   - "converting types [C#]"
 ms.assetid: 568df58a-d292-4b55-93ba-601578722878
-caps.latest.revision: 52
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Casting and Type Conversions (C# Programming Guide)
 Because C# is statically-typed at compile time, after a variable is declared, it cannot be declared again or used to store values of another type unless that type is convertible to the variable's type. For example, there is no conversion from an integer to any arbitrary string. Therefore, after you declare `i` as an integer, you cannot assign the string "Hello" to it, as is shown in the following code.  
@@ -92,5 +85,5 @@ Giraffe g2 = (Giraffe) a;
  [implicit](../../../csharp/language-reference/keywords/implicit.md)  
  [Conversion Operators](../../../csharp/programming-guide/statements-expressions-operators/conversion-operators.md)  
  [Generalized Type Conversion](http://msdn.microsoft.com/library/49253ae6-7657-4810-82ab-1176a6feeada)  
- [Exported Type Conversion](http://msdn.microsoft.com/en-us/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)  
+ [Exported Type Conversion](http://msdn.microsoft.com/library/1dfe55f4-07a2-4b61-aabf-a8cf65783a6b)  
  [How to: Convert a String to a Number](../../../csharp/programming-guide/types/how-to-convert-a-string-to-a-number.md)

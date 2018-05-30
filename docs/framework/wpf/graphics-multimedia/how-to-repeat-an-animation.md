@@ -1,24 +1,12 @@
 ---
 title: "How to: Repeat an Animation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "RepeatBehavior property of timelines [WPF]"
   - "repeating animating [WPF]"
   - "Timelines RepeatBehavior property [WPF]"
   - "animation [WPF], repeating"
 ms.assetid: e6f3b068-eeeb-47fd-8d40-8848c31f1e1e
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # How to: Repeat an Animation
 This example shows how to use the <xref:System.Windows.Media.Animation.Timeline.RepeatBehavior%2A> property of a <xref:System.Windows.Media.Animation.Timeline> in order to control the repeat behavior of an animation.  
@@ -38,6 +26,6 @@ This example shows how to use the <xref:System.Windows.Media.Animation.Timeline.
  [Accumulate Animation Values During Repeat Cycles](../../../../docs/framework/wpf/graphics-multimedia/how-to-accumulate-animation-values-during-repeat-cycles.md)  
  [Specify Whether a Timeline Automatically Reverses](../../../../docs/framework/wpf/graphics-multimedia/how-to-specify-whether-a-timeline-automatically-reverses.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)  
- [Animation and Timing](http://msdn.microsoft.com/en-us/7d83765b-d5ae-41b1-b423-80206e1124aa)  
+ [Animation and Timing](http://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Animation Timing Behavior Sample](http://go.microsoft.com/fwlink/?LinkID=159970)

@@ -1,14 +1,6 @@
 ---
 title: "&lt;filter&gt; Element for &lt;add&gt; for &lt;listeners&gt; for &lt;trace&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/trace/listeners/add/filter"
 helpviewer_keywords: 
@@ -16,7 +8,6 @@ helpviewer_keywords:
   - "filter element for <add> for <listeners> for <trace>"
   - "<filter> element for <add> for <listeners> for <trace>"
 ms.assetid: eb9c18f5-dfa8-47c5-b91b-e4b93e76e1cc
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

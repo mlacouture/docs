@@ -1,14 +1,6 @@
 ---
 title: "&lt;network&gt; Element (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#network"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/mailSettings/smtp/network"
@@ -16,7 +8,6 @@ helpviewer_keywords:
   - "<network> element"
   - "network element"
 ms.assetid: 2c2c6ad4-ed11-48ab-b28e-2bc0ba9b42c7
-caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -95,7 +86,7 @@ Configures the network options for an external Simple Mail Transport Protocol (S
  The <xref:System.Net.Configuration.SmtpNetworkElement.EnableSsl%2A?displayProperty=nameWithType> property can be used to get the current value of the `enableSsl` attribute from applicable configuration files.  
   
 ## Example  
- The following example specifies the appropriate SMTP parameters to send e-mail using the default network credentials.  
+ The following example specifies the appropriate SMTP parameters to send email using the default network credentials.  
   
 ```xml  
 <configuration>  

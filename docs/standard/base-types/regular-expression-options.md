@@ -1,16 +1,10 @@
 ---
 title: "Regular Expression Options"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "regular expressions, options"
   - "constructs, options"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "inline option constructs"
   - "options parameter"
 ms.assetid: c82dc689-7e82-4767-a18d-cd24ce5f05e9
-caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Regular Expression Options
 <a name="Top"></a> By default, the comparison of an input string with any literal characters in a regular expression pattern is case sensitive, white space in a regular expression pattern is interpreted as literal white-space characters, and capturing groups in a regular expression are named implicitly as well as explicitly. You can modify these and several other aspects of default regular expression behavior by specifying regular expression options. These options, which are listed in the following table, can be included inline as part of the regular expression pattern, or they can be supplied to a <xref:System.Text.RegularExpressions.Regex?displayProperty=nameWithType> class constructor or static pattern matching method as a <xref:System.Text.RegularExpressions.RegexOptions?displayProperty=nameWithType> enumeration value.  
@@ -34,7 +26,7 @@ manager: "wpickett"
 |<xref:System.Text.RegularExpressions.RegexOptions.Singleline>|`s`|Use single-line mode, where the period (.) matches every character (instead of every character except `\n`). For more information, see [Singleline Mode](#Singleline).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.ExplicitCapture>|`n`|Do not capture unnamed groups. The only valid captures are explicitly named or numbered groups of the form `(?<`*name*`>` *subexpression*`)`. For more information, see [Explicit Captures Only](#Explicit).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.Compiled>|Not available|Compile the regular expression to an assembly. For more information, see [Compiled Regular Expressions](#Compiled).|  
-|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore Whitespace](#Whitespace).|  
+|<xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace>|`x`|Exclude unescaped white space from the pattern, and enable comments after a number sign (`#`). For more information, see [Ignore White Space](#Whitespace).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.RightToLeft>|Not available|Change the search direction. Search moves from right to left instead of from left to right. For more information, see [Right-to-Left Mode](#RightToLeft).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.ECMAScript>|Not available|Enable ECMAScript-compliant behavior for the expression. For more information, see [ECMAScript Matching Behavior](#ECMAScript).|  
 |<xref:System.Text.RegularExpressions.RegexOptions.CultureInvariant>|Not available|Ignore cultural differences in language. For more information, see [Comparison Using the Invariant Culture](#Invariant).|  
@@ -273,7 +265,7 @@ manager: "wpickett"
   
 -   The number sign (#) is interpreted as the beginning of a comment, rather than as a literal character. All text in the regular expression pattern from the # character to the end of the string is interpreted as a comment.  
   
- However, in the following cases, white space characters in a regular expression aren't ignored, even if you use the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option:  
+ However, in the following cases, white-space characters in a regular expression aren't ignored, even if you use the <xref:System.Text.RegularExpressions.RegexOptions.IgnorePatternWhitespace?displayProperty=nameWithType> option:  
   
 -   White space within a character class is always interpreted literally. For example, the regular expression pattern `[ .,;:]` matches any single white-space character, period, comma, semicolon, or colon.  
   

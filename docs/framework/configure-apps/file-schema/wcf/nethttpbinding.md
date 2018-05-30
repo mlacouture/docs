@@ -1,22 +1,10 @@
 ---
 title: "&lt;netHttpBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b0d81ca0-87c5-4090-8baa-e390fd3656d2
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # &lt;netHttpBinding&gt;
-Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] service can use to configure and expose endpoints that are able to communicate over HTTP. When used with a duplex contract, Web Sockets will be used, otherwise HTTP will be used.  
+Represents a binding that a Windows Communication Foundation (WCF) service can use to configure and expose endpoints that are able to communicate over HTTP. When used with a duplex contract, Web Sockets will be used, otherwise HTTP will be used.  
   
  \<system.ServiceModel>  
 \<bindings>  
@@ -190,5 +178,5 @@ Represents a binding that a [!INCLUDE[indigo1](../../../../../includes/indigo1-m
  <xref:System.ServiceModel.Configuration.BasicHttpBindingElement>  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

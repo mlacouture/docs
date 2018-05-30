@@ -1,15 +1,9 @@
 ---
 title: "Using an Asynchronous Client Socket"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -23,7 +17,6 @@ helpviewer_keywords:
   - "Internet, sockets"
   - "client sockets"
 ms.assetid: fd85bc88-e06c-467d-a30d-9fd7cffcfca1
-caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

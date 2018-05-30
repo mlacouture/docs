@@ -1,17 +1,7 @@
 ---
 title: "4213 - RunnableInstancesDetectionError"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 979ec935-bd9f-4798-be9a-25e08c4b94cf
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # 4213 - RunnableInstancesDetectionError
 ## Properties  

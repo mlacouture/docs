@@ -1,24 +1,14 @@
 ---
 title: "How to: Qualify XML Element and XML Attribute Names"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "qualifying XML names"
   - "qualifying XML elements"
   - "XML namespaces, qualifying elements and names in"
 ms.assetid: 44719f90-7e15-42e8-a9e2-282287e2b5bf
-caps.latest.revision: 9
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # How to: Qualify XML Element and XML Attribute Names
 [Code Example](#cpconworkingwithxmlnamespacesanchor1)  

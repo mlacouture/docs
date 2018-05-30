@@ -1,16 +1,9 @@
 ---
 title: "FTP"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "FTP"
 ms.assetid: 9b43f8b4-89d7-46a7-89fc-71aca916dd32
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

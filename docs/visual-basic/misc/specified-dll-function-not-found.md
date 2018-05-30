@@ -1,16 +1,9 @@
 ---
 title: "Specified DLL function not found"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrID453"
 ms.assetid: c0a308ee-5876-40af-be4b-1979397835df
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Specified DLL function not found
 The dynamic-link library (DLL) in a user library reference was found, but the DLL function specified was not found within the DLL.  
@@ -23,4 +16,4 @@ The dynamic-link library (DLL) in a user library reference was found, but the DL
   
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
- [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)
+

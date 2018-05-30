@@ -1,17 +1,11 @@
 ---
 title: "Calling Synchronous Methods Asynchronously"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "asynchronous programming, delegates"
   - "asynchronous delegates"
@@ -26,10 +20,8 @@ helpviewer_keywords:
   - "waiting for asynchronous calls"
   - "status information [.NET Framework], asynchronous operations"
 ms.assetid: 41972034-92ed-450a-9664-ab93fcc6f1fb
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Calling Synchronous Methods Asynchronously
 The .NET Framework enables you to call any method asynchronously. To do this you define a delegate with the same signature as the method you want to call; the common language runtime automatically defines `BeginInvoke` and `EndInvoke` methods for this delegate, with the appropriate signatures.  

@@ -1,14 +1,7 @@
 ---
 title: "Network Isolation for Windows Store Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b064497c-d956-46b8-838d-7a0223c7e200
-caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

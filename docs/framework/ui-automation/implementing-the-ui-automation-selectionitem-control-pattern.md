@@ -1,20 +1,11 @@
 ---
 title: "Implementing the UI Automation SelectionItem Control Pattern"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Selection Item control pattern"
   - "UI Automation, Selection Item control pattern"
   - "control patterns, Selection Item"
 ms.assetid: 76b0949a-5b23-4cfc-84cc-154f713e2e12
-caps.latest.revision: 22
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
@@ -61,4 +52,4 @@ manager: "markl"
  [Implementing the UI Automation Selection Control Pattern](../../../docs/framework/ui-automation/implementing-the-ui-automation-selection-control-pattern.md)  
  [UI Automation Tree Overview](../../../docs/framework/ui-automation/ui-automation-tree-overview.md)  
  [Use Caching in UI Automation](../../../docs/framework/ui-automation/use-caching-in-ui-automation.md)  
- [Fragment Provider Sample](http://msdn.microsoft.com/en-us/778ef1bc-8610-4bc9-886e-aeff94a8a13e)
+ [Fragment Provider Sample](http://msdn.microsoft.com/library/778ef1bc-8610-4bc9-886e-aeff94a8a13e)

@@ -1,27 +1,17 @@
 ---
 title: "Creating Resource Files for Desktop Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "resource files, .resources files"
   - ".resources files"
   - "application resources, creating files"
   - "resource files, creating"
 ms.assetid: 6c5ad891-66a0-4e7a-adcf-f41863ba6d8d
-caps.latest.revision: 25
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Creating Resource Files for Desktop Apps
 You can include resources, such as strings, images, or object data, in resources files to make them easily available to your application. The .NET Framework offers five ways to create resources files:  
@@ -125,11 +115,15 @@ greeting=Hello, {0}!
   
  If you are using Visual Basic, and the source code file is named Greeting.vb, the following command creates an executable file that includes the embedded .resources file:  
   
- **vbc greeting.vb /resource:GreetingResources.resources**  
+```console 
+vbc greeting.vb -resource:GreetingResources.resources
+```
   
  If you are using C#, and the source code file is named Greeting.cs, the following command creates an executable file that includes the embedded .resources file:  
   
- **csc greeting.cs /resource:GreetingResources.resources**  
+ ```console
+csc greeting.cs -resource:GreetingResources.resources
+```
   
 <a name="ResxFiles"></a>   
 ## Resources in .resx Files  

@@ -1,18 +1,9 @@
 ---
 title: Using F# on Azure
 description: Guide to using Azure services with F#
-keywords: Azure, cloud, visual f#, f#, functional programming, .NET, .NET Core
 author: sylvanc
-ms.author: phcart
 ms.date: 09/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: FAD4D11E-703A-42D4-9F72-893D9E0F569B
 ---
-
-
 # Using F# on Azure
 
 F# is a superb language for cloud programming and is frequently used to write web applications, cloud services, cloud-hosted microservices, and for scalable data processing.
@@ -37,7 +28,7 @@ Azure Functions support F# as a first-class language with efficient, reactive, s
 
 Other resources for using Azure Functions and F#:
 
-* [Scale Up Azure Functions in F# Using Suave](http://blog.tamizhvendan.in/blog/2016/09/19/scale-up-azure-functions-in-f-number-using-suave/)
+* [Scale Up Azure Functions in F# Using Suave](https://blog.tamizhvendan.in/blog/2016/09/19/scale-up-azure-functions-in-f-number-using-suave/)
 * [How to create Azure function in F#](https://mnie.github.io/2016-09-08-AzureFunctions/)
 * [Using the Azure Type Provider with Azure Functions](https://compositional-it.com/blog/2017/08-30-using-the-azure-type-provider-with-azure-functions/index.html)
 
@@ -66,14 +57,14 @@ Azure Storage can also be used in conjunction with Azure Functions through decla
 * [Implementing Spark Apps in F# using Mobius](https://github.com/Microsoft/Mobius/blob/master/notes/spark-fsharp-mobius.md)
 * [Example F# Spark Apps using Mobius](https://github.com/Microsoft/Mobius/tree/master/examples/fsharp)
 
-## Using Azure DocumentDB with F# #
+## Using Azure Cosmos DB with F# #
 
-[Azure DocumentDB](https://azure.microsoft.com/services/documentdb/) is a NoSQL service for highly available, globally distributed apps.
+[Azure Cosmos DB](https://azure.microsoft.com/services/cosmos-db) is a NoSQL service for highly available, globally distributed apps.
 
-Azure DocumentDB can be used with F# in two ways:
+Azure Cosmos DB can be used with F# in two ways:
 
-1. Through the creation of F# Azure Functions which react to or cause changes to DocumentDB collections. See [Azure Function triggers for DocumentDB](/azure/azure-functions/functions-bindings-documentdb), or
-2. By using the [.NET SDK for Azure](/azure/documentdb/documentdb-get-started-quickstart). Note these examples are in C#.
+1. Through the creation of F# Azure Functions which react to or cause changes to Azure Cosmos DB collections. See [Azure Cosmos DB bindings for Azure Functions](/azure/azure-functions/functions-bindings-cosmosdb), or
+2. By using the [Azure Cosmos DB .NET SDK for SQL API](/azure/cosmos-db/sql-api-sdk-dotnet). The related samples are in C#.
 
 ## Using Azure Event Hubs with F# #
 
@@ -116,9 +107,9 @@ Timers can be implemented in F# and hosted on Azure via an [Azure Function in F#
 
 Azure VMs may be programmatically deployed and managed from F# scripts by using the Microsoft.Azure.Management packages and APIs. For example, see [Get Started with the Management Libraries for .NET](https://msdn.microsoft.com/library/dn722415.aspx) and [Using Azure Resource Manager](/azure/azure-resource-manager/resource-manager-deployment-model).
 
-Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure DocumentDB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
+Likewise, other Azure resources may also be deployed and managed from F# scripts using the same components. For example, you can create storage accounts, deploy Azure Cloud Services, create Azure Cosmos DB instances and manage Azure Notifcation Hubs programmatically from F# scripts.
 
-Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directy from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/documentation/templates/).
+Using F# scripts to deploy and manage resources is not normally necessary. For example, Azure resources may also be deployed directy from JSON template descriptions, which can be parameterized. See [Azure Resource Manager Templates](/azure/azure-resource-manager/resource-manager-template-best-practices) including examples such as the [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/).
 
 ## Other resources
 

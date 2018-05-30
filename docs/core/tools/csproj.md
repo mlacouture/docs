@@ -1,16 +1,10 @@
 ---
-title: csproj reference
+title: Additions to the csproj format for .NET Core
 description: Learn about the differences between existing and .NET Core csproj files
-keywords: reference, csproj, .NET Core
 author: blackdwarf
 ms.author: mairaw
 ms.date: 09/22/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: bdc29497-64f2-4d11-a21b-4097e0bdf5c9
 ---
-
 # Additions to the csproj format for .NET Core
 
 This document outlines the changes that were added to the project files as part of the move from *project.json* to *csproj* and [MSBuild](https://github.com/Microsoft/MSBuild). For more information about general project file syntax and reference, see [the MSBuild project file](/visualstudio/msbuild/msbuild-project-file-schema-reference) documentation.  
@@ -254,7 +248,7 @@ This Boolean values specifies whether the build output assemblies should be pack
 This Boolean value specifies whether any items that have a type of `Content` will be included in the resulting package automatically. The default is `true`. 
 
 ### BuildOutputTargetFolder
-Specifies the folder where to place the output assemblies.. The output assemblies (and other output files) are copied into their respective framework folders.
+Specifies the folder where to place the output assemblies. The output assemblies (and other output files) are copied into their respective framework folders.
 
 ### ContentTargetFolders
 This property specifies the default location of where all the content files should go if `PackagePath` is not specified for them. The default value is "content;contentFiles".

@@ -1,12 +1,6 @@
 ---
 title: "Cache Policy Interaction—Maximum Age and Maximum Staleness"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "maximum staleness"
   - "freshness of cached resources"
@@ -15,7 +9,6 @@ helpviewer_keywords:
   - "staleness of cached resources"
   - "age of cached resources"
 ms.assetid: 7f775925-89a1-4956-ba90-c869c1749a94
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

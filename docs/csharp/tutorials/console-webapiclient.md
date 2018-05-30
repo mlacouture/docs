@@ -1,14 +1,7 @@
 ---
 title: Create a REST client using .NET Core
-description: This tutorial teaches you a number of features in .NET Core and the C# language. 
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
+description: This tutorial teaches you a number of features in .NET Core and the C# language.
 ms.date: 03/06/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 51033ce2-7a53-4cdd-966d-9da15c8204d2
 ---
 
@@ -30,7 +23,7 @@ C# objects.
 
 There are a lot of features in this tutorial. Let’s build them one by one.
 
-If you prefer to follow along with the [final sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+If you prefer to follow along with the [final sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient) for this topic, you can download it. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ## Prerequisites
 You’ll need to set up your machine to run .NET core. You can find the
@@ -135,19 +128,37 @@ program before that task finishes. Therefore, you must use the `Wait`
 method to block and wait for the task to finish:
 
 ```csharp
-public static void Main(string[] args)
+static void Main(string[] args)
 {
     ProcessRepositories().Wait();
 }
 ```
 
-Now, you have a program that does nothing, but does it asynchronously. Let's go back to the
-`ProcessRepositories` method and fill in a first version of it:
+Now, you have a program that does nothing, but does it asynchronously. Let's improve it.
+
+First you need an object that is capable to retrieve data from the web; you can use
+ a <xref:System.Net.Http.HttpClient> to do that. This object handles the request and the responses. Instantiate a single instance of that type in the `Program` class inside the Program.cs file.
+
+```csharp
+namespace WebAPIClient
+{
+    class Program
+    {
+        private static readonly HttpClient client = new HttpClient();
+
+        static void Main(string[] args)
+        {
+            //...
+        }
+    }
+}
+```
+
+ Let's go back to the `ProcessRepositories` method and fill in a first version of it:
 
 ```csharp
 private static async Task ProcessRepositories()
 {
-    var client = new HttpClient();
     client.DefaultRequestHeaders.Accept.Clear();
     client.DefaultRequestHeaders.Accept.Add(
         new MediaTypeWithQualityHeaderValue("application/vnd.github.v3+json"));
@@ -168,8 +179,7 @@ using System.Net.Http.Headers;
 ```
 
 This first version makes a web request to read the list of all repositories under the dotnet
-foundation organization. (The gitHub ID for the .NET Foundation is 'dotnet'). First, you create
-a new <xref:System.Net.Http.HttpClient>. This object handles the request and the responses. The next few lines set up
+foundation organization. (The gitHub ID for the .NET Foundation is 'dotnet'). The first few lines set up
 the <xref:System.Net.Http.HttpClient> for this request. First, it is configured to accept the GitHub JSON responses.
 This format is simply JSON. The next line adds a User Agent header to all requests from this
 object. These two headers are checked by the GitHub server code, and are necessary to retrieve
@@ -485,7 +495,7 @@ again:
 Console.WriteLine(repo.LastPush);
 ```
 
-Your version should now match the [finished sample](https://github.com/dotnet/docs/tree/master/samples/csharp/getting-started/console-webapiclient).
+Your version should now match the [finished sample](https://github.com/dotnet/samples/tree/master/csharp/getting-started/console-webapiclient).
  
 ## Conclusion
 

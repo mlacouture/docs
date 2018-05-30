@@ -1,16 +1,10 @@
 ---
 title: "Regular Expression Example: Scanning for HREFs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "searching with regular expressions, examples"
   - "parsing text with regular expressions, examples"
@@ -19,10 +13,8 @@ helpviewer_keywords:
   - "regular expressions [.NET Framework], examples"
   - "pattern-matching with regular expressions, examples"
 ms.assetid: fae2c15b-7adf-4b15-b118-58eb3906994f
-caps.latest.revision: 24
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Regular Expression Example: Scanning for HREFs
 The following example searches an input string and displays all the href="…" values and their locations in the string.  
@@ -46,7 +38,7 @@ The following example searches an input string and displays all the href="…" v
 |`\s*`|Match zero or more white-space characters.|  
 |`=`|Match the equals sign.|  
 |`\s*`|Match zero or more white-space characters.|  
-|`(?:["'](?<1>[^"']*)"&#124;(?<1>\S+))`|Match one of the following without assigning the result to a captured group:<br /><br /> -   A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern.<br />-   One or more non-white-space characters. The group named `1` is included in this pattern.|  
+|<code>(?:\["'\](?<1>\[^"'\]*)"&#124;(?<1>\S+))</code>|Match one of the following without assigning the result to a captured group:<br /> <ul><li><p>A quotation mark or apostrophe, followed by zero or more occurrences of any character other than a quotation mark or apostrophe, followed by a quotation mark or apostrophe. The group named `1` is included in this pattern.</p></li><li><p>One or more non-white-space characters. The group named `1` is included in this pattern.</p></li></ul>|  
 |`(?<1>[^"']*)`|Assign zero or more occurrences of any character other than a quotation mark or apostrophe to the capturing group named `1`.|  
 |`"(?<1>\S+)`|Assign one or more non-white-space characters to the capturing group named `1`.|  
   

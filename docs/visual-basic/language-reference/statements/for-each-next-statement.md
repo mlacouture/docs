@@ -1,12 +1,6 @@
 ---
 title: "For Each...Next Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.ForEach"
   - "vb.ForEachNext"
@@ -28,9 +22,6 @@ helpviewer_keywords:
   - "Exit statement [Visual Basic], For Each...Next statements"
   - "iteration"
 ms.assetid: ebce3120-95c3-42b1-b70b-fa7da40c75e2
-caps.latest.revision: 56
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # For Each...Next Statement (Visual Basic)
 Repeats a group of statements for each element in a collection.  
@@ -69,7 +60,7 @@ Next [ element ]
   
  [!code-vb[VbVbalrStatements#121](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_1.vb)]  
   
- For more examples, see [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
+ For more examples, see [Collections](../../../standard/collections/index.md) and [Arrays](../../../visual-basic/programming-guide/language-features/arrays/index.md).  
   
 ## Nested Loops  
  You can nest `For Each` loops by putting one loop within another.  
@@ -110,7 +101,7 @@ Next [ element ]
   
  [!code-vb[VbVbalrStatements#127](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_4.vb)]  
   
- For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7), [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md), and [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).  
+ For more information, see [Iterators](../../programming-guide/concepts/iterators.md), [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md), and [Iterator](../../../visual-basic/language-reference/modifiers/iterator.md).  
   
 ## Technical Implementation  
  When a `For Each`…`Next` statement runs, Visual Basic evaluates the collection only one time, before the loop starts. If your statement block changes `element` or `group`, these changes don't affect the iteration of the loop.  
@@ -145,7 +136,7 @@ Next [ element ]
   
  **Modifying the Collection.** The enumerator object returned by <xref:System.Collections.IEnumerable.GetEnumerator%2A> normally doesn't let you change the collection by adding, deleting, replacing, or reordering any elements. If you change the collection after you have initiated a `For Each`...`Next` loop, the enumerator object becomes invalid, and the next attempt to access an element causes an <xref:System.InvalidOperationException> exception.  
   
- However, this blocking of modification isn't determined by [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)], but rather by the implementation of the <xref:System.Collections.IEnumerable> interface. It is possible to implement `IEnumerable` in a way that allows for modification during iteration. If you are considering doing such dynamic modification, make sure that you understand the characteristics of the `IEnumerable` implementation on the collection you are using.  
+ However, this blocking of modification isn't determined by Visual Basic, but rather by the implementation of the <xref:System.Collections.IEnumerable> interface. It is possible to implement `IEnumerable` in a way that allows for modification during iteration. If you are considering doing such dynamic modification, make sure that you understand the characteristics of the `IEnumerable` implementation on the collection you are using.  
   
  **Modifying Collection Elements.** The <xref:System.Collections.IEnumerator.Current%2A> property of the enumerator object is [ReadOnly](../../../visual-basic/language-reference/modifiers/readonly.md), and it returns a local copy of each collection element. This means that you cannot modify the elements themselves in a `For Each`...`Next` loop. Any modification you make affects only the local copy from `Current` and isn't reflected back into the underlying collection. However, if an element is a reference type, you can modify the members of the instance to which it points. The following example modifies the `BackColor` member of each `thisControl` element. You cannot, however, modify `thisControl` itself.  
   
@@ -176,7 +167,7 @@ End Sub
  [!code-vb[VbVbalrStatements#125](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/for-each-next-statement_7.vb)]  
   
 ## See Also  
- [Collections](http://msdn.microsoft.com/library/e76533a9-5033-4a0b-b003-9c2be60d185b)  
+ [Collections](../../../standard/collections/index.md)  
  [For...Next Statement](../../../visual-basic/language-reference/statements/for-next-statement.md)  
  [Loop Structures](../../../visual-basic/programming-guide/language-features/control-flow/loop-structures.md)  
  [While...End While Statement](../../../visual-basic/language-reference/statements/while-end-while-statement.md)  

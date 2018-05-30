@@ -1,17 +1,11 @@
 ---
 title: "How to: Delete Stores in Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "stores, deleting"
   - "data stores, deleting"
@@ -21,10 +15,8 @@ helpviewer_keywords:
   - "storing data using isolated storage, deleting stores"
   - "data storage using isolated storage, deleting stores"
 ms.assetid: 3947e333-5af6-4601-b2f1-24d4d6129cf3
-caps.latest.revision: 14
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # How to: Delete Stores in Isolated Storage
 The <xref:System.IO.IsolatedStorage.IsolatedStorageFile> class supplies two methods for deleting isolated storage files:  

@@ -1,15 +1,11 @@
 ---
 title: Building a Hello World application with .NET Core and Visual Basic in Visual Studio 2017
 description: Learn how to build a simple .NET Core console application with Visual Basic using Visual Studio 2017.
-keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: rpetrusha
 ms.author: ronpet
 ms.date: 08/07/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: devlang-vb
-dev_langs:
-- "vb"
+dev_langs: 
+  - "vb"
 ---
 # Build a Visual Basic Hello World application with .NET Core in Visual Studio 2017
 
@@ -17,7 +13,7 @@ This topic provides a step-by-step introduction to building, debugging, and publ
 
 ## Prerequisites
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.0.
+[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with .NET Core 2.0.
 
 For more information, see [Prerequisites for .NET Core on Windows](../../core/windows-prerequisites.md).
 
@@ -63,7 +59,7 @@ Enhance your application to prompt the user for his or her name and to display i
 
    ![Visual Studio Program file with updated Main method](./media/vb-with-visual-studio/codewindow.png)
 
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. Finally, it uses an [interpolated string](../../csharp/language-reference/keywords/interpolated-strings.md) to display these values in the console window.
+   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `currentDate`. Finally, it uses an [interpolated string](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) to display these values in the console window.
 
 1. Compile the program by choosing **Build** > **Build Solution**.
 

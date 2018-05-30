@@ -1,25 +1,15 @@
 ---
 title: "How to: Continue a Windows Service (Visual Basic)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "vb"
+dev_langs: 
+  - "vb"
 f1_keywords: 
   - "ServiceController.Continue"
 helpviewer_keywords: 
   - "Windows Service applications, pausing"
   - "pausing Windows Service applications"
 ms.assetid: e5d13760-4c83-4b0d-abef-39852677cd7a
-caps.latest.revision: 16
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
 ---
 # How to: Continue a Windows Service (Visual Basic)

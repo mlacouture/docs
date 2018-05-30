@@ -1,10 +1,6 @@
 ---
 title: "C# Programming Guide"
 ms.date: 05/02/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "cs.langref"
 helpviewer_keywords: 
@@ -13,9 +9,6 @@ helpviewer_keywords:
   - "Visual C#, programming concepts"
   - "C# language, concepts"
 ms.assetid: ac0f23a2-6bf3-4077-be99-538ae5fd3bc5
-caps.latest.revision: 45
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # C# programming guide
 This section provides detailed information on key C# language features and features accessible to C# through the .NET Framework.  
@@ -70,7 +63,7 @@ This section provides detailed information on key C# language features and featu
  [XML Documentation Comments](../../csharp/programming-guide/xmldoc/xml-documentation-comments.md)  
   
 ## Platform Sections  
- [Application Domains (C# and Visual Basic)](http://msdn.microsoft.com/en-us/1bc2939a-79db-4a4a-a677-4a2ce6de2b1e)  
+ [Application Domains (C# and Visual Basic)](http://msdn.microsoft.com/library/1bc2939a-79db-4a4a-a677-4a2ce6de2b1e)  
   
  [Assemblies and the Global Assembly Cache](../../csharp/programming-guide/concepts/assemblies-gac/index.md)  
   

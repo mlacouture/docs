@@ -1,17 +1,9 @@
 ---
 title: "How to: Log Information About Services"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "AutoLog property"
   - "services, logging information"
@@ -20,9 +12,7 @@ helpviewer_keywords:
   - "application event logs, service applications"
   - "logs, service applications"
 ms.assetid: c0d8140f-c055-4d8e-a2e0-37358a550116
-caps.latest.revision: 17
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
 ---
 # How to: Log Information About Services

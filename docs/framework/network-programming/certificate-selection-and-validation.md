@@ -1,14 +1,7 @@
 ---
 title: "Certificate Selection and Validation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c933aca2-4cd0-4ff1-9df9-267143f25a6f
-caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

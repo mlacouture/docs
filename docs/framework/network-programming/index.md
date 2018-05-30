@@ -1,19 +1,12 @@
 ---
 title: "Network Programming in the .NET Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Networking"
   - "Internet"
   - "Internet, .NET Framework Internet services"
   - "Network Resources"
 ms.assetid: 8d455610-67a0-4fa8-a62f-7747064a9256
-caps.latest.revision: 24
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -22,6 +15,7 @@ manager: "markl"
 The Microsoft .NET Framework provides a layered, extensible, and managed implementation of Internet services that can be quickly and easily integrated into your applications. Your network applications can build on pluggable protocols to automatically take advantage of new Internet protocols, or they can use a managed implementation of the Windows socket interface to work with the network on the socket level.  
   
 ## In This Section  
+
  [Introducing Pluggable Protocols](../../../docs/framework/network-programming/introducing-pluggable-protocols.md)  
  Describes how to access an Internet resource without regard to the access protocol that it requires.  
   
@@ -138,6 +132,8 @@ The Microsoft .NET Framework provides a layered, extensible, and managed impleme
  Provides support for configuration of authentication using extended protection for applications.  
   
 ## See Also  
+
+ [Transport Layer Security (TLS) best practices with .NET Framework](../../../docs/framework/network-programming/tls.md)  
  [Network Programming How-to Topics](../../../docs/framework/network-programming/network-programming-how-to-topics.md)  
  [Network Programming Samples](../../../docs/framework/network-programming/network-programming-samples.md)  
  [Networking Samples for .NET on MSDN Code Gallery](http://code.msdn.microsoft.com/Wiki/View.aspx?ProjectName=nclsamples)  

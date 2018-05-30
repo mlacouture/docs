@@ -1,16 +1,8 @@
 ---
 title: "ICorDebugILFrame4::GetCodeEx Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorDebugILFrame4.GetLocalVariableEx"
 api_location: 
@@ -20,10 +12,8 @@ api_type:
 ms.assetid: aeda0e42-29ee-4ca8-9f21-ac4641677a62
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # ICorDebugILFrame4::GetCodeEx Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

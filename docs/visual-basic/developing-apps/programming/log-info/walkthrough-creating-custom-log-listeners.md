@@ -1,20 +1,10 @@
 ---
 title: "Creating Custom Log Listeners (Visual Basic)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "custom log listeners"
   - "My.Application.Log object, custom log listeners"
 ms.assetid: 0e019115-4b25-4820-afb1-af8c6e391698
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Creating Custom Log Listeners (Visual Basic)
 This walkthrough demonstrates how to create a custom log listener and configure it to listen to the output of the `My.Application.Log` object.  
@@ -37,11 +27,11 @@ This walkthrough demonstrates how to create a custom log listener and configure 
   
  To ensure that `My.Application.Log` uses your log listener, you should strongly name the assembly that contains your log listener.  
   
- The next procedure provides some simple steps for creating a strongly named log-listener assembly. For more information, see [Creating and Using Strong-Named Assemblies](https://msdn.microsoft.com/library/xwb8f617).  
+ The next procedure provides some simple steps for creating a strongly named log-listener assembly. For more information, see [Creating and Using Strong-Named Assemblies](../../../../framework/app-domains/create-and-use-strong-named-assemblies.md).  
   
 #### To strongly name the log-listener assembly  
   
-1.  Have a project selected in **Solution Explorer**. On the **Project** menu, choose **Properties**. For more information, see [Introduction to the Project Designer](http://msdn.microsoft.com/en-us/898dd854-c98d-430c-ba1b-a913ce3c73d7).  
+1.  Have a project selected in **Solution Explorer**. On the **Project** menu, choose **Properties**.   
   
 2.  Click the **Signing** tab.  
   

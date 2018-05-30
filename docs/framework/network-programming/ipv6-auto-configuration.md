@@ -1,14 +1,7 @@
 ---
 title: "IPv6 Auto-Configuration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 581c1d21-1013-43a3-bf3e-2d9ead62b79c
-caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -1,24 +1,14 @@
 ---
 title: "How to: Receive Strings From Serial Ports in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "serial ports, retrieving strings"
   - "strings [Visual Basic], retrieving from serial ports"
   - "My.Resources object"
 ms.assetid: 8371ce2c-e1c7-476b-a86d-9afc2614b6b7
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Receive Strings From Serial Ports in Visual Basic
-This topic describes how to use `My.Computer.Ports` to receive strings from the computer's serial ports in [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)].  
+This topic describes how to use `My.Computer.Ports` to receive strings from the computer's serial ports in Visual Basic.  
   
 ### To receive strings from the serial port  
   
@@ -38,11 +28,11 @@ This topic describes how to use `My.Computer.Ports` to receive strings from the 
   
      [!code-vb[VbVbalrMyComputer#40](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-receive-strings-from-serial-ports_3.vb)]  
   
-5.  Use the <xref:System.IO.Ports.SerialPort.ReadLine%2A> method to read the next available line of text from the serial port.  
+5.  Use the <xref:System.IO.Ports.SerialPort.ReadLine> method to read the next available line of text from the serial port.  
   
      [!code-vb[VbVbalrMyComputer#41](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-receive-strings-from-serial-ports_4.vb)]  
   
-6.  Use an `If` statement to determine if the <xref:System.IO.Ports.SerialPort.ReadLine%2A> method returns `Nothing` (which means no more text is available). If it does return `Nothing`, exit the `Do` loop.  
+6.  Use an `If` statement to determine if the <xref:System.IO.Ports.SerialPort.ReadLine> method returns `Nothing` (which means no more text is available). If it does return `Nothing`, exit the `Do` loop.  
   
      [!code-vb[VbVbalrMyComputer#42](../../../../visual-basic/developing-apps/programming/computer-resources/codesnippet/VisualBasic/how-to-receive-strings-from-serial-ports_5.vb)]  
   

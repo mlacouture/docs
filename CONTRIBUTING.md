@@ -9,16 +9,34 @@ The document covers the process for contributing to the articles and code sample
 * [Building the docs](#building-the-docs)
 * [Contributor License Agreement](#contributor-license-agreement)
 
+This repository contains the conceptual documentation for .NET. The .NET documentation site is built from multiple repositories in addition to this one:
+
+- [Code samples and snippets](https://github.com/dotnet/samples)
+- [API reference](https://github.com/dotnet/dotnet-api-docs)
+- [.NET Compiler Platform SDK reference](https://github.com/dotnet/roslyn-api-docs)
+
+Issues and tasks for all these repositories are tracked here.
+
 ## Process for contributing
 
 You need a basic understanding of [Git and GitHub.com](https://guides.github.com/activities/hello-world/).
 
-**Step 1:** Skip this step for small changes. Open an [issue](https://github.com/dotnet/docs/issues) describing what you want to do, such as change an existing article or create a new one.
+**Step 1:** Skip this step for small changes. If you're interested in writing new content or in thoroughly revising existing content, open an [issue](https://github.com/dotnet/docs/issues) describing what you want to do.
 The content inside the **docs** folder is organized into sections that are reflected in the Table of Contents (TOC). Define where the topic will be located in the TOC. Get feedback on your proposal.
 
-You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution.
+-or-
 
-**Step 2:** Fork the `/dotnet/docs` repo and create a branch for your changes.
+You can also choose from existing issues for which community contributions are welcome. [Projects for .NET Community contributors](https://github.com/dotnet/docs/projects/35) lists many of the work items that are available for commmunity contributors. Depending on your interests and level of commitment, you can choose from issues in the following categories:
+
+- **Maintenance**. This category includes fairly simple contributions, such as fixing broken or incorrect links, adding missing code examples, or addressing limited content issues. In some cases, these issues may concern large numbers of files. In that case, you should let us know what you'd like to work on before you begin.
+
+- **Content updates**. Given the enormity of the doc set, content easily becomes outdated and requires revision. In addition, for a variety of reason, some content has been duplicated or even triplicated. Updating content involves making sure that individual topics are current or revising content in a feature area to eliminate duplication and ensure that all unique content is preserved in the smaller documentation set.
+
+- **New content authoring**. If you're interested in authoring your own topic, these issues list topics that we know we'd like to add to our doc set. Let us know before you begin working on a topic, though. If you're interested in writing a topic that isn't listed here, open an issue. 
+
+You can also look at our [open issues](https://github.com/dotnet/docs/issues) list and volunteer to work on the ones you're interested in. We use the [up-for-grabs](https://github.com/dotnet/docs/labels/up-for-grabs) label to tag issues open for contribution. 
+
+**Step 2:** Fork the `/dotnet/docs`, `dotnet/samples` or `dotnet/dotnet-api-docs` repos as needed and create a branch for your changes.
 
 For small changes, you can use GitHub's web interface. Simply click the **Edit the file in your fork of this project** on the file you'd like to change. 
 GitHub creates the new branch for you when you submit the changes.
@@ -35,8 +53,6 @@ Include larger samples in the *samples* folder under the root of the repo.
 
 Be sure to follow the proper Markdown syntax. For more information, see the [style guide](./styleguide/template.md).
 
-Remove the "wrench" icon (🔧) from the TOC and the file heading, if applicable.
-
 ### Example structure
 
     docs
@@ -47,11 +63,6 @@ Remove the "wrench" icon (🔧) from the TOC and the file heading, if applicable
           /media
             /porting-overview
                 portability_report.png
-      ...
-    samples
-      /core
-        /porting
-          porting_sample.cs
 
 **Step 4:** Submit a Pull Request (PR) from your branch to `dotnet/docs/master`.
 
@@ -75,7 +86,7 @@ We make the following distinction for code that exists in our repository:
 
 - snippets: illustrate a smaller concept or task. They compile but they are not intended to be complete applications.
 
-Code all lives in the *samples* directories and is organized as follows:
+Code all lives in the [dotnet/samples](https://github.com/dotnet/samples) repository and is organized as follows:
 
 - *core* contains .NET Core samples.
 
@@ -106,7 +117,32 @@ with `http://docs.microsoft.com/dotnet/articles`.
 
 Your topic will also contain links to the sample. Link directly to the sample's folder on GitHub.
 
-For more information, see the [Samples Readme](https://github.com/dotnet/docs/blob/master/samples/README.md).
+For more information, see the [Samples Readme](https://github.com/dotnet/samples/blob/master/README.md).
+
+## The C# interactive experience #
+
+Short code samples in C# can use the `csharp-interactive` language tag to
+specify a C# sample that runs in the browser. (Inline code samples use the
+`csharp-interactive` tag, for snippets included from source, use the
+`code-csharp-interactive` tag.) These code samples
+display a code window and an output window in the article. The output window displays any output from
+executing the interactive code once the user has run the sample. 
+
+The C# interactive experience changes how we work with samples. Visitors can run the sample
+to see the results. A number of factors help determine if the sample
+or corresponding text should include information about the output.
+
+### When to display the expected output without running the sample
+
+- Articles intended for beginners should provide output so that readers can compare the output of their work with the expected answer.
+- Samples where the output is integral to the topic should display that output. For example, articles on formatted text should show the text format without running the sample.
+- When both the sample and the expected output is short, consider showing the output. It saves a bit of time.
+- Articles explaining how current culture or invariant culture affect output should explain the expected output. The interactive REPL (Read Evaluate Print Loop) runs on a Linux-based host. The default culture, and the invariant culture produce different output on different operating systems and machines. The article should explain the output in Windows, Linux, and Mac systems.
+
+### When to exclude expected output from the sample 
+
+- Articles where the sample generates a larger output should not include that in comments. It obscures the code once the sample has been run.
+- Articles where the sample demonstrates a topic, but the output isn't integral to understanding it. For example, code that runs a LINQ query to explain query syntax and then display every item in the output collection.
 
 ## DOs and DON'Ts
 
@@ -160,8 +196,8 @@ function docfx-serve {
 
 ## Contributor License Agreement
 
-You must sign the [.NET Foundation Contribution License Agreement (CLA)](http://cla2.dotnetfoundation.org) before your PR is merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
+You must sign the [.NET Foundation Contribution License Agreement (CLA)](https://cla.dotnetfoundation.org) before your PR is merged. This is a one-time requirement for projects in the .NET Foundation. You can read more about [Contribution License Agreements (CLA)](http://en.wikipedia.org/wiki/Contributor_License_Agreement) on Wikipedia.
 
-The agreement: [net-foundation-contribution-license-agreement.pdf](https://cla2.dotnetfoundation.org/cladoc/net-foundation-contribution-license-agreement.pdf)
+The agreement: [net-foundation-contribution-license-agreement.pdf](https://github.com/dotnet/home/blob/master/guidance/net-foundation-contribution-license-agreement.pdf)
 
 You don't have to sign the agreement up-front. You can clone, fork, and submit your PR as usual. When your PR is created, it is classified by a CLA bot. If the change is trivial (for example, you fixed a typo), then the PR is labeled with `cla-not-required`. Otherwise, it's classified as `cla-required`. Once you signed the CLA, the current and all future pull requests are labeled as `cla-signed`.

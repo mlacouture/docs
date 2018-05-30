@@ -1,17 +1,10 @@
 ---
 title: "Strings (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "C# language, strings"
   - "strings [C#]"
 ms.assetid: 21580405-cb25-4541-89d5-037846a38b07
-caps.latest.revision: 41
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Strings (C# Programming Guide)
 A string is an object of type <xref:System.String> whose value is text. Internally, the text is stored as a sequential read-only collection of <xref:System.Char> objects. There is no null-terminating character at the end of a C# string; therefore a C# string can contain any number of embedded null characters ('\0'). The <xref:System.String.Length%2A> property of a string represents the number of `Char` objects it contains, not the number of Unicode characters. To access the individual Unicode code points in a string, use the <xref:System.Globalization.StringInfo> object.  
@@ -37,7 +30,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
   
  [!code-csharp[csProgGuideStrings#25](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_3.cs)]  
   
- For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see [How to: Modify String Contents](../../../csharp/programming-guide/strings/how-to-modify-string-contents.md).  
+ For more information about how to create new strings that are based on modifications such as search and replace operations on the original string, see [How to: Modify String Contents](../../how-to/modify-string-contents.md).  
   
 ## Regular and Verbatim String Literals  
  Use regular string literals when you must embed escape characters provided by C#, as shown in the following example:  
@@ -78,7 +71,7 @@ A string is an object of type <xref:System.String> whose value is text. Internal
  One overload of the <xref:System.Console.WriteLine%2A> method takes a format string as a parameter. Therefore, you can just embed a format string literal without an explicit call to the method. However, if you use the <xref:System.Diagnostics.Trace.WriteLine%2A> method to display debug output in the Visual Studio **Output** window, you have to explicitly call the <xref:System.String.Format%2A> method because <xref:System.Diagnostics.Trace.WriteLine%2A> only accepts a string, not a format string. For more information about format strings, see [Formatting Types](../../../standard/base-types/formatting-types.md).  
   
 ## Substrings  
- A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring%2A> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf%2A> method. Use the <xref:System.String.Replace%2A> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring%2A> method, <xref:System.String.Replace%2A> actually returns a new string and does not modify the original string. For more information, see [How to: Search Strings Using String Methods](../../../csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md) and [How to: Modify String Contents](../../../csharp/programming-guide/strings/how-to-modify-string-contents.md).  
+ A substring is any sequence of characters that is contained in a string. Use the <xref:System.String.Substring%2A> method to create a new string from a part of the original string. You can search for one or more occurrences of a substring by using the <xref:System.String.IndexOf%2A> method. Use the <xref:System.String.Replace%2A> method to replace all occurrences of a specified substring with a new string. Like the <xref:System.String.Substring%2A> method, <xref:System.String.Replace%2A> actually returns a new string and does not modify the original string. For more information, see [How to: search strings](../../how-to/search-strings.md) and [How to: Modify String Contents](../../how-to/modify-string-contents.md).  
   
  [!code-csharp[csProgGuideStrings#7](../../../csharp/programming-guide/strings/codesnippet/CSharp/index_7.cs)]  
   
@@ -118,17 +111,17 @@ string s = String.Empty;
   
 |Topic|Description|  
 |-----------|-----------------|  
-|[How to: Modify String Contents](../../../csharp/programming-guide/strings/how-to-modify-string-contents.md)|Provides a code example that illustrates how to modify the contents of strings.|  
-|[How to: Concatenate Multiple Strings](../../../csharp/programming-guide/strings/how-to-concatenate-multiple-strings.md)|Illustrates how to use the `+` operator and the `Stringbuilder` class to join strings together at compile time and run time.|  
-|[How to: Compare Strings](../../../csharp/programming-guide/strings/how-to-compare-strings.md)|Shows how to perform ordinal comparisons of strings.|  
-|[How to: Parse Strings Using String.Split ](../../../csharp/programming-guide/strings/how-to-parse-strings-using-string-split.md)|Contains a code example that illustrates how to use the `String.Split` method to parse strings.|  
-|[How to: Search Strings Using String Methods](../../../csharp/programming-guide/strings/how-to-search-strings-using-string-methods.md)|Explains how to use specific methods to search strings.|  
-|[How to: Search Strings Using Regular Expressions](../../../csharp/programming-guide/strings/how-to-search-strings-using-regular-expressions.md)|Explains how to use regular expressions to search strings.|  
+|[How to: Modify String Contents](../../how-to/modify-string-contents.md)|Illustrates techniques to transform strings and modify the contents of strings.|  
+|[How to: Compare Strings](../../how-to/compare-strings.md)|Shows how to perform ordinal and culture specific comparisons of strings.|  
+|[How to: Concatenate Multiple Strings](../../how-to/concatenate-multiple-strings.md)|Demonstrates various ways to join multiple strings into one.|
+|[How to: Parse Strings Using String.Split ](../../how-to/parse-strings-using-split.md)|Contains code examples that illustrate how to use the `String.Split` method to parse strings.|  
+|[How to: Search Strings](../../how-to/search-strings.md)|Explains how to use search for specific text or patterns in strings.|  
 |[How to: Determine Whether a String Represents a Numeric Value](../../../csharp/programming-guide/strings/how-to-determine-whether-a-string-represents-a-numeric-value.md)|Shows how to safely parse a string to see whether it has a valid numeric value.|  
-|[How to: Convert a String to a DateTime](../../../csharp/programming-guide/strings/how-to-convert-a-string-to-a-datetime.md)|Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=nameWithType> object.|  
-|[Basic String Operations](https://msdn.microsoft.com/library/a292he7t)|Provides links to topics that use <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> methods to perform basic string operations.|  
-|[Parsing Strings](https://msdn.microsoft.com/library/b4w53z0y)|Describes how to insert characters or empty spaces into a string.|  
-|[Comparing Strings](https://msdn.microsoft.com/library/fbh501kz)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
+|[String interpolation](../../language-reference/tokens/interpolated.md)|Describes the string interpolation feature that provides a convenient syntax to format strings.|
+|[Basic String Operations](../../../../docs/standard/base-types/basic-string-operations.md)|Provides links to topics that use <xref:System.String?displayProperty=nameWithType> and <xref:System.Text.StringBuilder?displayProperty=nameWithType> methods to perform basic string operations.|  
+|[Parsing Strings](../../../standard/base-types/parsing-strings.md)|Describes how to convert string representations of .NET base types to instances of the corresponding types.|  
+|[Parsing Date and Time Strings in .NET](../../../standard/base-types/parsing-datetime.md)|Shows how to convert a string such as "01/24/2008" to a <xref:System.DateTime?displayProperty=nameWithType> object.|  
+|[Comparing Strings](../../../../docs/standard/base-types/comparing.md)|Includes information about how to compare strings and provides examples in C# and Visual Basic.|  
 |[Using the StringBuilder Class](../../../standard/base-types/stringbuilder.md)|Describes how to create and modify dynamic string objects by using the <xref:System.Text.StringBuilder> class.|  
 |[LINQ and Strings](../../../csharp/programming-guide/concepts/linq/linq-and-strings.md)|Provides information about how to perform various string operations by using LINQ queries.|  
 |[C# Programming Guide](../../../csharp/programming-guide/index.md)|Provides links to topics that explain programming constructs in C#.|  

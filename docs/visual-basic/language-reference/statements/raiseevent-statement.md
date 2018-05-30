@@ -1,12 +1,6 @@
 ---
 title: "RaiseEvent Statement"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.RaiseEventMethod"
   - "vb.RaiseEvent"
@@ -16,9 +10,6 @@ helpviewer_keywords:
   - "RaiseEvent statement [Visual Basic]"
   - "event handlers, connecting events to"
 ms.assetid: f82e380a-1e6b-4047-bea8-c853f4d2c742
-caps.latest.revision: 19
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # RaiseEvent Statement
 Triggers an event declared at module level within a class, form, or document.  
@@ -76,7 +67,7 @@ RaiseEvent eventname[( argumentlist )]
  Press F5 to run the preceding example, and click the button labeled **Start**. The first text box starts to count down the seconds. When the full time (10 seconds) has elapsed, the first text box displays "Done".  
   
 > [!NOTE]
->  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. To allow the form to handle the events directly, you can use multithreading. For more information, see [Threading](http://msdn.microsoft.com/library/552f6c68-dbdb-4327-ae36-32cf9063d88c).  
+>  The `My.Application.DoEvents` method does not process events in exactly the same way as the form does. To allow the form to handle the events directly, you can use multithreading. For more information, see [Threading](../../programming-guide/concepts/threading/index.md).  
   
 ## See Also  
  [Events](../../../visual-basic/programming-guide/language-features/events/index.md)  

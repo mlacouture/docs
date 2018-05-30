@@ -1,13 +1,7 @@
 ---
 title: What's New in C# 6 - C# Guide
-description: Learn the new features in C# Version 6    
-keywords: .NET, .NET Core
-author: BillWagner
+description: Learn the new features in C# Version 6
 ms.date: 09/22/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 4d879f69-f889-4d3f-a781-75194e143400
 ---
 
@@ -40,6 +34,8 @@ productivity for developers. Features in this release include:
     - Collection initializers can rely on accessible extension methods, in addition to member methods.
 * [Improved overload resolution](#improved-overload-resolution):
     - Some constructs that previously generated ambiguous method calls now resolve correctly.
+* [`deterministic` compiler option](#deterministic-compiler-output):
+    - The deterministic compiler option ensures that subsequent compilations of the same source generate the same binary output.
 
 The overall effect of these features is that you write more concise code
 that is also more readable. The syntax contains less ceremony for many
@@ -290,20 +286,20 @@ on [events](../events-overview.md#language-support-for-events).
 ## String Interpolation
 
 C# 6 contains new syntax for composing strings from a format string
-and expressions that can be evaluated to produce other string values.
+and expressions that are evaluated to produce other string values.
 
 Traditionally, you needed to use positional parameters in a method
 like `string.Format`:
 
 [!code-csharp[stringFormat](../../../samples/snippets/csharp/new-in-6/oldcode.cs#stringFormat)]
 
-With C# 6, the new string interpolation feature enables you to embed
-the expressions in the format string. Simple preface the string with
+With C# 6, the new [string interpolation](../language-reference/tokens/interpolated.md) feature enables you to embed
+the expressions in the format string. Simply preface the string with
 `$`:
 
 [!code-csharp[stringInterpolation](../../../samples/snippets/csharp/new-in-6/newcode.cs#FullNameExpressionMember)]
 
-This initial example used variable expressions for the substituted
+This initial example uses property expressions for the substituted
 expressions. You can expand on this syntax to use any expression. For
 example, you could compute a student's grade point average as part of
 the interpolation:
@@ -318,7 +314,7 @@ the expression to format:
 
 [!code-csharp[stringInterpolationFormat](../../../samples/snippets/csharp/new-in-6/newcode.cs#stringInterpolationFormat)]
 
-The preceding line of code will format the value for `Grades.Average()` as
+The preceding line of code formats the value for `Grades.Average()` as
 a floating-point number with two decimal places.
 
 The `:` is always interpreted as the separator between the expression
@@ -351,36 +347,25 @@ can be placed between the curly braces of an interpolated string.
 
 ### String interpolation and specific cultures
 
-All the examples shown in the preceding section will format the strings using the current
+All the examples shown in the preceding section format the strings using the current
 culture and language on the machine where the code executes. Often you
 may need to format the string produced using a specific culture.
-The object produced from a string interpolation is a type that has an
-implicit conversion to either <xref:System.String> or <xref:System.FormattableString>.
+To do that use the fact that the object produced by a string interpolation can be implicitly converted to <xref:System.FormattableString>.
 
-The <xref:System.FormattableString> type contains the format string, and the results
-of evaluating the arguments before converting them to strings. You can
+The <xref:System.FormattableString> instance contains the format string, and the results
+of evaluating the expressions before converting them to strings. You can
 use public methods of <xref:System.FormattableString> to specify the culture when
-formatting a string. For example, the following will produce a string
-using German as the language and culture. (It will use the ',' character
+formatting a string. For example, the following example produces a string
+using German culture. (It uses the ',' character
 for the decimal separator,
 and the '.' character as the thousands separator.)
 
 ```csharp
 FormattableString str = $"Average grade is {s.Grades.Average()}";
-var gradeStr = string.Format(null, 
-    System.Globalization.CultureInfo.CreateSpecificCulture("de-de"),
-    str.GetFormat(), str.GetArguments());
+var gradeStr = str.ToString(new System.Globalization.CultureInfo("de-DE"));
 ```
 
-> [!NOTE]
-> The preceding example is not supported in .NET Core version 1.0.1. It is
-> only supported in the .NET Framework.
-
-In general, string interpolation expressions produce strings as their
-output. However, when you want greater control over the culture used to
-format the string, you can specify a specific output.  If this is a capability
-you often need, you can create convenience methods, as extension methods,
-to enable easy formatting with specific cultures.
+For more information, see the [String interpolation](../language-reference/tokens/interpolated.md) topic.
 
 ## Exception Filters
 
@@ -525,12 +510,12 @@ if any, is lost.
 ## Index Initializers
 
 *Index Initializers* is one of two features that make collection
-initializers more consistent. In earlier releases of C#, you could use
-*collection initializers* only with sequence style collections:
+initializers more consistent with index usage. In earlier releases of C#, you could use
+*collection initializers* only with sequence style collections, including <xref:System.Collections.Generic.Dictionary%602> by adding braces around key and value pairs:
 
 [!code-csharp[ListInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#ListInitializer)]
 
-Now, you can also use them with <xref:System.Collections.Generic.Dictionary%602> collections and similar types:
+Now, you can use them with <xref:System.Collections.Generic.Dictionary%602> collections and similar types. The new syntax supports assignment using an index into the collection:
 
 [!code-csharp[DictionaryInitializer](../../../samples/snippets/csharp/new-in-6/initializers.cs#DictionaryInitializer)]
 
@@ -538,7 +523,7 @@ This feature means that associative containers can be initialized using
 syntax similar to what's been in place for sequence containers for several
 versions.
 
-### Extension `Add` methods in collection initializers
+## Extension `Add` methods in collection initializers
 
 Another feature that makes collection initialization easier is the ability
 to use an *extension method* for the `Add` method. This feature was
@@ -564,10 +549,7 @@ Now you can, but only if you create an extension method that maps `Add` to
 
 What you are doing with this feature is to map whatever method adds
 items to a collection to a method named `Add` by creating an
-extension method: 
-
-[!code-csharp[Enrollment](../../../samples/snippets/csharp/new-in-6/enrollment.cs#Enrollment)]
-[!code-csharp[ExtensionAddSample](../../../samples/snippets/csharp/new-in-6/classList.cs#ExtensionAddSample)]
+extension method.
 
 ## Improved overload resolution
 
@@ -590,3 +572,12 @@ a lambda expression as an argument:
 
 The C# 6 compiler correctly determines that `Task.Run(Func<Task>())` is
 a better choice.
+
+### Deterministic compiler output
+
+The `-deterministic` option instructs the compiler to produce a byte-for-byte identical output assembly for successive compilations of the same source files.
+
+By default, every compilation produces unique output on each compilation. The compiler adds a timestamp, and a GUID generated from random numbers. You use this option if you want to compare the byte-for-byte output to ensure consistency across builds.
+
+For more information, see the [-deterministic compiler option](../language-reference/compiler-options/deterministic-compiler-option.md) article.
+

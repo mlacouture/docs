@@ -1,17 +1,7 @@
 ---
 title: "Variance in Delegates (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: 19de89d2-8224-4406-8964-2965b732b890
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Variance in Delegates (C#)
 .NET Framework 3.5 introduced variance support for matching method signatures with delegate types in all delegates in C#. This means that you can assign to delegates not only methods that have matching signatures, but also methods that return more derived types (covariance) or that accept parameters that have less derived types (contravariance) than that specified by the delegate type. This includes both generic and non-generic delegates.  
@@ -144,7 +134,7 @@ public delegate void DContravariant<in A>(A a);
 ```  
   
 > [!IMPORTANT]
->  `ref` and `out` parameters in C# can't be marked as variant.  
+>  `ref`, `in`, and `out` parameters in C# can't be marked as variant.  
   
  It is also possible to support both variance and covariance in the same delegate, but for different type parameters. This is shown in the following example.  
   

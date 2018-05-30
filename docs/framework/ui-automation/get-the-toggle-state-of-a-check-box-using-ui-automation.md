@@ -1,23 +1,14 @@
 ---
 title: "Get the Toggle State of a Check Box Using UI Automation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "UI Automation, getting toggle states of check boxes"
   - "check boxes, getting toggle states of"
   - "getting, toggle states of check boxes"
 ms.assetid: 84fc31a3-175f-4e93-90a0-dd29d89b77ce
-caps.latest.revision: 10
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"

@@ -1,28 +1,18 @@
 ---
 title: "How to: Sign an Assembly with a Strong Name"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "strong-named assemblies, signing with strong names"
   - "signing assemblies"
   - "assemblies [.NET Framework], signing"
   - "assemblies [.NET Framework], strong-named"
 ms.assetid: 2c30799a-a826-46b4-a25d-c584027a6c67
-caps.latest.revision: 23
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # How to: Sign an Assembly with a Strong Name
 There are a number of ways to sign an assembly with a strong name:  

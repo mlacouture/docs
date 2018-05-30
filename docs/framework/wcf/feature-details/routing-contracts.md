@@ -1,19 +1,7 @@
 ---
 title: "Routing Contracts"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9ceea7ae-ea19-4cf9-ba4f-d071e236546d
-caps.latest.revision: 7
-author: "wadepickett"
-ms.author: "wpickett"
-manager: "wpickett"
 ---
 # Routing Contracts
 Routing contracts define the message patterns that the Routing Service can process.  Each contract is typeless and allows the service to receive a message without knowledge of the message schema or action. This allows the Routing Service to generically route messages without additional configuration for the specifics of the underlying messages being routed.  
@@ -33,5 +21,5 @@ Routing contracts define the message patterns that the Routing Service can proce
 |<xref:System.ServiceModel.Routing.IDuplexSessionRouter>|SessionMode=SessionMode.Required<br /><br /> CallbackContract=typeof(ISimplexSession)<br /><br /> AsyncPattern = true<br /><br /> IsOneWay = true<br /><br /> TransactionFlow(TransactionFlowOption.Allowed)|IDuplexSessionChannel -> IDuplexSessionChannel|  
   
 ## See Also  
- [Routing Service](http://msdn.microsoft.com/en-us/5ac8718c-bcef-456f-bfd5-1e60a30d6eaa)  
+ [Routing Service](http://msdn.microsoft.com/library/5ac8718c-bcef-456f-bfd5-1e60a30d6eaa)  
  [Routing Introduction](../../../../docs/framework/wcf/feature-details/routing-introduction.md)

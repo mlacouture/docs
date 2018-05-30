@@ -1,15 +1,9 @@
 ---
 title: "Managing Connections"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Internet, connections"
   - "HTTP, classes for connecting"
@@ -23,7 +17,6 @@ helpviewer_keywords:
   - "downloading Internet resources, connections"
   - "ServicePointManager class, about ServicePointManager class"
 ms.assetid: 9b3d3de7-189f-4f7d-81ae-9c29c441aaaa
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

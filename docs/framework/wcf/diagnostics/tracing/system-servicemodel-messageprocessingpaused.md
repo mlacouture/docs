@@ -1,19 +1,7 @@
 ---
 title: "System.ServiceModel.MessageProcessingPaused"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 36b5302a-93cc-478a-9bb2-8a1601fba1df
-caps.latest.revision: 6
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # System.ServiceModel.MessageProcessingPaused
 System.ServiceModel.MessageProcessingPaused  

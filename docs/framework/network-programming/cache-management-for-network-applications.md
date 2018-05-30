@@ -1,18 +1,11 @@
 ---
 title: "Cache Management for Network Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "cache [.NET Framework], network applications"
   - "network resources, caching"
   - "Internet, caching"
 ms.assetid: fc258a40-f370-434f-ae09-4a8cb11ddaeb
-caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

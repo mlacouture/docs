@@ -1,14 +1,6 @@
 ---
 title: "How to: Group Items in a Windows Forms ListView Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -20,10 +12,6 @@ helpviewer_keywords:
   - "groups"
   - "groups [Windows Forms], in Windows Forms controls"
 ms.assetid: 610416a1-8da4-436c-af19-5f19e654769b
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # How to: Group Items in a Windows Forms ListView Control
 With the grouping feature of the <xref:System.Windows.Forms.ListView> control, you can display related sets of items in groups. These groups are separated on the screen by horizontal group headers that contain the group titles. You can use <xref:System.Windows.Forms.ListView> groups to make navigating large lists easier by grouping items alphabetically, by date, or by any other logical grouping. The following image shows some grouped items.  
@@ -68,5 +56,5 @@ ListView grouped items
  <xref:System.Windows.Forms.ListViewGroup>  
  [ListView Control](../../../../docs/framework/winforms/controls/listview-control-windows-forms.md)  
  [ListView Control Overview](../../../../docs/framework/winforms/controls/listview-control-overview-windows-forms.md)  
- [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
+ [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
  [How to: Add and Remove Items with the Windows Forms ListView Control](../../../../docs/framework/winforms/controls/how-to-add-and-remove-items-with-the-windows-forms-listview-control.md)

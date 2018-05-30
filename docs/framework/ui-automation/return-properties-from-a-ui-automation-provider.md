@@ -1,23 +1,14 @@
 ---
 title: "Return Properties from a UI Automation Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "providers, UI Automation, returning properties"
   - "properties, returned by UI Automation providers"
   - "UI Automation, providers returning properties"
 ms.assetid: 5eba950e-b9e1-48eb-ab8e-b69db76bf589
-caps.latest.revision: 14
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"

@@ -1,26 +1,18 @@
 ---
 title: "How to: Use Specific Exceptions in a Catch Block"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "exceptions, try/catch blocks"
   - "try/catch blocks"
   - "catch blocks"
 ms.assetid: 12af9ff3-8587-4f31-90cf-6c2244e0fdae
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # How to use specific exceptions in a catch block
 

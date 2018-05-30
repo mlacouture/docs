@@ -1,14 +1,6 @@
 ---
 title: "Getting Started with Ink"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +11,6 @@ helpviewer_keywords:
   - "animation [WPF], gradient brush colors"
   - "brushes [WPF], animating colors of"
 ms.assetid: 760332dd-594a-475d-865b-01659db8cab7
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Getting Started with Ink
 Incorporating digital ink into your applications is easier than ever. Ink has evolved from being a corollary to the COM and Windows Forms method of programming to achieving full integration into the [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)]. You do not need to install separate SDKs or runtime libraries.  
@@ -35,7 +23,7 @@ Incorporating digital ink into your applications is easier than ever. Ink has ev
   
  If you haven't already done so, install Microsoft Visual Studio 2005 and the [!INCLUDE[TLA#tla_winfxsdk](../../../../includes/tlasharptla-winfxsdk-md.md)]. [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] applications usually must be compiled before you can view them, even if they consist entirely of [!INCLUDE[TLA#tla_xaml](../../../../includes/tlasharptla-xaml-md.md)]. However, the [!INCLUDE[TLA#tla_winfxsdk](../../../../includes/tlasharptla-winfxsdk-md.md)] includes an application, XamlPad, designed to speed up the process of implementing a [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)]-based UI. You can use that application to view and tinker with the first few samples in this document. The process of creating compiled applications from [!INCLUDE[TLA2#tla_xaml](../../../../includes/tla2sharptla-xaml-md.md)] is covered later in this document.  
   
- To launch XAMLPad, click the **Start** menu, point to **All Programs**, point to **Microsoft Winndows SDK**, point to **Tools**, and click **XAMLPad**. In the rendering pane, XAMLPad renders the XAML code written in the code pane. You can edit the XAML code, and the changes immediately appear in the rendering pane.  
+ To launch XAMLPad, click the **Start** menu, point to **All Programs**, point to **Microsoft Windows SDK**, point to **Tools**, and click **XAMLPad**. In the rendering pane, XAMLPad renders the XAML code written in the code pane. You can edit the XAML code, and the changes immediately appear in the rendering pane.  
   
 #### Got Ink?  
  To start your first [!INCLUDE[TLA2#tla_winclient](../../../../includes/tla2sharptla-winclient-md.md)] application that supports ink:  

@@ -1,37 +1,28 @@
 ---
 title: "How to: Cancel a Dataflow Block"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Task Parallel Library, dataflows"
   - "dataflow blocks, canceling in TPL"
   - "TPL dataflow library,canceling dataflow blocks"
 ms.assetid: fbddda0d-da3b-4ec8-a1d6-67ab8573fcd7
-caps.latest.revision: 9
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # How to: Cancel a Dataflow Block
 This document demonstrates how to enable cancellation in your application. This example uses Windows Forms to show where work items are active in a dataflow pipeline and also the effects of cancellation.  
+
+[!INCLUDE [tpl-install-instructions](../../../includes/tpl-install-instructions.md)]
   
-> [!TIP]
->  The TPL Dataflow Library (<xref:System.Threading.Tasks.Dataflow?displayProperty=nameWithType> namespace) is not distributed with the [!INCLUDE[net_v45](../../../includes/net-v45-md.md)]. To install the <xref:System.Threading.Tasks.Dataflow> namespace, open your project in [!INCLUDE[vs_dev11_long](../../../includes/vs-dev11-long-md.md)], choose **Manage NuGet Packages** from the Project menu, and search online for the `Microsoft.Tpl.Dataflow` package.  
-  
-### To Create the Windows Forms Application  
+## To Create the Windows Forms Application  
   
 1.  Create a C# or Visual Basic **Windows Forms Application** project. In the following steps, the project is named `CancellationWinForms`.  
   
-2.  On the form designer for the main form, Form1.cs (Form1.vb for [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]), add a <xref:System.Windows.Forms.ToolStrip> control.  
+2.  On the form designer for the main form, Form1.cs (Form1.vb for Visual Basic), add a <xref:System.Windows.Forms.ToolStrip> control.  
   
 3.  Add a <xref:System.Windows.Forms.ToolStripButton> control to the <xref:System.Windows.Forms.ToolStrip> control. Set the <xref:System.Windows.Forms.ToolStripItem.DisplayStyle%2A> property to <xref:System.Windows.Forms.ToolStripItemDisplayStyle.Text> and the <xref:System.Windows.Forms.ToolStripItem.Text%2A> property to **Add Work Items**.  
   
@@ -42,11 +33,11 @@ This document demonstrates how to enable cancellation in your application. This 
 ## Creating the Dataflow Pipeline  
  This section describes how to create the dataflow pipeline that processes work items and updates the progress bars.  
   
-#### To Create the Dataflow Pipeline  
+### To Create the Dataflow Pipeline  
   
 1.  In your project, add a reference to System.Threading.Tasks.Dataflow.dll.  
   
-2.  Ensure that Form1.cs (Form1.vb for [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]) contains the following `using` statements (`Imports` in [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]).  
+2.  Ensure that Form1.cs (Form1.vb for Visual Basic) contains the following `using` statements (`Imports` in Visual Basic).  
   
      [!code-csharp[TPLDataflow_CancellationWinForms#1](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_cancellationwinforms/cs/cancellationwinforms/form1.cs#1)]
      [!code-vb[TPLDataflow_CancellationWinForms#1](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms/form1.vb#1)]  
@@ -73,7 +64,7 @@ This document demonstrates how to enable cancellation in your application. This 
 ## Connecting the Dataflow Pipeline to the User Interface  
  This section describes how to connect the dataflow pipeline to the user interface. Both creating the pipeline and adding work items to the pipeline are controlled by the event handler for the **Add Work Items** button. Cancellation is initiated by the **Cancel** button. When the user clicks either of these buttons, the appropriate action is initiated in an asynchronous manner.  
   
-#### To Connect the Dataflow Pipeline to the User Interface  
+### To Connect the Dataflow Pipeline to the User Interface  
   
 1.  On the form designer for the main form, create an event handler for the <xref:System.Windows.Forms.ToolStripItem.Click> event for the **Add Work Items** button.  
   
@@ -90,7 +81,7 @@ This document demonstrates how to enable cancellation in your application. This 
      [!code-vb[TPLDataflow_CancellationWinForms#6](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms/form1.vb#6)]  
   
 ## Example  
- The following example shows the complete code for Form1.cs (Form1.vb for [!INCLUDE[vbprvb](../../../includes/vbprvb-md.md)]).  
+ The following example shows the complete code for Form1.cs (Form1.vb for Visual Basic).  
   
  [!code-csharp[TPLDataflow_CancellationWinForms#100](../../../samples/snippets/csharp/VS_Snippets_Misc/tpldataflow_cancellationwinforms/cs/cancellationwinforms/form1.cs#100)]
  [!code-vb[TPLDataflow_CancellationWinForms#100](../../../samples/snippets/visualbasic/VS_Snippets_Misc/tpldataflow_cancellationwinforms/vb/cancellationwinforms/form1.vb#100)]  
@@ -98,8 +89,6 @@ This document demonstrates how to enable cancellation in your application. This 
  The following illustration shows the running application.  
   
  ![The Windows Forms Application](../../../docs/standard/parallel-programming/media/tpldataflow-cancellation.png "TPLDataflow_Cancellation")  
-  
-## Robust Programming  
-  
+
 ## See Also  
  [Dataflow](../../../docs/standard/parallel-programming/dataflow-task-parallel-library.md)

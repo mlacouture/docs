@@ -1,17 +1,8 @@
 ---
 title: External Functions (F#)
 description: Learn about the F# language support for calling functions in native code.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: c26b6124-ceaa-471c-9dc9-861b4dfa332a 
 ---
-
 # External Functions
 
 This topic describes F# language support for calling functions in native code.
@@ -49,7 +40,7 @@ module InteropWithNative =
 InteropWithNative.HelloWorld()
 ```
 
-Interoperability with native code is referred to as *platform invoke* and is a feature of the CLR. For more information, see [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k.aspx). The information in that section is applicable to F#.
+Interoperability with native code is referred to as *platform invoke* and is a feature of the CLR. For more information, see [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md). The information in that section is applicable to F#.
 
 
 ## See Also

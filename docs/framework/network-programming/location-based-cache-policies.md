@@ -1,12 +1,6 @@
 ---
 title: "Location-Based Cache Policies"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Cache If Available policy"
   - "reload policy"
@@ -21,7 +15,6 @@ helpviewer_keywords:
   - "Cache Or Next Cache Only policy"
   - "Refresh policy"
 ms.assetid: e41d7f1a-0a6a-4dee-97d1-c6a8b6a07fc2
-caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

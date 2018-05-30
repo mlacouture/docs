@@ -1,12 +1,6 @@
 ---
 title: "Interpreting Network Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "TraceMode attribute"
   - "hexidecimal data, network tracing output"
@@ -15,7 +9,6 @@ helpviewer_keywords:
   - "text, network tracing output"
   - "includehex"
 ms.assetid: ad22b4b8-00af-4778-9cca-cb609ce1f8ff
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

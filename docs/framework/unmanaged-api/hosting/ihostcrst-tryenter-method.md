@@ -1,14 +1,6 @@
 ---
 title: "IHostCrst::TryEnter Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
 api_name: 
   - "IHostCrst.TryEnter"
 api_location: 
@@ -23,10 +15,8 @@ helpviewer_keywords:
 ms.assetid: a922fa98-beab-4f09-a342-cc94fc65687f
 topic_type: 
   - "apiref"
-caps.latest.revision: 10
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # IHostCrst::TryEnter Method
 Attempts to enter the critical section represented by the current [IHostCrst](../../../../docs/framework/unmanaged-api/hosting/ihostcrst-interface.md) instance.  

@@ -1,18 +1,11 @@
 ---
 title: "Extension Methods (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "methods [C#], adding to existing types"
   - "extension methods [C#]"
   - "methods [C#], extension"
 ms.assetid: 175ce3ff-9bbf-4e64-8421-faeb81a0bb51
-caps.latest.revision: 35
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Extension Methods (C# Programming Guide)
 Extension methods enable you to "add" methods to existing types without creating a new derived type, recompiling, or otherwise modifying the original type. Extension methods are a special kind of static method, but they are called as if they were instance methods on the extended type. For client code written in C#, F# and Visual Basic, there is no apparent difference between calling an extension method and the methods that are actually defined in a type.  
@@ -31,13 +24,13 @@ Extension methods enable you to "add" methods to existing types without creating
   
  The `WordCount` extension method can be brought into scope with this `using` directive:  
   
-```  
+```csharp  
 using ExtensionMethods;  
 ```  
   
  And it can be called from an application by using this syntax:  
   
-```  
+```csharp  
 string s = "Hello Extension Methods";  
 int i = s.WordCount();  
 ```  
@@ -48,7 +41,7 @@ int i = s.WordCount();
   
  In general, you will probably be calling extension methods far more often than implementing your own. Because extension methods are called by using instance method syntax, no special knowledge is required to use them from client code. To enable extension methods for a particular type, just add a `using` directive for the namespace in which the methods are defined. For example, to use the standard query operators, add this `using` directive to your code:  
   
-```  
+```csharp  
 using System.Linq;  
 ```  
   
@@ -80,14 +73,14 @@ using System.Linq;
   
 -   Extension methods are brought into scope at the namespace level. For example, if you have multiple static classes that contain extension methods in a single namespace named `Extensions`, they will all be brought into scope by the `using Extensions;` directive.  
   
- For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](https://msdn.microsoft.com/library/51ket42z).  
+ For a class library that you implemented, you shouldn't use extension methods to avoid incrementing the version number of an assembly. If you want to add significant functionality to a library for which you own the source code, you should follow the standard .NET Framework guidelines for assembly versioning. For more information, see [Assembly Versioning](../../../../docs/framework/app-domains/assembly-versioning.md).  
   
 ## See Also  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Parallel Programming Samples (these include many example extension methods)](http://code.msdn.microsoft.com/Samples-for-Parallel-b4b76364)  
  [Lambda Expressions](../../../csharp/programming-guide/statements-expressions-operators/lambda-expressions.md)  
  [Standard Query Operators Overview](http://msdn.microsoft.com/library/24cda21e-8af8-4632-b519-c404a839b9b2)  
- [Conversion rules for Instance parameters and their impact](http://go.microsoft.com/fwlink/?LinkId=112385)  
- [Extension methods Interoperability between languages](http://go.microsoft.com/fwlink/?LinkId=112386)  
- [Extension methods and Curried Delegates](http://go.microsoft.com/fwlink/?LinkId=112387)  
- [Extension method Binding and Error reporting](http://go.microsoft.com/fwlink/?LinkId=112388)
+ [Conversion rules for Instance parameters and their impact](https://blogs.msdn.microsoft.com/sreekarc/2007/10/11/conversion-rules-for-instance-parameters-and-their-impact)  
+ [Extension methods Interoperability between languages](https://blogs.msdn.microsoft.com/sreekarc/2007/10/11/extension-methods-interoperability-between-languages)  
+ [Extension methods and Curried Delegates](https://blogs.msdn.microsoft.com/sreekarc/2007/05/01/extension-methods-and-curried-delegates)  
+ [Extension method Binding and Error reporting](https://blogs.msdn.microsoft.com/sreekarc/2007/04/26/extension-method-binding-and-error-reporting)

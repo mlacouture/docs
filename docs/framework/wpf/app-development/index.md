@@ -1,26 +1,14 @@
 ---
 title: "Application Development"
-ms.custom: ""
-ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
+ms.date: "01/26/2018"
 helpviewer_keywords: 
   - "WPF [WPF], about application development"
   - "application development [WPF], about"
 ms.assetid: 2996ce5e-81e9-49ae-881b-952db3dd1b7e
-caps.latest.revision: 21
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Application Development
 <a name="introduction"></a>
-[!INCLUDE[TLA#tla_wpf](../../../../includes/tlasharptla-wpf-md.md)] is a presentation framework that can be used to develop the following types of applications:  
+Windows Presentation Foundation (WPF) is a presentation framework that can be used to develop the following types of applications:  
   
 -   Standalone Applications (traditional style [!INCLUDE[TLA#tla_mswin](../../../../includes/tlasharptla-mswin-md.md)] applications built as executable assemblies that are installed to and run from the client computer).  
   
@@ -63,7 +51,7 @@ manager: "wpickett"
   
 <a name="WPF_Application_Resource__Content__and_Data_Files"></a>   
 ## WPF Application Resource, Content, and Data Files  
- [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the core support in the [!INCLUDE[TLA#tla_winfx](../../../../includes/tlasharptla-winfx-md.md)] for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).  
+ [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] extends the core support in the Microsoft .NET Framework for embedded resources with support for three kinds of non-executable data files: resource, content, and data. For more information, see [WPF Application Resource, Content, and Data Files](../../../../docs/framework/wpf/app-development/wpf-application-resource-content-and-data-files.md).  
   
  A key component of the support for WPF non-executable data files is the ability to identify and load them using a unique [!INCLUDE[TLA2#tla_uri](../../../../includes/tla2sharptla-uri-md.md)]. For more information, see [Pack URIs in WPF](../../../../docs/framework/wpf/app-development/pack-uris-in-wpf.md).  
   
@@ -83,7 +71,7 @@ manager: "wpickett"
   
  <xref:System.Windows.Window> supports the ability to create a special type of window known as a dialog box. Both modal and modeless types of dialog boxes can be created.  
   
- For convenience, and the benefits of reusability and a consistent user experience across applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] exposes three of the common [!INCLUDE[TLA2#tla_mswin](../../../../includes/tla2sharptla-mswin-md.md)] dialog boxes: <xref:Microsoft.Win32.OpenFileDialog>, <xref:Microsoft.Win32.SaveFileDialog>, and <xref:System.Windows.Controls.PrintDialog>.  
+ For convenience, and the benefits of reusability and a consistent user experience across applications, [!INCLUDE[TLA2#tla_wpf](../../../../includes/tla2sharptla-wpf-md.md)] exposes three of the common Windows dialog boxes: <xref:Microsoft.Win32.OpenFileDialog>, <xref:Microsoft.Win32.SaveFileDialog>, and <xref:System.Windows.Controls.PrintDialog>.  
   
  A message box is a special type of dialog box for showing important textual information to users, and for asking simple Yes/No/OK/Cancel questions. You use the <xref:System.Windows.MessageBox> class to create and show message boxes.  
   
@@ -135,5 +123,5 @@ manager: "wpickett"
 |[Navigation Overview](../../../../docs/framework/wpf/app-development/navigation-overview.md)|Provides an overview of managing navigation between pages of your application.|  
 |[Hosting](../../../../docs/framework/wpf/app-development/hosting-wpf-applications.md)|Provides an overview of [!INCLUDE[TLA#tla_xbap#plural](../../../../includes/tlasharptla-xbapsharpplural-md.md)].|  
 |[Build and Deploy](../../../../docs/framework/wpf/app-development/building-and-deploying-wpf-applications.md)|Describes how to build and deploy your WPF application.|  
-|[Introduction to WPF in Visual Studio 2015](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
+|[Introduction to WPF in Visual Studio](../../../../docs/framework/wpf/getting-started/introduction-to-wpf-in-vs.md)|Describes the main features of WPF.|  
 |[Walkthrough: My first WPF desktop application](../../../../docs/framework/wpf/getting-started/walkthrough-my-first-wpf-desktop-application.md)|A walkthrough that shows how to create a WPF application using page navigation, layout, controls, images, styles, and binding.|

@@ -1,15 +1,9 @@
 ---
 title: "Making Asynchronous Requests"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "Internet, asynchronous access"
   - "Networking"
@@ -17,7 +11,6 @@ helpviewer_keywords:
   - "Network Resources"
   - "WebRequest class, asynchronous access"
 ms.assetid: 735d3fce-f80c-437f-b02c-5c47f5739674
-caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

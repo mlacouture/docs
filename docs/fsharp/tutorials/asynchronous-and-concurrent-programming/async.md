@@ -1,17 +1,8 @@
 ---
 title: Async Programming in F#
 description: Learn how F# async programming is accomplished via a language-level programming model that is easy to use and natural to the language.
-keywords: .NET, .NET Core
-author: cartermp
-ms.author: phcart
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: f9196bfc-b8a8-4d33-8b53-0dcbd58a69d8
 ---
-
 # Async Programming in F# #
 
 > [!NOTE]
@@ -40,7 +31,7 @@ let fetchHtmlAsync url =
         return html
     }
 
-let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
+let html = "https://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
 printfn "%s" html
 ```
 
@@ -75,7 +66,7 @@ let fetchHtmlAsync url =
     }
 
  // Execution will pause until fetchHtmlAsync finishes
- let html = "http://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
+ let html = "https://dotnetfoundation.org" |> fetchHtmlAsync |> Async.RunSynchronously
 
  // you actually have the result from fetchHtmlAsync now!
  printfn "%s" html
@@ -94,7 +85,7 @@ let uploadDataAsync url data =
         webClient.UploadStringAsync(uri, data)
     }
 
-let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
+let workflow = uploadDataAsync "https://url-to-upload-to.com" "hello, world!"
 
 // Execution will continue after calling this!
 Async.Start(workflow)
@@ -119,10 +110,10 @@ open System
 open System.Net
 
 let urlList = 
-    [ "http://www.microsoft.com"
-      "http://www.google.com"
-      "http://www.amazon.com"
-      "http://www.facebook.com" ]
+    [ "https://www.microsoft.com"
+      "https://www.google.com"
+      "https://www.amazon.com"
+      "https://www.facebook.com" ]
 
 let fetchHtmlAsync url = 
     async {
@@ -204,7 +195,7 @@ let uploadDataAsync url data =
         webClient.UploadStringAsync(uri, data)
     }
 
-let workflow = uploadDataAsync "http://url-to-upload-to.com" "hello, world!"
+let workflow = uploadDataAsync "https://url-to-upload-to.com" "hello, world!"
 
 let token = new CancellationTokenSource()
 Async.Start (workflow, token)
@@ -218,5 +209,5 @@ And that’s it!
 ## Further resources:
 
 *   [Async Workflows on MSDN](https://msdn.microsoft.com/library/dd233250.aspx)
-*   [Asynchronous Sequences for F#](http://fsprojects.github.io/FSharp.Control.AsyncSeq/library/AsyncSeq.html)
+*   [Asynchronous Sequences for F#](https://fsprojects.github.io/FSharp.Control.AsyncSeq/library/AsyncSeq.html)
 *   [F# Data HTTP Utilities](https://fsharp.github.io/FSharp.Data/library/Http.html)

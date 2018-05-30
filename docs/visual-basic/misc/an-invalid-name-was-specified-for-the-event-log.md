@@ -1,14 +1,7 @@
 ---
 title: "An invalid name was specified for the event log"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 ms.assetid: b1b158bd-f13f-4371-a8af-31c0e86ae6be
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # An invalid name was specified for the event log
 An invalid name was specified for the event log. Usually this is a result of invalid characters in the name, a blank file name, or a file name that is too long.  
@@ -24,4 +17,4 @@ An invalid name was specified for the event log. Usually this is a result of inv
 ## See Also  
  [How to: Parse File Paths](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-parse-file-paths.md)  
  [How to: Rename a File](../../visual-basic/developing-apps/programming/drives-directories-files/how-to-rename-a-file.md)  
- [How to: Create and Remove Custom Event Logs](http://msdn.microsoft.com/en-us/af9b7da0-80c7-46ac-b7f7-897063ddd503)
+ 

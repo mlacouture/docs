@@ -1,17 +1,7 @@
 ---
 title: "1124 - InvokeMethodIsStatic"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b9643641-fb52-4fa8-b354-4dd6617d68f6
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # 1124 - InvokeMethodIsStatic
 ## Properties  

@@ -1,14 +1,7 @@
 ---
 title: "Integrated Windows Authentication with Extended Protection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 81731998-d5e7-49e4-ad38-c8e6d01689d0
-caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

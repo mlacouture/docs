@@ -1,18 +1,11 @@
 ---
 title: "Constructors (C# Programming Guide)"
 ms.date: 05/05/2017
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "constructors [C#]"
   - "classes [C#], constructors"
   - "C# language, constructors"
 ms.assetid: df2e2e9d-7998-418b-8e7d-890c17ff6c95
-caps.latest.revision: 23
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Constructors (C# Programming Guide)
 Whenever a [class](../../../csharp/language-reference/keywords/class.md) or [struct](../../../csharp/language-reference/keywords/struct.md) is created, its constructor is called. A class or struct may have multiple constructors that take different arguments. Constructors enable the programmer to set default values, limit instantiation, and write code that is flexible and easy to read. For more information and examples, see [Using Constructors](../../../csharp/programming-guide/classes-and-structs/using-constructors.md) and [Instance Constructors](../../../csharp/programming-guide/classes-and-structs/instance-constructors.md).  
@@ -61,4 +54,4 @@ For more information and examples, see [Static Constructors](../../../csharp/pro
  [Classes and Structs](../../../csharp/programming-guide/classes-and-structs/index.md)  
  [Finalizers](../../../csharp/programming-guide/classes-and-structs/destructors.md)  
  [static](../../../csharp/language-reference/keywords/static.md)  
- [Why Do Initializers Run In The Opposite Order As Constructors? Part One](http://go.microsoft.com/fwlink/?LinkId=112374)
+ [Why Do Initializers Run In The Opposite Order As Constructors? Part One](https://blogs.msdn.microsoft.com/ericlippert/2008/02/15/why-do-initializers-run-in-the-opposite-order-as-constructors-part-one)

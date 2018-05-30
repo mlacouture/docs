@@ -1,17 +1,9 @@
 ---
 title: "Retrieving Resources in Desktop Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], resources"
   - "resource files, deploying"
@@ -26,10 +18,8 @@ helpviewer_keywords:
   - "translating resources into languages"
   - "localizing resources"
 ms.assetid: eca16922-1c46-4f68-aefe-e7a12283641f
-caps.latest.revision: 22
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Retrieving Resources in Desktop Apps
 When you work with localized resources in .NET Framework desktop apps, you should ideally package the resources for the default or neutral culture with the main assembly and create a separate satellite assembly for each language or culture that your app supports. You can then use the <xref:System.Resources.ResourceManager> class as described in the next section to access named resources. If you choose not to embed your resources in the main assembly and satellite assemblies, you can also access binary .resources files directly, as discussed in the section [Retrieving Resources from .resources files](#from_file) later in this article.  To retrieve resources in [!INCLUDE[win8_appname_long](../../../includes/win8-appname-long-md.md)] apps, see [Creating and retrieving resources in Windows Store apps](http://go.microsoft.com/fwlink/p/?LinkID=241674) in the Windows Dev Center.  
@@ -72,15 +62,15 @@ TimeHeader=Текущее время —
   
 ```  
 resgen strings.txt  
-csc GetString.cs /resource:strings.resources  
+csc GetString.cs -resource:strings.resources  
   
 resgen strings.fr-FR.txt  
 md fr-FR  
-al /embed:strings.fr-FR.resources /culture:fr-FR /out:fr-FR\GetString.resources.dll  
+al -embed:strings.fr-FR.resources -culture:fr-FR -out:fr-FR\GetString.resources.dll  
   
 resgen strings.ru-RU.txt  
 md ru-RU  
-al /embed:strings.ru-RU.resources /culture:ru-RU /out:ru-RU\GetString.resources.dll  
+al -embed:strings.ru-RU.resources -culture:ru-RU -out:ru-RU\GetString.resources.dll  
 ```  
   
  When the current UI culture is Spanish (Spain), note that the example displays English language resources, because Spanish language resources are unavailable, and English is the example's default culture.  
@@ -106,7 +96,7 @@ CreateResources
   
 resgen AppResources.resx  
   
-csc GetStream.cs /resource:AppResources.resources  
+csc GetStream.cs -resource:AppResources.resources  
 ```  
   
  The following example uses the <xref:System.Resources.ResourceManager.GetObject%28System.String%29?displayProperty=nameWithType> method to deserialize a custom object. The example includes a source code file named UIElements.cs (UIElements.vb for Visual Basic) that defines the following structure named `PersonTable`. This structure is intended to be used by a general table display routine that displays the localized names of table columns. Note that the `PersonTable` structure is marked with the <xref:System.SerializableAttribute> attribute.  
@@ -127,12 +117,12 @@ csc GetStream.cs /resource:AppResources.resources
  You can build the necessary resource file and assemblies and run the app by executing the following batch file. You must use the `/r` option to supply Resgen.exe with a reference to UIElements.dll so that it can access information about the `PersonTable` structure. If you're using C#, replace the `vbc` compiler name with `csc`, and replace the `.vb` extension with `.cs`.  
   
 ```  
-vbc /t:library UIElements.vb  
-vbc CreateResources.vb /r:UIElements.dll  
+vbc -t:library UIElements.vb  
+vbc CreateResources.vb -r:UIElements.dll  
 CreateResources  
   
-resgen UIResources.resx  /r:UIElements.dll  
-vbc GetObject.vb /r:UIElements.dll /resource:UIResources.resources  
+resgen UIResources.resx  -r:UIElements.dll  
+vbc GetObject.vb -r:UIElements.dll -resource:UIResources.resources  
   
 GetObject.exe  
 ```  

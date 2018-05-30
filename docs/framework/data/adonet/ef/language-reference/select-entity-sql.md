@@ -1,19 +1,7 @@
 ---
 title: "SELECT (Entity SQL)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 9a33bd0d-ded1-41e7-ba3c-305502755e3b
-caps.latest.revision: 4
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # SELECT (Entity SQL)
 Specifies the elements returned by a query.  

@@ -1,18 +1,8 @@
 ---
 title: "&lt;certificateValidator&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 86161897-c20f-4ad8-9d7f-050c247251bf
-caps.latest.revision: 6
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;certificateValidator&gt;

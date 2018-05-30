@@ -1,14 +1,6 @@
 ---
 title: "Redirecting Assembly Versions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "assembly binding, redirection"
   - "redirecting assembly binding to earlier version"
@@ -16,7 +8,6 @@ helpviewer_keywords:
   - "application configuration [.NET Framework]"
   - "assemblies [.NET Framework], binding redirection"
 ms.assetid: 88fb1a17-6ac9-4b57-8028-193aec1f727c
-caps.latest.revision: 26
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -51,12 +42,11 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
   
 ```xml  
 <dependentAssembly>  
-        <assemblyIdentity name="someAssembly"  
-          publicKeyToken="32ab4ba45e0a69a1"  
-          culture="en-us" />  
-  
-        <bindingRedirect oldVersion="7.0.0.0" newVersion="8.0.0.0" />  
-      </dependentAssembly>  
+  <assemblyIdentity name="someAssembly"  
+    publicKeyToken="32ab4ba45e0a69a1"  
+    culture="en-us" />  
+  <bindingRedirect oldVersion="7.0.0.0" newVersion="8.0.0.0" />  
+</dependentAssembly>  
 ```  
   
 ### Relying on automatic binding redirection  
@@ -165,7 +155,7 @@ You can redirect compile-time binding references to .NET Framework assemblies, t
  [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Configuring Apps](../../../docs/framework/configure-apps/index.md)  
- [Configuring .NET Framework Apps](http://msdn.microsoft.com/en-us/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)  
+ [Configuring .NET Framework Apps](http://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)  
  [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
  [How to: Create a Publisher Policy](../../../docs/framework/configure-apps/how-to-create-a-publisher-policy.md)

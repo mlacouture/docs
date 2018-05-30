@@ -1,14 +1,7 @@
 ---
 title: "Socket Performance Enhancements in Version 3.5"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 225aa5f9-c54b-4620-ab64-5cd100cfd54c
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

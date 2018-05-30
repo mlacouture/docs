@@ -1,12 +1,6 @@
 ---
 title: "How to: Configure Network Tracing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "formatting [.NET Framework], network tracing"
   - "network tracing, configuring"
@@ -17,7 +11,6 @@ helpviewer_keywords:
   - "application configuration files, network tracing"
   - "sockets, trace output"
 ms.assetid: 5ef9fe4b-8d3d-490e-9259-1d014b2181af
-caps.latest.revision: 23
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -104,4 +97,4 @@ The application or computer configuration file holds the settings that determine
  [Interpreting Network Tracing](../../../docs/framework/network-programming/interpreting-network-tracing.md)  
  [Network Tracing in the .NET Framework](../../../docs/framework/network-programming/network-tracing.md)  
  [Enabling Network Tracing](../../../docs/framework/network-programming/enabling-network-tracing.md)  
- [Introduction to Instrumentation and Tracing](http://msdn.microsoft.com/en-us/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)
+ [Introduction to Instrumentation and Tracing](http://msdn.microsoft.com/library/e924e57c-33cf-4b0e-9e7f-a45d13e38f2c)

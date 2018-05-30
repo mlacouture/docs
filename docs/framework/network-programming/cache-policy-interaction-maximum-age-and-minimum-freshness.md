@@ -1,12 +1,6 @@
 ---
 title: "Cache Policy Interaction—Maximum Age and Minimum Freshness"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "time-based cache policies"
   - "Revalidate policy"
@@ -16,7 +10,6 @@ helpviewer_keywords:
   - "minimum freshness policy"
   - "age of cached resources"
 ms.assetid: 6567d451-ecec-496c-95a3-a415b99ba52a
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

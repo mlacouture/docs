@@ -1,15 +1,9 @@
 ---
 title: "Using a Synchronous Server Socket"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "synchronous server sockets"
@@ -23,7 +17,6 @@ helpviewer_keywords:
   - "sockets, synchronous server sockets"
   - "Internet, sockets"
 ms.assetid: d1ce882e-653e-41f5-9289-844ec855b804
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

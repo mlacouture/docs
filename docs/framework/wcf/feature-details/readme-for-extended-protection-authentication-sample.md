@@ -1,18 +1,8 @@
 ---
 title: "ReadMe for Extended Protection Authentication Sample"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 80bf2e97-398d-4db5-9040-d96478a2ccab
-caps.latest.revision: 3
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # ReadMe for Extended Protection Authentication Sample

@@ -1,19 +1,12 @@
 ---
 title: "Interoperability (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "COM interop"
   - "interoperability"
   - "platform invoke, accessing APIs with C#"
   - "C# language, interoperability"
 ms.assetid: 238bb95a-e962-4026-bbd5-197055bdb8ee
-caps.latest.revision: 31
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Interoperability (C# Programming Guide)
 Interoperability enables you to preserve and take advantage of existing investments in unmanaged code. Code that runs under the control of the common language runtime (CLR) is called *managed code*, and code that runs outside the CLR is called *unmanaged code*. COM, COM+, C++ components, ActiveX components, and Microsoft Win32 API are examples of unmanaged code.  
@@ -45,5 +38,5 @@ Interoperability enables you to preserve and take advantage of existing investme
 ## See Also  
  <xref:System.Runtime.InteropServices.Marshal.ReleaseComObject%2A?displayProperty=nameWithType>  
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
- [Interoperating with Unmanaged Code](https://msdn.microsoft.com/library/sd10k43k)  
+ [Interoperating with Unmanaged Code](../../../../docs/framework/interop/index.md)  
  [Walkthrough: Office Programming](../../../csharp/programming-guide/interop/walkthrough-office-programming.md)

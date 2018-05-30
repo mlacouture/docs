@@ -2,10 +2,6 @@
 title: PutMethod function (Unmanaged API Reference)
 description: The PutMethod function creates a method.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "PutMethod"
 api_location: 
@@ -20,7 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # PutMethod function
 Creates a method.

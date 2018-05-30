@@ -1,16 +1,10 @@
 ---
 title: "Custom Date and Time Format Strings"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "formatting [.NET Framework], dates"
   - "custom DateTime format string"
@@ -20,10 +14,8 @@ helpviewer_keywords:
   - "formatting [.NET Framework], time"
   - "date and time strings"
 ms.assetid: 98b374e3-0cc2-4c78-ab44-efb671d71984
-caps.latest.revision: 79
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Custom Date and Time Format Strings
 A date and time format string defines the text representation of a <xref:System.DateTime> or <xref:System.DateTimeOffset> value that results from a formatting operation . It can also define the representation of a date and time value that is required in a parsing operation in order to successfully convert the string to a date and time. A custom format string consists of one or more custom date and time format specifiers. Any string that is not a [standard date and time format string](../../../docs/standard/base-types/standard-date-and-time-format-strings.md) is interpreted as a custom date and time format string.  
@@ -31,7 +23,7 @@ A date and time format string defines the text representation of a <xref:System.
  Custom date and time format strings can be used with both <xref:System.DateTime> and <xref:System.DateTimeOffset> values.  
   
 > [!TIP]
->  You can download the [Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either date and time or numeric values and displays the result string.  
+>  You can download the [Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either date and time or numeric values and displays the result string.  
   
 <a name="table"></a> In formatting operations, custom date and time format strings can be used either with the `ToString` method of a date and time instance or with a method that supports composite formatting. The following example illustrates both uses.  
   
@@ -606,7 +598,7 @@ A date and time format string defines the text representation of a <xref:System.
  The ":" custom format specifier represents the time separator, which is used to differentiate hours, minutes, and seconds. The appropriate localized time separator is retrieved from the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current or specified culture.  
   
 > [!NOTE]
->  To change the time separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `hh'_'dd'_'ss` produces a result string in which "_" (an underscore) is always used as the time separator. To change the time separator for all dates for a culture, either change the value of the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current culture, or instantiate a <xref:System.Globalization.DateTimeFormatInfo> object, assign the character to its <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A> property, and call an overload of the formatting method that includes an <xref:System.IFormatProvider> parameter.  
+>  To change the time separator for a particular date and time string, specify the separator character within a literal string delimiter. For example, the custom format string `hh'_'dd'_'ss` produces a result string in which "\_" (an underscore) is always used as the time separator. To change the time separator for all dates for a culture, either change the value of the <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A?displayProperty=nameWithType> property of the current culture, or instantiate a <xref:System.Globalization.DateTimeFormatInfo> object, assign the character to its <xref:System.Globalization.DateTimeFormatInfo.TimeSeparator%2A> property, and call an overload of the formatting method that includes an <xref:System.IFormatProvider> parameter.  
   
  If the ":" format specifier is used without other custom format specifiers, it is interpreted as a standard date and time format specifier and throws a <xref:System.FormatException>. For more information about using a single format specifier, see [Using Single Custom Format Specifiers](#UsingSingleSpecifiers) later in this topic.  
   
@@ -686,7 +678,7 @@ A date and time format string defines the text representation of a <xref:System.
 ### Control Panel settings  
  The **Regional and Language Options** settings in Control Panel influence the result string produced by a formatting operation that includes many of the custom date and time format specifiers. These settings are used to initialize the <xref:System.Globalization.DateTimeFormatInfo> object associated with the current thread culture, which provides values used to govern formatting. Computers that use different settings generate different result strings.  
   
- In addition, if you use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29?displayProperty=nameWithType> constructor to instantiate a new <xref:System.Globalization.CultureInfo> object that represents the same culture as the current system culture, any customizations established by the **Regional and Language Options** item in Control Panel will be applied to the new <xref:System.Globalization.CultureInfo> object. You can use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructo to create a <xref:System.Globalization.CultureInfo> object that does not reflect a system's customizations.  
+ In addition, if you use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%29?displayProperty=nameWithType> constructor to instantiate a new <xref:System.Globalization.CultureInfo> object that represents the same culture as the current system culture, any customizations established by the **Regional and Language Options** item in Control Panel will be applied to the new <xref:System.Globalization.CultureInfo> object. You can use the <xref:System.Globalization.CultureInfo.%23ctor%28System.String%2CSystem.Boolean%29?displayProperty=nameWithType> constructor to create a <xref:System.Globalization.CultureInfo> object that does not reflect a system's customizations.  
   
 ### DateTimeFormatInfo properties  
  Formatting is influenced by properties of the current <xref:System.Globalization.DateTimeFormatInfo> object, which is provided implicitly by the current thread culture or explicitly by the <xref:System.IFormatProvider> parameter of the method that invokes formatting. For the <xref:System.IFormatProvider> parameter, you should specify a <xref:System.Globalization.CultureInfo> object, which represents a culture, or a <xref:System.Globalization.DateTimeFormatInfo> object.  
@@ -698,4 +690,4 @@ A date and time format string defines the text representation of a <xref:System.
  <xref:System.IFormatProvider?displayProperty=nameWithType>  
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [Standard Date and Time Format Strings](../../../docs/standard/base-types/standard-date-and-time-format-strings.md)  
- [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)
+ [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)

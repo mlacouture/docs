@@ -1,14 +1,6 @@
 ---
 title: "How to: Use the Modifiers and GenerateMember Properties"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -23,16 +15,12 @@ helpviewer_keywords:
   - "form inheritance"
   - "Windows Forms, inheritance"
 ms.assetid: 3381a5e4-e1a3-44e2-a765-a0b758937b85
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # How to: Use the Modifiers and GenerateMember Properties
 When you place a component on a Windows Form, two properties are provided by the design environment: `GenerateMember` and `Modifiers`. The `GenerateMember` property specifies when the Windows Forms Designer generates a member variable for a component. The `Modifiers` property is the access modifier assigned to that member variable. If the value of the `GenerateMember` property is `false`, the value of the `Modifiers` property has no effect.  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ### To specify whether a component is a member of the form  
   

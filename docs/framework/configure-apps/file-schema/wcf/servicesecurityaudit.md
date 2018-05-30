@@ -1,18 +1,8 @@
 ---
 title: "&lt;serviceSecurityAudit&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: ba517369-a034-4f8e-a2c4-66517716062b
-caps.latest.revision: 17
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;serviceSecurityAudit&gt;
@@ -29,7 +19,7 @@ Specifies settings that enable auditing of security events during service operat
 ```xml  
 <serviceSecurityAudit   
    auditLogLocation="Default/Application/Security"  
-   messageAuthenticationAuditLevel= None/Success/Failure/SuccessAndFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessAndFailure"  
+   messageAuthenticationAuditLevel= None/Success/Failure/SuccessOrFailure"   serviceAuthorizationAuditLevel="None/Success/Failure/SuccessOrFailure"  
    suppressAuditFailure="Boolean"  
 />  
 ```  
@@ -43,8 +33,8 @@ Specifies settings that enable auditing of security events during service operat
 |---------------|-----------------|  
 |auditLogLocation|Specifies the location of the audit log. Valid values include the following:<br /><br /> -   Default: Security events are written to the application log on Windows XP, and to the Event Log on Windows Server 2003 and Windows Vista.<br />-   Application: Audit events are written to the Application Event Log.<br />-   Security: Audit events are written to the Security Event Log.<br /><br /> The default value is Default. For more information, see <xref:System.ServiceModel.AuditLogLocation>.|  
 |suppressAuditFailure|A Boolean value that specifies the behavior for suppressing failures of writing to the audit log.<br /><br /> Applications should be notified for failures of writing to the audit log. If your application is not designed to handle audit failures, you should use this attribute to suppress failures in writing to the audit log.<br /><br /> If this attribute is `true`, exceptions other than OutOfMemoryException, StackOverFlowException, ThreadAbortException, and ArgumentException that result from attempts to write audit events are handled by the system, and are not propagated to the application. If this attribute is `false`, all exceptions that result from attempts to write audit events are passed up to the application.<br /><br /> The default is `true`.|  
-|serviceAuthorizationAuditLevel|Specifies the types of authorization events that are recorded in the audit log. Valid values include the following:<br /><br /> -   None: No auditing of service authorization events is performed.<br />-   Success: Only successful service authorization events are audited.<br />-   Failure: Only failure service authorization events are audited.<br />-   SuccessAndFailure: Both success and failure service authorization events are audited.<br /><br /> The default value is None. For more information, see <xref:System.ServiceModel.AuditLevel>.|  
-|messageAuthenticationAuditLevel|Specifies the type of message authentication audit events logged. Valid values include the following:<br /><br /> -   None: No audit events are generated.<br />-   Success: Only successful security (full validation including message signature validation, cipher, and token validation) events are logged.<br />-   Failure: Only failure events are logged.<br />-   SuccessAndFailure: Both success and failure events are logged.<br /><br /> The default value is None. For more information, see <xref:System.ServiceModel.AuditLevel>.|  
+|serviceAuthorizationAuditLevel|Specifies the types of authorization events that are recorded in the audit log. Valid values include the following:<br /><br /> -   None: No auditing of service authorization events is performed.<br />-   Success: Only successful service authorization events are audited.<br />-   Failure: Only failure service authorization events are audited.<br />-   SuccessOrFailure: Both success and failure service authorization events are audited.<br /><br /> The default value is None. For more information, see <xref:System.ServiceModel.AuditLevel>.|  
+|messageAuthenticationAuditLevel|Specifies the type of message authentication audit events logged. Valid values include the following:<br /><br /> -   None: No audit events are generated.<br />-   Success: Only successful security (full validation including message signature validation, cipher, and token validation) events are logged.<br />-   Failure: Only failure events are logged.<br />-   SuccessOrFailure: Both success and failure events are logged.<br /><br /> The default value is None. For more information, see <xref:System.ServiceModel.AuditLevel>.|  
   
 ### Child Elements  
  None.  
@@ -56,7 +46,7 @@ Specifies settings that enable auditing of security events during service operat
 |[\<behavior>](../../../../../docs/framework/configure-apps/file-schema/wcf/behavior-of-endpointbehaviors.md)|Specifies a behavior element.|  
   
 ## Remarks  
- This configuraton element is used to audit [!INCLUDE[indigo1](../../../../../includes/indigo1-md.md)] authentication events. When auditing is enabled, either successful or failed authentication attempts (or both) can be audited. The events are written to one of three event logs: application, security, or the default log for the operating system version. The event logs can all be viewed using the Windows Event viewer.  
+ This configuraton element is used to audit Windows Communication Foundation (WCF) authentication events. When auditing is enabled, either successful or failed authentication attempts (or both) can be audited. The events are written to one of three event logs: application, security, or the default log for the operating system version. The event logs can all be viewed using the Windows Event viewer.  
   
  For a detailed example of using this configuration element, see [Service Auditing Behavior](../../../../../docs/framework/wcf/samples/service-auditing-behavior.md).  
   
@@ -66,7 +56,7 @@ Specifies settings that enable auditing of security events during service operat
   
  Message authentication audit events cover whether the message was tampered with, whether the message has expired and whether the client can authenticate to the service. They provide information about whether the authentication succeeded or failed along with the identity of the client and the endpoint the message was sent to along with the action associated with the message.  
   
- Service authorization audit events cover the authorization decision made by a service authorization manager. They provide information about whether authorization succeeded of failed along with the identity of the client, the endpoint the message was sent to, the action associated with the message, the identifier of the authorization context that was generated from the incoming message and the type of the authorization manager that made the access decision.  
+ Service authorization audit events cover the authorization decision made by a service authorization manager. They provide information about whether authorization succeeded or failed along with the identity of the client, the endpoint the message was sent to, the action associated with the message, the identifier of the authorization context that was generated from the incoming message and the type of the authorization manager that made the access decision.  
   
 ## Example  
   

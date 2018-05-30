@@ -1,14 +1,7 @@
 ---
 title: Local functions vs. lambda expressions
 description: Learn why local functions might be a better choice than lambda expressions.
-keywords: C#, .NET, .NET Core, Latest Features, What's New, local functions, lambda expressions
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/27/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 368d1752-3659-489a-97b4-f15d87e49ae3
 ---
 # Local functions compared to lambda expressions
@@ -49,7 +42,7 @@ value before they can be re-assigned to a body that references the same
 lambda expression.
 
 Definite assignment rules also affect any variables that are captured
-by the local function or lamdba epression. Both local functions and
+by the local function or lambda expression. Both local functions and
 lambda expression rules demand that any captured variables are definitely
 assigned at the point when the local function or lambda expression is
 converted to a delegate. The difference is that lambda expressions are converted
@@ -65,20 +58,20 @@ Third, the compiler can perform static analysis that enables local functions to
 definitely assign captured variables in the enclosing scope. Consider this example:
 
 ```csharp
-bool M()
+int M()
 {
     int y;
-    Local();
+    LocalFunction();
     return y;
 
-    void Local() => y = 0;
+    void LocalFunction() => y = 0;
 }
 ```
 
-The compiler can determine that `Local` definitely assigns `y` when called. Because `Local` is called before the `return` statement, `y` is definitiely
+The compiler can determine that `LocalFunction` definitely assigns `y` when called. Because `LocalFunction` is called before the `return` statement, `y` is definitiely
 assigned at the `return` statement.
 
-The analysis that enables that analysis enables the fourth difference.
+The analysis that enables the example analysis enables the fourth difference.
 Depending on their use, local functions can avoid heap allocations that
 are always necessary for lambda expressions. If a local function is never
 converted to a delegate, and none of the variables captured by the local function is captured by other lambdas or local functions that are converted to delegates, the compiler can avoid heap allocations. 

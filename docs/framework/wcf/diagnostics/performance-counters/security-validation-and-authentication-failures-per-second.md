@@ -1,18 +1,8 @@
 ---
 title: "Security Validation and Authentication Failures Per Second"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 266c3bd3-2ffc-4471-94b7-3675443be1ac
-caps.latest.revision: 8
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # Security Validation and Authentication Failures Per Second

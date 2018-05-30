@@ -1,16 +1,10 @@
 ---
 title: "How to: Encrypt XML Elements with Asymmetric Keys"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "cryptography [.NET Framework], asymmetric keys"
   - "AES algorithm"
@@ -23,10 +17,8 @@ helpviewer_keywords:
   - "Rijndael"
   - "encryption [.NET Framework], asymmetric keys"
 ms.assetid: a164ba4f-e596-4bbe-a9ca-f214fe89ed48
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # How to: Encrypt XML Elements with Asymmetric Keys
 You can use the classes in the <xref:System.Security.Cryptography.Xml> namespace to encrypt an element within an XML document.  XML Encryption is a standard way to exchange or store encrypted XML data, without worrying about the data being easily read.  For more information about the XML Encryption standard, see the World Wide Web Consortium (W3C) specification for XML Encryption located at http://www.w3.org/TR/xmldsig-core/.  

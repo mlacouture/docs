@@ -1,28 +1,18 @@
 ---
 title: "Viewing Type Information"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "types, viewing type information"
   - "Type object"
   - "viewing type information"
   - "reflection, viewing type information"
 ms.assetid: 7e7303a9-4064-4738-b4e7-b75974ed70d2
-caps.latest.revision: 13
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Viewing Type Information
 The <xref:System.Type?displayProperty=nameWithType> class is central to reflection. The common language runtime creates the **Type** for a loaded type when reflection requests it. You can use a **Type** object's methods, fields, properties, and nested classes to find out everything about that type.  

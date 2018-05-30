@@ -1,18 +1,8 @@
 ---
 title: "System.ServiceModel.Security.SecurityImpersonationFailure"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: e0e61834-72ac-4a58-af32-94e3206a9369
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # System.ServiceModel.Security.SecurityImpersonationFailure

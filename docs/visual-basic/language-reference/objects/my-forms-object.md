@@ -1,26 +1,18 @@
 ---
 title: "My.Forms Object"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "My.Forms"
   - "My.MyProject.Forms"
 helpviewer_keywords: 
   - "My.Forms object"
 ms.assetid: f6bff4e6-6769-4294-956b-037aa6106d2a
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # My.Forms Object
 Provides properties for accessing an instance of each Windows form declared in the current project.  
   
 ## Remarks  
- The `My.Forms` object provides an instance of each form in the current project. The name of the property is the same as the name of the form that the property accesses. For information about adding forms to a project, see [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/en-us/3d7bb25f-fd90-47cf-9378-fa0d764686c1).  
+ The `My.Forms` object provides an instance of each form in the current project. The name of the property is the same as the name of the form that the property accesses.   
   
  You can access the forms provided by the `My.Forms` object by using the name of the form, without qualification. Because the property name is the same as the form's type name, this allows you to access a form as if it had a default instance. For example, `My.Forms.Form1.Show` is equivalent to `Form1.Show`.  
   
@@ -50,7 +42,7 @@ Provides properties for accessing an instance of each Windows form declared in t
   
  [!code-vb[VbVbalrMyForms#2](../../../visual-basic/language-reference/objects/codesnippet/VisualBasic/my-forms-object_1.vb)]  
   
- For this example to work, your project must have a form named `SidebarMenu`. For more information, see [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/en-us/3d7bb25f-fd90-47cf-9378-fa0d764686c1).  
+ For this example to work, your project must have a form named `SidebarMenu`.  
   
  This code will work only in a Windows Application project.  
   
@@ -73,7 +65,6 @@ Provides properties for accessing an instance of each Windows form declared in t
  <xref:System.Windows.Forms.Form>  
  <xref:System.Windows.Forms.Form.Close%2A>  
  [Objects](../../../visual-basic/language-reference/objects/index.md)  
- [How to: Add Windows Forms to a Project](http://msdn.microsoft.com/en-us/3d7bb25f-fd90-47cf-9378-fa0d764686c1)  
  [Is Operator](../../../visual-basic/language-reference/operators/is-operator.md)  
  [IsNot Operator](../../../visual-basic/language-reference/operators/isnot-operator.md)  
  [Accessing Application Forms](../../../visual-basic/developing-apps/programming/accessing-application-forms.md)

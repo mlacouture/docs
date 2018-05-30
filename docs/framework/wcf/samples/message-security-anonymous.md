@@ -1,31 +1,21 @@
 ---
 title: "Message Security Anonymous"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "WS Security"
 ms.assetid: c321cbf9-8c05-4cce-b5a5-4bf7b230ee03
-caps.latest.revision: 52
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # Message Security Anonymous
-The Message Security Anonymous sample demonstrates how to implement a [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] application that uses message-level security with no client authentication but that requires server authentication using the server's X.509 certificate. All application messages between the client and server are signed and encrypted. This sample is based on the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) sample. This sample consists of a client console program (.exe) and a service library (.dll) hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern.  
+The Message Security Anonymous sample demonstrates how to implement a Windows Communication Foundation (WCF) application that uses message-level security with no client authentication but that requires server authentication using the server's X.509 certificate. All application messages between the client and server are signed and encrypted. This sample is based on the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) sample. This sample consists of a client console program (.exe) and a service library (.dll) hosted by Internet Information Services (IIS). The service implements a contract that defines a request-reply communication pattern.  
   
 > [!NOTE]
 >  The setup procedure and build instructions for this sample are located at the end of this topic.  
   
  This sample adds a new operation to the calculator interface that returns `True` if the client was not authenticated.  
-  
-```  
+
+```csharp
 public class CalculatorService : ICalculator  
 {  
     public bool IsCallerAnonymous()  
@@ -35,8 +25,8 @@ public class CalculatorService : ICalculator
     }  
     ...  
 }  
-```  
-  
+```
+
  The service exposes a single endpoint for communicating with the service, defined using a configuration file (Web.config). The endpoint consists of an address, a binding, and a contract. The binding is configured with a `wsHttpBinding` binding. The default security mode for the `wsHttpBinding` binding is `Message`. The `clientCredentialType` attribute is set to `None`.  
   
 ```xml  
@@ -116,8 +106,8 @@ public class CalculatorService : ICalculator
  The sample sets the <xref:System.ServiceModel.Security.X509ServiceCertificateAuthentication.CertificateValidationMode%2A> to <xref:System.ServiceModel.Security.X509CertificateValidationMode.PeerOrChainTrust> for authenticating the service's certificate. This is done in the client's App.config file in the `behaviors` section. This means that if the certificate is in the user's Trusted People store, then it is trusted without performing a validation of the certificate's issuer chain. This setting is used here for convenience so that the sample can be run without requiring certificates issued by a certification authority (CA). This setting is less secure than the default, ChainTrust. The security implications of this setting should be carefully considered before using `PeerOrChainTrust` in production code.  
   
  The client implementation adds a call to the `IsCallerAnonymous` method and otherwise does not differ from the [WSHttpBinding](../../../../docs/framework/wcf/samples/wshttpbinding.md) sample.  
-  
-```  
+
+```csharp
 // Create a client with a client endpoint configuration.  
 CalculatorClient client = new CalculatorClient();  
   
@@ -138,8 +128,8 @@ client.Close();
 Console.WriteLine();  
 Console.WriteLine("Press <ENTER> to terminate client.");  
 Console.ReadLine();  
-```  
-  
+```
+
  When you run the sample, the operation requests and responses are displayed in the client console window. Press ENTER in the client window to shut down the client.  
   
 ```  
@@ -159,7 +149,7 @@ Press <ENTER> to terminate client.
   
      The following lines from the Setup.bat batch file create the server certificate to be used.  
   
-    ```  
+    ```bat
     echo ************  
     echo Server cert setup starting  
     echo %SERVER_NAME%  
@@ -183,7 +173,7 @@ Press <ENTER> to terminate client.
   
      The following lines in the Setup.bat batch file make the server certificate stored in the LocalMachine store accessible to the [!INCLUDE[vstecasp](../../../../includes/vstecasp-md.md)] worker process account.  
   
-    ```  
+    ```bat
     echo ************  
     echo setting privileges on server certificates  
     echo ************  
@@ -215,7 +205,7 @@ Press <ENTER> to terminate client.
   
 4.  Launch Client.exe from \client\bin. Client activity is displayed on the client console application.  
   
-5.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+5.  If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 ### To run the sample across computers  
   
@@ -237,13 +227,13 @@ Press <ENTER> to terminate client.
   
 9. On the client, run ImportServiceCert.bat in a Visual Studio command prompt opened with administrator privileges. This imports the service certificate from the Service.cer file into the CurrentUser - TrustedPeople store.  
   
-10. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/en-us/8787c877-5e96-42da-8214-fa737a38f10b).  
+10. On the client computer, launch Client.exe from a command prompt. If the client and service are not able to communicate, see [Troubleshooting Tips](http://msdn.microsoft.com/library/8787c877-5e96-42da-8214-fa737a38f10b).  
   
 ### To clean up after the sample  
   
 -   Run Cleanup.bat in the samples folder after you have finished running the sample.  
   
 > [!NOTE]
->  This script does not remove service certificates on a client when running this sample across computers. If you have run [!INCLUDE[indigo1](../../../../includes/indigo1-md.md)] samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com.`  
+>  This script does not remove service certificates on a client when running this sample across computers. If you have run Windows Communication Foundation (WCF) samples that use certificates across computers, be sure to clear the service certificates that have been installed in the CurrentUser - TrustedPeople store. To do this, use the following command: `certmgr -del -r CurrentUser -s TrustedPeople -c -n <Fully Qualified Server Machine Name>` For example: `certmgr -del -r CurrentUser -s TrustedPeople -c -n server1.contoso.com.`  
   
 ## See Also

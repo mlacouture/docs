@@ -1,21 +1,17 @@
 ---
 title: "HttpWebRequest._HttpResponse Field"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
-api_name:
+api_name: 
   - "System.Net.HttpWebRequest._HttpResponse"
-api_location:
+api_location: 
   - "System.dll"
 api_type: 
   - "Assembly"
 ms.assetid: eab9b789-beb4-4c28-b2d8-78debc7ba129
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 
 # HttpWebRequest.\_HttpResponse Field

@@ -1,12 +1,6 @@
 ---
 title: "Time-Based Cache Policies"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "time-based cache policies"
   - "cache synchronization date policy"
@@ -23,7 +17,6 @@ helpviewer_keywords:
   - "minimum freshness policy"
   - "age of cached resources"
 ms.assetid: 74f0bcaf-5c95-40c1-9967-f3bbf1d2360a
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

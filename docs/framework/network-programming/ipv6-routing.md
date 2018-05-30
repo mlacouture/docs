@@ -1,14 +1,7 @@
 ---
 title: "IPv6 Routing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: c98731b4-b542-46a2-9947-1cea63c186b2
-caps.latest.revision: 4
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -1,15 +1,9 @@
 ---
 title: "Automatic Proxy Detection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "automatic proxy detections"
   - "Web Proxy Auto-Discovery"
@@ -20,7 +14,6 @@ helpviewer_keywords:
   - "network"
   - "WPAD (Web Proxy Auto-Discovery)"
 ms.assetid: fcd9c3bd-93de-4c92-8ff3-837327ad18de
-caps.latest.revision: 18
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

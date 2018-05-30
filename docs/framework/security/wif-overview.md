@@ -1,18 +1,8 @@
 ---
 title: "Windows Identity Foundation 4.5 Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 5f723345-7270-49e2-b638-b3a34bd40517
-caps.latest.revision: 11
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # Windows Identity Foundation 4.5 Overview

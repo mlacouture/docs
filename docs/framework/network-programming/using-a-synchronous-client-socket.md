@@ -1,15 +1,9 @@
 ---
 title: "Using a Synchronous Client Socket"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "sending data, sockets"
@@ -23,7 +17,6 @@ helpviewer_keywords:
   - "Internet, sockets"
   - "client sockets"
 ms.assetid: 945d00c6-7202-466c-9df9-140b84156d43
-caps.latest.revision: 12
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

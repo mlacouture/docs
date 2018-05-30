@@ -1,16 +1,9 @@
 ---
 title: "Unable to obtain a stream for the log"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrApplicationLog_ExhaustedPossibleStreamNames"
 ms.assetid: 33994f52-8efb-4790-a459-033e5c1db632
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Unable to obtain a stream for the log
 Unable to obtain a stream for the log. Potential file names based on \<name> are already in use.  
@@ -28,5 +21,5 @@ Unable to obtain a stream for the log. Potential file names based on \<name> are
 ## See Also  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener>  
  <xref:Microsoft.VisualBasic.Logging.FileLogTraceListener.LogFileCreationSchedule%2A>  
- [My.Application.Log Object](../../visual-basic/language-reference/objects/my-application-log-object.md)  
- [My.Log Object](../../visual-basic/language-reference/objects/my-log-object.md)
+ [My.Application.Log](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)  
+ [My.Application.Info.DirectoryPath](xref:Microsoft.VisualBasic.ApplicationServices.ApplicationBase.Log)

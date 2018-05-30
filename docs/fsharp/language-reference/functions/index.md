@@ -1,17 +1,8 @@
 ---
 title: Functions (F#)
 description: Learn about functions in F# and how F# supports common functional programming constructs.
-keywords: visual f#, f#, functional programming
-author: cartermp
-ms.author: phcart
 ms.date: 05/16/2016
-ms.topic: language-reference
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 6dea2c3e-2f9d-4c9d-97a2-d8f9a72b6f4c 
 ---
-
 # Functions
 
 Functions are the fundamental unit of program execution in any programming language. As in other languages, an F# function has a name, can have parameters and take arguments, and has a body. F# also supports functional programming constructs such as treating functions as values, using unnamed functions in expressions, composition of functions to form new functions, curried functions, and the implicit definition of functions by way of the partial application of function arguments.
@@ -184,11 +175,11 @@ let result2 = Compose2 2
 // Pipelining
 // Pipeline operator
 // ( |> ) : 'T1 -> ('T1 -> 'U) -> 'U
-let Pipeline1 x = addOne <| timesTwo x
+let Pipeline2 x = addOne x |> timesTwo
 
 // Backward pipeline operator
 // ( <| ) : ('T -> 'U) -> 'T -> 'U
-let Pipeline2 x = addOne x |> timesTwo
+let Pipeline1 x = addOne <| timesTwo x
 
 // Result is 5
 let result3 = Pipeline1 2

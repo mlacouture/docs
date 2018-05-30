@@ -1,33 +1,21 @@
 ---
 title: "Known Issues in SqlClient for Entity Framework"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-ado"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 48fe4912-4d0f-46b6-be96-3a42c54780f6
-caps.latest.revision: 2
-author: "JennieHubbard"
-ms.author: "jhubbard"
-manager: "jhubbard"
 ---
 # Known Issues in SqlClient for Entity Framework
 This section describes known issues related to the .NET Framework Data Provider for SQL Server (SqlClient).  
   
 ## Trailing Spaces in String Functions  
- [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] ignores trailing spaces in string values. Therefore, passing trailing spaces in the string can lead to unpredictable results, even failures.  
+ SQL Server ignores trailing spaces in string values. Therefore, passing trailing spaces in the string can lead to unpredictable results, even failures.  
   
- If you have to have trailing spaces in your string, you should consider appending a white space character at the end, so that [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] does not trim the string. If the trailing spaces are not required, they should be trimmed before they are passed down the query pipeline.  
+ If you have to have trailing spaces in your string, you should consider appending a white space character at the end, so that SQL Server does not trim the string. If the trailing spaces are not required, they should be trimmed before they are passed down the query pipeline.  
   
 ## RIGHT Function  
  If a non-`null` value is passed as a first argument and 0 is passed as a second argument to `RIGHT(nvarchar(max)`, 0`)` or `RIGHT(varchar(max)`, 0`)`, a `NULL` value will be returned instead of an `empty` string.  
   
 ## CROSS and OUTER APPLY Operators  
- CROSS and OUTER APPLY operators were introduced in [!INCLUDE[ssVersion2005](../../../../../includes/ssversion2005-md.md)]. In some cases the query pipeline might produce a Transact-SQL statement that contains CROSS APPLY and/or OUTER APPLY operators. Because some backend providers, including versions of [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] earlier than [!INCLUDE[ssVersion2005](../../../../../includes/ssversion2005-md.md)], do not support these operators, such queries cannot be executed on these backend providers.  
+ CROSS and OUTER APPLY operators were introduced in [!INCLUDE[ssVersion2005](../../../../../includes/ssversion2005-md.md)]. In some cases the query pipeline might produce a Transact-SQL statement that contains CROSS APPLY and/or OUTER APPLY operators. Because some backend providers, including versions of SQL Server earlier than [!INCLUDE[ssVersion2005](../../../../../includes/ssversion2005-md.md)], do not support these operators, such queries cannot be executed on these backend providers.  
   
  The following are some typical scenarios that might lead to the presence of CROSS APPLY and/or OUTER APPLY operators in the output query:  
   
@@ -54,7 +42,7 @@ SELECT [E] FROM Container.EntitySet AS [E] ORDER BY [E].[NonKeyColumn] DESC SKIP
  Certain database behaviors depend on the compatibility level set to the database. If your `ProviderManifestToken` attribute is set to 2005 and your SQL Server version is 2005, but the compatibility level of a database is set to "80" (SQL Server 2000), the generated [!INCLUDE[tsql](../../../../../includes/tsql-md.md)] will be targeting SQL Server 2005, but might not execute as expected due to the compatibility level setting. For example, you might lose ordering information if a column name in the ORDER BY list matches a column name in the selector.  
   
 ## Nested Queries in Projection  
- Nested queries in a projection clause might get translated into Cartesian product queries on the server. On some back-end servers, including SLQ Server, this can cause the TempDB table to to get quite large. This can decrease server performance.  
+ Nested queries in a projection clause might get translated into Cartesian product queries on the server. On some back-end servers, including SLQ Server, this can cause the TempDB table to get quite large. This can decrease server performance.  
   
  The following is an example of  a nested query in a projection clause:  
   
@@ -63,7 +51,7 @@ SELECT c, (SELECT c, (SELECT c FROM AdventureWorksModel.Vendor AS c  ) As Inner2
 ```  
   
 ## Server Generated GUID Identity Values  
- The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports server-generated GUID type identity values, but the provider must support returning the server-generated identity value after a row was inserted. Starting with [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] 2005, you can return the server-generated GUID type in a [!INCLUDE[ssNoVersion](../../../../../includes/ssnoversion-md.md)] database through the [OUTPUT clause](http://go.microsoft.com/fwlink/?LinkId=169400) .  
+ The [!INCLUDE[adonet_ef](../../../../../includes/adonet-ef-md.md)] supports server-generated GUID type identity values, but the provider must support returning the server-generated identity value after a row was inserted. Starting with SQL Server 2005, you can return the server-generated GUID type in a SQL Server database through the [OUTPUT clause](http://go.microsoft.com/fwlink/?LinkId=169400) .  
   
 ## See Also  
  [SqlClient for the Entity Framework](../../../../../docs/framework/data/adonet/ef/sqlclient-for-the-entity-framework.md)  

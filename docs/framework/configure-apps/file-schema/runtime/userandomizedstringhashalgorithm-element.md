@@ -1,25 +1,15 @@
 ---
 title: "&lt;UseRandomizedStringHashAlgorithm&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "UseRandomizedStringHashAlgorithm element"
   - "<UseRandomizedStringHashAlgorithm> element"
 ms.assetid: c08125d6-56cc-4b23-b482-813ff85dc630
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # &lt;UseRandomizedStringHashAlgorithm&gt; Element
 Determines whether the common language runtime calculates hash codes for strings on a per application domain basis.  

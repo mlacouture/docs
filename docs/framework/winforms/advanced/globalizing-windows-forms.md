@@ -1,14 +1,6 @@
 ---
 title: "Globalizing Windows Forms"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Windows Forms, globalization"
   - "localization [Windows Forms]"
@@ -16,10 +8,6 @@ helpviewer_keywords:
   - "world-ready applications"
   - "global applications [Windows Forms], creating Windows Forms"
 ms.assetid: 72f6cd92-83be-45ec-aa37-9cb8e3ebc3c5
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Globalizing Windows Forms
 *Globalization* is the process of designing and developing a software product that functions for multiple cultures.  
@@ -48,7 +36,7 @@ manager: "wpickett"
   
 -   [Walkthrough: Localizing Windows Forms](http://msdn.microsoft.com/library/y99d1cd3\(v=vs.110\))  
   
--   [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](http://msdn.microsoft.com/en-us/library/7k9fa71y\(v=vs.110\))  
+-   [Walkthrough: Creating a Layout That Adjusts Proportion for Localization](http://msdn.microsoft.com/library/7k9fa71y\(v=vs.110\))  
   
 -   [How to: Create Message Boxes for Bi-Directional Windows Forms](http://msdn.microsoft.com/library/k1689bxh\(v=vs.110\))  
   

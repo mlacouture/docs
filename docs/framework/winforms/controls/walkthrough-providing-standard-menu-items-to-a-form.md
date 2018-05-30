@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Providing Standard Menu Items to a Form"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -18,10 +10,6 @@ helpviewer_keywords:
   - "StatusStrip control [Windows Forms]"
   - "ToolStrip control [Windows Forms]"
 ms.assetid: dac37d98-589e-4d6d-9673-6437e8943122
-caps.latest.revision: 7
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Walkthrough: Providing Standard Menu Items to a Form
 You can provide a standard menu for your forms with the <xref:System.Windows.Forms.MenuStrip> control.  
@@ -41,12 +29,12 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
  To copy the code in this topic as a single listing, see [How to: Provide Standard Menu Items to a Form](../../../../docs/framework/winforms/controls/how-to-provide-standard-menu-items-to-a-form.md).  
   
 > [!NOTE]
->  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/en-us/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
+>  The dialog boxes and menu commands you see might differ from those described in Help depending on your active settings or edition. To change your settings, choose **Import and Export Settings** on the **Tools** menu. For more information, see [Customizing Development Settings in Visual Studio](http://msdn.microsoft.com/library/22c4debb-4e31-47a8-8f19-16f328d7dcd3).  
   
 ## Prerequisites  
  In order to complete this walkthrough, you will need:  
   
--   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where [!INCLUDE[vsprvs](../../../../includes/vsprvs-md.md)] is installed.  
+-   Sufficient permissions to be able to create and run Windows Forms application projects on the computer where Visual Studio is installed.  
   
 ## Creating the Project  
  The first step is to create the project and set up the form.  
@@ -55,7 +43,7 @@ You can provide a standard menu for your forms with the <xref:System.Windows.For
   
 1.  Create a Windows application project called **StandardMenuForm**.  
   
-     For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/en-us/b2f93fed-c635-4705-8d0e-cf079a264efa).  
+     For more information, see [How to: Create a Windows Application Project](http://msdn.microsoft.com/library/b2f93fed-c635-4705-8d0e-cf079a264efa).  
   
 2.  In the Windows Forms Designer, select the form.  
   

@@ -1,14 +1,7 @@
 ---
 title: "Peer Names and PNRP IDs"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: afa538e8-948f-4a98-aa9f-305134004115
-caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

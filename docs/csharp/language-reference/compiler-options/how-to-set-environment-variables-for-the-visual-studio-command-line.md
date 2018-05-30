@@ -1,10 +1,6 @@
 ---
 title: "How to: Set Environment Variables for the Visual Studio Command Line"
-ms.date: "09-29-2017"
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
+ms.date: "09/29/2017"
 f1_keywords: 
   - "cs.build.commandline"
 helpviewer_keywords: 
@@ -19,13 +15,10 @@ helpviewer_keywords:
   - "Visual C# compiler, enabling"
   - "compiling source code, from command line"
 ms.assetid: 7ec09480-5612-4f6a-8d00-ad90ea9bca5d
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Set Environment Variables for the Visual Studio Command Line
 
-The VsDevCmd.bat file sets the appropriate environment variables to enable command-line builds. For more information about VsDevCmd.bat, see [Knowledge Base article Q248802](http://go.microsoft.com/fwlink/?LinkId=225042).  
+The VsDevCmd.bat file sets the appropriate environment variables to enable command-line builds. For more information about VsDevCmd.bat, see [Knowledge Base article Q248802](https://support.microsoft.com/help/248802/you-receive-the-out-of-environment-space-error-message-when-you-execut).  
 
 > [!NOTE]
 > The VsDevCmd.bat file is a new file delivered with Visual Studio 2017. Visual Studio 2015 and earlier versions used VSVARS32.bat for the same purpose. This file was stored in \Program Files\Microsoft Visual Studio\\*Version*\Common7\Tools or Program Files (x86)\Microsoft Visual Studio\\*Version*\Common7\Tools.

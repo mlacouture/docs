@@ -4,9 +4,6 @@ description: The dotnet-sln command provides a convenient option to add, remove,
 author: mairaw
 ms.author: mairaw
 ms.date: 08/14/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: dotnet-cli
 ---
 # dotnet sln
 
@@ -14,7 +11,7 @@ ms.technology: dotnet-cli
 
 ## Name
 
-`dotnet-sln` - Modifies a .NET Core solution file.
+`dotnet sln` - Modifies a .NET Core solution file.
 
 ## Synopsis
 

@@ -1,11 +1,7 @@
 ---
 title: Delete function (Unmanaged API Reference)
-description: The Delete function deletes the specified property and all of its qualifiers from a CIM class definition. 
+description: The Delete function deletes the specified property and all of its qualifiers from a CIM class definition.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "Delete"
 api_location: 
@@ -20,7 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Delete function
 Deletes the specified property and all of its qualifiers from a CIM class definition.

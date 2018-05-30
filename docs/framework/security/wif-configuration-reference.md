@@ -1,18 +1,8 @@
 ---
 title: "WIF Configuration Reference"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 098b80ba-9ebd-4078-a1cb-c1151036a207
-caps.latest.revision: 2
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # WIF Configuration Reference

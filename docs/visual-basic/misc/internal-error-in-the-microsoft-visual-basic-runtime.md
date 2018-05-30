@@ -1,19 +1,12 @@
 ---
 title: "Internal error in the Microsoft Visual Basic runtime"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrInternalError"
 ms.assetid: 1a106880-dec8-4e75-a935-de3ec2096b25
-caps.latest.revision: 9
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Internal error in the Microsoft Visual Basic runtime
-An internal error has occurred in the Microsoft [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] runtime.  
+An internal error has occurred in the Microsoft Visual Basic runtime.  
   
 ## To correct this error  
   
@@ -21,4 +14,4 @@ An internal error has occurred in the Microsoft [!INCLUDE[vbprvb](~/includes/vbp
   
 ## See Also  
  [Error Types](../../visual-basic/programming-guide/language-features/error-types.md)  
- [PAVEOVER Product Support and Accessibility](http://msdn.microsoft.com/en-us/14e1d293-7b6d-40a6-bf3e-a92f8ee6c88c)
+

@@ -1,17 +1,7 @@
 ---
 title: "1126 - InvokedMethodThrewException"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 0d3cff1a-97e6-4b6c-be18-108c6881bfc0
-caps.latest.revision: 2
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # 1126 - InvokedMethodThrewException
 ## Properties  

@@ -1,12 +1,6 @@
 ---
 title: "Proxy Configuration"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Networking"
   - "adaptive proxies"
@@ -17,7 +11,6 @@ helpviewer_keywords:
   - "network, proxy configuration"
   - "proxies, configuring"
 ms.assetid: 353c0a8b-4cee-44f6-8e65-60e286743df9
-caps.latest.revision: 14
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

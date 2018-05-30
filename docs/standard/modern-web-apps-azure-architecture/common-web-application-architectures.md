@@ -1,13 +1,11 @@
 ---
-title: Common web application architectures  
+title: Common web application architectures
 description: Architect modern web applications with ASP.NET Core and Microsoft Azure | common web application architectures
 author: ardalis
 ms.author: wiwagn
 ms.date: 10/06/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
 ---
-#Common Web Application Architectures
+# Common Web Application Architectures
 
 > "If you think good architecture is expensive, try bad architecture."  
 > _- Brian Foote and Joseph Yoder_

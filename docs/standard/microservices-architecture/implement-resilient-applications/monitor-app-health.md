@@ -1,13 +1,9 @@
 ---
 title: Health monitoring
 description: .NET Microservices Architecture for Containerized .NET Applications | Health monitoring
-keywords: Docker, Microservices, ASP.NET, Container
 author: CESARDELATORRE
 ms.author: wiwagn
-ms.date: 05/26/2017
-ms.prod: .net-core
-ms.technology: dotnet-docker
-ms.topic: article
+ms.date: 12/11/2017
 ---
 # Health monitoring
 
@@ -19,7 +15,7 @@ In the typical model, services send reports about their status, and that informa
 
 ## Implementing health checks in ASP.NET Core services
 
-When developing an ASP.NET Core microservice or web application, you can use a library named HealthChecks from the ASP.NET team. (As of May 2017, an early release is available on GitHub).
+When developing an ASP.NET Core microservice or web application, you can use an out-of-band library (not official as part of ASP.NETCore) named `HealthChecks` from the ASP.NET team. It is available at this [GitHub repo](https://github.com/dotnet-architecture/HealthChecks).
 
 This library is easy to use and provides features that let you validate that any specific external resource needed for your application (like a SQL Server database or remote API) is working properly. When you use this library, you can also decide what it means that the resource is healthy, as we explain later.
 
@@ -29,7 +25,7 @@ In order to use this library, you need to first use the library in your microser
 
 You can see how the HealthChecks library is used in the eShopOnContainers sample application. To begin, you need to define what constitutes a healthy status for each microservice. In the sample application, the microservices are healthy if the microservice API is accessible via HTTP and if its related SQL Server database is also available.
 
-In the future, you will be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at https://github.com/aspnet/HealthChecks and copy the following folders to your solution.
+In the future, you will be able to install the HealthChecks library as a NuGet package. But as of this writing, you need to download and compile the code as part of your solution. Clone the code available at https://github.com/dotnet-architecture/HealthChecks and copy the following folders to your solution:
 
   - src/common
   - src/Microsoft.AspNetCore.HealthChecks

@@ -1,12 +1,6 @@
 ---
 title: "Accessing the Internet Through a Proxy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Networking"
   - "global proxy instances"
@@ -18,7 +12,6 @@ helpviewer_keywords:
   - "Internet, proxy instances"
   - "Network Resources"
 ms.assetid: cbf46f63-ce28-486d-b827-ec0f1a9d8319
-caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -1,18 +1,8 @@
 ---
 title: "&lt;security&gt; of &lt;peerTransport&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f73634ed-f896-4968-bf74-5e5ac52d3b6b
-caps.latest.revision: 7
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;security&gt; of &lt;peerTransport&gt;

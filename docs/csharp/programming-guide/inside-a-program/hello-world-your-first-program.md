@@ -1,10 +1,6 @@
 ---
 title: "Hello World -- Your First Program (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "get-started-article"
 f1_keywords: 
   - "cs.program"
   - "vs.csharp.startpage.firstapplication"
@@ -12,9 +8,6 @@ helpviewer_keywords:
   - "examples [C#], Hello World"
   - "Hello World example [C#]"
 ms.assetid: 6493182a-b0b6-4539-a719-518a168cb730
-caps.latest.revision: 39
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Hello World -- Your First Program (C# Programming Guide)
 The following procedure creates a C# version of the traditional "Hello World!" program. The program displays the string `Hello World!`  
@@ -131,7 +124,7 @@ The following procedure creates a C# version of the traditional "Hello World!" p
  [C# Programming Guide](../../../csharp/programming-guide/index.md)  
  [Inside a C# Program](../../../csharp/programming-guide/inside-a-program/index.md)  
  [Strings](../../../csharp/programming-guide/strings/index.md)  
- [\<paveover>C# Sample Applications](http://msdn.microsoft.com/en-us/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
+ [\<paveover>C# Sample Applications](http://msdn.microsoft.com/library/9a9d7aaa-51d3-4224-b564-95409b0f3e15)  
  [C# Reference](../../../csharp/language-reference/index.md)  
  [Main() and Command-Line Arguments](../../../csharp/programming-guide/main-and-command-args/index.md)  
  [Getting Started with Visual C# and Visual Basic](/visualstudio/ide/getting-started-with-visual-csharp-and-visual-basic)

@@ -1,18 +1,8 @@
 ---
 title: "&lt;sslStreamSecurity&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 430a378b-a742-4858-8a12-9f9b235fd627
-caps.latest.revision: 11
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;sslStreamSecurity&gt;

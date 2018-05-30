@@ -1,25 +1,15 @@
 ---
 title: "Working with .resx Files Programmatically"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "resource files, .resx files"
   - ".resx files"
 ms.assetid: 168f941a-2b84-43f8-933f-cf4a8548d824
-caps.latest.revision: 12
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Working with .resx Files Programmatically
 Because XML resource (.resx) files must consist of well-defined XML, including a header that must follow a specific schema followed by data in name/value pairs, you may find that creating these files manually is error-prone. As an alternative, you can create .resx files programmatically by using types and members in the .NET Framework Class Library. You can also use the .NET Framework Class Library to retrieve resources that are stored in .resx files. This topic explains how you can use the types and members in the <xref:System.Resources> namespace to work with .resx files.  
@@ -78,15 +68,15 @@ Because XML resource (.resx) files must consist of well-defined XML, including a
   
  The result is a binary resource file that has the same root file name as the .resx file and a .resources file extension. This file can then be compiled into an executable or a library at compile time. If you are using the Visual Basic compiler, use the following syntax to embed a .resources file in an application's executable:  
   
- **vbc** *filename* **.vb /resource:** *.resourcesFilename*  
+ **vbc** *filename* **.vb -resource:** *.resourcesFilename*  
   
  If you are using C#, the syntax is as follows:  
   
- **csc** *filename* **.cs /resource:** *.resourcesFilename*  
+ **csc** *filename* **.cs -resource:** *.resourcesFilename*  
   
  The .resources file can also be embedded in a satellite assembly by using [Assembly Linker (AL.exe)](../../../docs/framework/tools/al-exe-assembly-linker.md), which has the following basic syntax:  
   
- **al** *resourcesFilename* **/out:** *assemblyFilename*  
+ **al** *resourcesFilename* **-out:** *assemblyFilename*  
   
 ## See Also  
  [Creating Resource Files](../../../docs/framework/resources/creating-resource-files-for-desktop-apps.md)  

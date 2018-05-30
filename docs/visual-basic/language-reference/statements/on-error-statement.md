@@ -1,12 +1,6 @@
 ---
 title: "On Error Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.OnError"
 helpviewer_keywords: 
@@ -28,14 +22,11 @@ helpviewer_keywords:
   - "run-time errors [Visual Basic], handling"
   - "On Error statement [Visual Basic]"
 ms.assetid: ff947930-fb84-40cf-bd66-1ea219561d5c
-caps.latest.revision: 22
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # On Error Statement (Visual Basic)
 Enables an error-handling routine and specifies the location of the routine within a procedure; can also be used to disable an error-handling routine.  
   
- Without an `On Error` statement, any run-time error that occurs is fatal: an error message is displayed, and execution stops.  
+ Without error handling, any run-time error that occurs is fatal: an error message is displayed, and execution stops.  
   
  Whenever possible, we suggest you use structured exception handling in your code, rather than using unstructured exception handling and the `On Error` statement. For more information, see [Try...Catch...Finally Statement](../../../visual-basic/language-reference/statements/try-catch-finally-statement.md).  
   

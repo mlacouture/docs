@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Display Data from a SQL Server Database in a DataGrid Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +8,6 @@ helpviewer_keywords:
   - "DataGrid [WPF], displaying data from SQL Server"
   - "controls [WPF], DataGrid"
 ms.assetid: 6810b048-0a23-4f86-bfa5-97f92b3cfab4
-caps.latest.revision: 13
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Walkthrough: Display Data from a SQL Server Database in a DataGrid Control
 In this walkthrough, you retrieve data from a SQL Server database and display that data in a <xref:System.Windows.Controls.DataGrid> control. You use the ADO.NET Entity Framework to create the entity classes that represent the data, and use LINQ to write a query that retrieves the specified data from an entity class.  
@@ -83,7 +71,7 @@ In this walkthrough, you retrieve data from a SQL Server database and display th
   
 4.  Select the <xref:System.Windows.Window>.  
   
-5.  Using the Properties window or XAML editor, create an event handler for the <xref:System.Windows.Window> named `Window_Loaded` for the <xref:System.Windows.FrameworkElement.Loaded> event. For more information, see [How to: Create a Simple Event Handler](http://msdn.microsoft.com/en-us/b1456e07-9dec-4354-99cf-18666b64f480).  
+5.  Using the Properties window or XAML editor, create an event handler for the <xref:System.Windows.Window> named `Window_Loaded` for the <xref:System.Windows.FrameworkElement.Loaded> event. For more information, see [How to: Create a Simple Event Handler](http://msdn.microsoft.com/library/b1456e07-9dec-4354-99cf-18666b64f480).  
   
      The following shows the XAML for MainWindow.xaml.  
   

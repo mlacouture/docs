@@ -1,18 +1,8 @@
 ---
 title: "&lt;windowsStreamSecurity&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 926bea29-90c7-4a26-9cf0-fb4aa44f6f70
-caps.latest.revision: 10
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;windowsStreamSecurity&gt;

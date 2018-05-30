@@ -1,17 +1,7 @@
 ---
 title: "XML Serializer Generator Tool (Sgen.exe)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: cc1d1f1c-fb26-4be9-885a-3fe84c81cec6
-caps.latest.revision: 4
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # XML Serializer Generator Tool (Sgen.exe)
 The XML Serializer Generator creates an XML serialization assembly for types in a specified assembly in order to improve the startup performance of a <xref:System.Xml.Serialization.XmlSerializer> when it serializes or deserializes objects of the specified types.  
@@ -42,7 +32,7 @@ sgen [options]
 |**/?**|Displays command syntax and options for the tool.|  
   
 ## Remarks  
- When the XML Serializer Generator is not used, a <xref:System.Xml.Serialization.XmlSerializer> generates serialization code and a serialization assembly for each type every time an application is run. To improve the performance of XML serialization startup, use the Sgen.exe tool to generate those assemblies the assemblies in advance. These assemblies can then be deployed with the application.  
+ When the XML Serializer Generator is not used, a <xref:System.Xml.Serialization.XmlSerializer> generates serialization code and a serialization assembly for each type every time an application is run. To improve the performance of XML serialization startup, use the Sgen.exe tool to generate those assemblies in advance. These assemblies can then be deployed with the application.  
   
  The XML Serializer Generator can also improve the performance of clients that use XML Web service proxies to communicate with servers because the serialization process will not incur a performance hit when the type is loaded the first time.  
   
@@ -61,5 +51,5 @@ sgen Data.dll
   
 ## See Also  
  [Tools](../../../docs/framework/tools/index.md)  
- [XML Web Services Overview](http://msdn.microsoft.com/en-us/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)  
+ [XML Web Services Overview](https://msdn.microsoft.com/library/9db0c7b8-bca6-462b-9be5-f5f9a7f05a4d)  
  [Command Prompts](../../../docs/framework/tools/developer-command-prompt-for-vs.md)

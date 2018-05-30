@@ -1,17 +1,9 @@
 ---
 title: "Service Application Programming Architecture"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "ServiceController components, programming architecture"
   - "ServiceBase class, service states"
@@ -22,9 +14,7 @@ helpviewer_keywords:
   - "ServiceProcessInstaller class, service application code model"
   - "Windows Service applications, states"
 ms.assetid: 83230026-d068-4174-97ff-e264c896eb2f
-caps.latest.revision: 15
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
 ---
 # Service Application Programming Architecture

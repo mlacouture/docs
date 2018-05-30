@@ -1,23 +1,12 @@
 ---
 title: "Writing Queries in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.tgt_pltfrm: ""
-ms.topic: "get-started-article"
 helpviewer_keywords: 
   - "queries [LINQ in Visual Basic], writing"
   - "LINQ [Visual Basic], walkthroughs"
   - "LINQ [Visual Basic], writing queries"
   - "writing LINQ queries [Visual Basic]"
 ms.assetid: f0045808-b9fe-4d31-88d1-473d9957211e
-caps.latest.revision: 70
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Walkthrough: Writing Queries in Visual Basic
 This walkthrough demonstrates how you can use Visual Basic language features to write [!INCLUDE[vbteclinqext](~/includes/vbteclinqext-md.md)] query expressions. The walkthrough demonstrates how to create queries on a list of Student objects, how to run the queries, and how to modify them. The queries incorporate several features including object initializers, local type inference, and anonymous types.  
@@ -141,7 +130,7 @@ This walkthrough demonstrates how you can use Visual Basic language features to 
   
  [LINQ to Objects](http://msdn.microsoft.com/library/73cafe73-37cf-46e7-bfa7-97c7eea7ced9)  
   
- [LINQ to SQL](https://msdn.microsoft.com/library/bb386976)  
+ [LINQ to SQL](../../../../framework/data/adonet/sql/linq/index.md)  
   
  [LINQ to XML](http://msdn.microsoft.com/library/f0fe21e9-ee43-4a55-b91a-0800e5782c13)  
   

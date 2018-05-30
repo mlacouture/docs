@@ -1,14 +1,7 @@
 ---
 title: "Peer Name Publication and Resolution"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: f0370e08-9fa6-4ee5-ab78-9a58a20a7da2
-caps.latest.revision: 5
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

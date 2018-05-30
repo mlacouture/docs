@@ -1,12 +1,6 @@
 ---
 title: "HTTP"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "protocols, HTTP"
   - "sending data, HTTP"
@@ -19,7 +13,6 @@ helpviewer_keywords:
   - "HTTP, about HTTP"
   - "HttpWebRequest class, sending and receiving data"
 ms.assetid: 985fe5d8-eb71-4024-b361-41fbdc1618d8
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

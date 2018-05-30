@@ -1,13 +1,7 @@
 ---
 title: "Fundamentals of Garbage Collection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "garbage collection, generations"
   - "garbage collection, background garbage collection"
@@ -16,10 +10,8 @@ helpviewer_keywords:
   - "garbage collection, workstation garbage collection"
   - "garbage collection, managed heap"
 ms.assetid: 67c5a20d-1be1-4ea7-8a9a-92b0b08658d2
-caps.latest.revision: 51
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Fundamentals of Garbage Collection
 <a name="top"></a> In the common language runtime (CLR), the garbage collector serves as an automatic memory manager. It provides the following benefits:  
@@ -100,7 +92,7 @@ manager: "wpickett"
   
  There is a managed heap for each managed process. All threads in the process allocate memory for objects on the same heap.  
   
- To reserve memory, the garbage collector calls the Win32 [VirtualAlloc](http://go.microsoft.com/fwlink/?LinkId=179047) function, and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments as needed, and releases segments back to the operating system (after clearing them of any objects) by calling the Win32 [VirtualFree](http://go.microsoft.com/fwlink/?LinkId=179050) function.  
+ To reserve memory, the garbage collector calls the Win32 [VirtualAlloc](https://msdn.microsoft.com/library/aa366887.aspx) function, and reserves one segment of memory at a time for managed applications. The garbage collector also reserves segments as needed, and releases segments back to the operating system (after clearing them of any objects) by calling the Win32 [VirtualFree](https://msdn.microsoft.com/library/aa366892.aspx) function.  
   
 > [!IMPORTANT]
 >  The size of segments allocated by the garbage collector is implementation-specific and is subject to change at any time, including in periodic updates. Your app should never make assumptions about or depend on a particular segment size, nor should it attempt to configure the amount of memory available for segment allocations.  

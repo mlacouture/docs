@@ -1,25 +1,17 @@
 ---
 title: "WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 api_name: 
   - "System.IO.WindowsRuntimeStreamExtensions.AsRandomAccessStream"
 api_location: 
   - "System.Runtime.WindowsRuntime.dll"
 ms.assetid: dcc72283-caed-49ee-b45d-ccaf94e97129
-caps.latest.revision: 12
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # WindowsRuntimeStreamExtensions.AsRandomAccessStream(System.IO.Stream) Method
 [Supported in the .NET Framework 4.5.1 and later versions]  

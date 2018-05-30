@@ -1,14 +1,6 @@
 ---
 title: "How to: Debug Windows Service Applications"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "debugging Windows Service applications"
   - "debugging [Visual Studio], Windows services"
@@ -16,9 +8,7 @@ helpviewer_keywords:
   - "Windows Service applications, debugging"
   - "services, debugging"
 ms.assetid: 63ab0800-0f05-4f1e-88e6-94c73fd920a2
-caps.latest.revision: 16
 author: "ghogen"
-ms.author: "ghogen"
 manager: "douge"
 ---
 # How to: Debug Windows Service Applications

@@ -1,17 +1,11 @@
 ---
 title: "Comparing Strings in .NET"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "value comparisons of strings"
   - "LastIndexOf method"
@@ -24,10 +18,8 @@ helpviewer_keywords:
   - "Equals method"
   - "StartsWith method"
 ms.assetid: 977dc094-fe19-4955-98ec-d2294d04a4ba
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Comparing Strings in .NET
 .NET provides several methods to compare the values of strings. The following table lists and describes the value-comparison methods.  

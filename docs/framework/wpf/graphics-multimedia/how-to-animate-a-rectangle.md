@@ -1,14 +1,6 @@
 ---
 title: "How to: Animate a Rectangle"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +8,6 @@ helpviewer_keywords:
   - "animation [WPF], rectangles"
   - "rectangles [WPF], animating"
 ms.assetid: 572ffb95-790d-4ace-adbf-b2ea8a90e75b
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # How to: Animate a Rectangle
 This example shows how to animate changes to the size and position of a rectangle.  
@@ -37,5 +25,5 @@ This example shows how to animate changes to the size and position of a rectangl
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/graphics-how-to-topics.md)  
- [Animation and Timing](http://msdn.microsoft.com/en-us/7d83765b-d5ae-41b1-b423-80206e1124aa)  
+ [Animation and Timing](http://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

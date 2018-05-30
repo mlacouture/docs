@@ -1,13 +1,7 @@
 ---
 title: Pattern Matching - C# Guide
 description: Learn about pattern matching expressions in C#
-keywords: .NET, .NET Core, C#
 ms.date: 01/24/2017
-ms.author: wiwagn
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 1e575c32-2e2b-4425-9dca-7d118f3ed15b
 ---
 
@@ -65,7 +59,7 @@ of some shape.
 
 ## The `is` type pattern expression
 
-Before C# 7, you'd need to test each type in a series of `if` and `is`
+Before C# 7.0, you'd need to test each type in a series of `if` and `is`
 statements:
 
 [!code-csharp[ClassicIsExpression](../../samples/csharp/PatternMatching/GeometricUtilities.cs#02_ClassicIsExpression "Classic type pattern using is")]
@@ -91,7 +85,7 @@ variable in another location, your code generates compiler errors.
 
 Let's examine both of those rules in detail, beginning with scope. The variable
 `c` is in scope only in the `else` branch of the first `if` statement. The variable
-`s` is in scope in the method `ComputeArea`. That's because each 
+`s` is in scope in the method `ComputeAreaModernIs`. That's because each 
 branch of an `if` statement establishes a separate scope for variables. However, the `if` statement
 itself does not. That means variables declared in the `if` statement are in the
 same scope as the `if` statement (the method in this case.) This behavior is not
@@ -247,7 +241,7 @@ searching for known command values. You might write something like:
 [!code-csharp[VarCaseExpression](../../samples/csharp/PatternMatching/Program.cs#VarCaseExpression "use a var case expression to filter white space")]
 
 The `var` case matches `null`, the empty string, or any string that contains
-only whitespace. Notice that the preceding code uses the `?.` operator to
+only white space. Notice that the preceding code uses the `?.` operator to
 ensure that it does not accidentally throw a <xref:System.NullReferenceException>. The `default` case handles any other string values that are not understood by this command parser.
 
 This is one example where you may want to consider

@@ -1,17 +1,9 @@
 ---
 title: "Certmgr.exe (Certificate Manager Tool)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "certificates, managing"
   - "CRLs"
@@ -21,10 +13,8 @@ helpviewer_keywords:
   - "CTLs"
   - "certificate revocation lists"
 ms.assetid: 7e953b43-1374-4bbc-814f-53ca1b6b52bb
-caps.latest.revision: 27
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Certmgr.exe (Certificate Manager Tool)
 The Certificate Manager tool (Certmgr.exe) manages certificates, certificate trust lists (CTLs), and certificate revocation lists (CRLs).  

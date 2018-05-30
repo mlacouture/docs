@@ -1,15 +1,9 @@
 ---
 title: "How to: Create a Socket"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "application protocols, sockets"
   - "Networking"
@@ -23,7 +17,6 @@ helpviewer_keywords:
   - "Internet, sockets"
   - "sockets, creating"
 ms.assetid: c64a049c-5981-43bc-a2dc-1851473589c7
-caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -1,15 +1,9 @@
 ---
 title: "Basic and Digest Authentication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "authentication [.NET Framework], classes"
   - "Basic authentication"
@@ -25,7 +19,6 @@ helpviewer_keywords:
   - "network resources, authentication"
   - "user authentication, digest"
 ms.assetid: 8cce2742-8d52-4643-9dd2-64ddf38aa878
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

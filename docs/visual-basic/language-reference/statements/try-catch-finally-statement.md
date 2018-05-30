@@ -1,12 +1,6 @@
 ---
 title: "Try...Catch...Finally Statement (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Try...Catch...Finally"
   - "vb.when"
@@ -25,9 +19,6 @@ helpviewer_keywords:
   - "Visual Basic code, handling errors while running"
   - "structured exception handling, Try...Catch...Finally statements"
 ms.assetid: d6488026-ccb3-42b8-a810-0d97b9d6472b
-caps.latest.revision: 69
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Try...Catch...Finally Statement (Visual Basic)
 Provides a way to handle some or all possible errors that may occur in a given block of code, while still running code.  
@@ -66,7 +57,7 @@ End Try
 ## Remarks  
  If you expect that a particular exception might occur during a particular section of code, put the code in a `Try` block and use a `Catch` block to retain control and handle the exception if it occurs.  
   
- A `Try…Catch` statement consists of a `Try` block followed by one or more `Catch` clauses, which specify handlers for various exceptions. When an exception is thrown in a `Try` block, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] looks for the `Catch` statement that handles the exception. If a matching `Catch` statement is not found, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] examines the method that called the current method, and so on up the call stack. If no `Catch` block is found, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] displays an unhandled exception message to the user and stops execution of the program.  
+ A `Try…Catch` statement consists of a `Try` block followed by one or more `Catch` clauses, which specify handlers for various exceptions. When an exception is thrown in a `Try` block, Visual Basic looks for the `Catch` statement that handles the exception. If a matching `Catch` statement is not found, Visual Basic examines the method that called the current method, and so on up the call stack. If no `Catch` block is found, Visual Basic displays an unhandled exception message to the user and stops execution of the program.  
   
  You can use more than one `Catch` statement in a `Try…Catch` statement. If you do this, the order of the `Catch` clauses is significant because they are examined in order. Catch the more specific exceptions before the less specific ones.  
   
@@ -76,7 +67,7 @@ End Try
   
 -   The statement has no `exception` variable, for example: `Catch`  
   
- When a `Try…Catch…Finally` statement is nested in another `Try` block, [!INCLUDE[vbprvb](~/includes/vbprvb-md.md)] first examines each `Catch` statement in the innermost `Try` block. If no matching `Catch` statement is found, the search proceeds to the `Catch` statements of the outer `Try…Catch…Finally` block.  
+ When a `Try…Catch…Finally` statement is nested in another `Try` block, Visual Basic first examines each `Catch` statement in the innermost `Try` block. If no matching `Catch` statement is found, the search proceeds to the `Catch` statements of the outer `Try…Catch…Finally` block.  
   
  Local variables from a `Try` block are not available in a `Catch` block because they are separate blocks. If you want to use a variable in more than one block, declare the variable outside the `Try...Catch...Finally` structure.  
   
@@ -133,7 +124,7 @@ End Try
 ## Iterators  
  An iterator function or `Get` accessor performs a custom iteration over a collection. An iterator uses a [Yield](../../../visual-basic/language-reference/statements/yield-statement.md) statement to return each element of the collection one at a time. You call an iterator function by using a [For Each...Next Statement](../../../visual-basic/language-reference/statements/for-each-next-statement.md).  
   
- A `Yield` statement can be inside a `Try` block. A `Try` block that contains a `Yield` statement can have `Catch` blocks, and can have a `Finally` block. See the "Try Blocks in Visual Basic" section of [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7) for an example.  
+ A `Yield` statement can be inside a `Try` block. A `Try` block that contains a `Yield` statement can have `Catch` blocks, and can have a `Finally` block. See the "Try Blocks in Visual Basic" section of [Iterators](../../programming-guide/concepts/iterators.md) for an example.  
   
  A `Yield` statement cannot be inside a `Catch` block or a `Finally` block.  
   
@@ -190,5 +181,5 @@ End Try
  [Exit Statement](../../../visual-basic/language-reference/statements/exit-statement.md)  
  [On Error Statement](../../../visual-basic/language-reference/statements/on-error-statement.md)  
  [Best Practices for Using Code Snippets](/visualstudio/ide/best-practices-for-using-code-snippets)  
- [Exception Handling](https://msdn.microsoft.com/library/dd997415)  
+ [Exception Handling](../../../standard/parallel-programming/exception-handling-task-parallel-library.md)  
  [Throw Statement](../../../visual-basic/language-reference/statements/throw-statement.md)

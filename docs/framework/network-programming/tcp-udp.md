@@ -1,12 +1,6 @@
 ---
 title: "TCP-UDP"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "protocols, TCP/UDP"
   - "network resources, TCP/UDP"
@@ -22,7 +16,6 @@ helpviewer_keywords:
   - "requesting data from Internet, TCP/UDP"
   - "Internet, TCP/UDP"
 ms.assetid: df29b4b0-49e8-4923-82b9-13150dfc40f5
-caps.latest.revision: 8
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

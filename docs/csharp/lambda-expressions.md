@@ -1,14 +1,9 @@
 ---
 title: Lambda Expressions
-description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments. 
-keywords: .NET, .NET Core, lambda expressions, lambdas, delegates 
-ms-author: ronpet
+description: Lean to use lambda expressions, which are executable code blocks that can be passed as arguments.
+ms.author: ronpet
 author: rpetrusha
 ms.date: 11/22/2016
-ms.topic: article 
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: b6a0539a-8ce5-4da7-adcf-44be345a2714
 ---
 
@@ -146,7 +141,7 @@ Lambdas can refer to *outer variables* (see [Anonymous methods](programming-guid
 
 - Variables introduced within a lambda expression are not visible in the outer method.
 
-- A lambda expression cannot directly capture a `ref` or `out` parameter from an enclosing method.
+- A lambda expression cannot directly capture an `in`, `ref`, or `out` parameter from an enclosing method.
 
 - A return statement in a lambda expression does not cause the enclosing method to return.
 

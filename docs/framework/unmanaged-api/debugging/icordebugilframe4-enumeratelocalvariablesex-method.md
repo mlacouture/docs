@@ -1,16 +1,8 @@
 ---
 title: "ICorDebugILFrame4::EnumerateLocalVariablesEx Method"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "reference"
-dev_langs:
- - "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "ICorDebugILFrame4.EnumerateLocalVariablesEx"
 api_location: 
@@ -20,10 +12,8 @@ api_type:
 ms.assetid: 6f60aae6-70ec-4c4c-963a-138df98c4668
 topic_type: 
   - "apiref"
-caps.latest.revision: 6
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # ICorDebugILFrame4::EnumerateLocalVariablesEx Method
 [Supported in the .NET Framework 4.5.2 and later versions]  

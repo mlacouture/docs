@@ -1,16 +1,9 @@
 ---
 title: "Argument &#39;&lt;argumentname&gt;&#39; is Nothing"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vbrArgument_InvalidNullValue1"
 ms.assetid: abbde904-c191-4911-8822-c9dd2f81d616
-caps.latest.revision: 8
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Argument &#39;&lt;argumentname&gt;&#39; is Nothing
 An expression contains a null argument.  
@@ -23,4 +16,4 @@ An expression contains a null argument.
   
 ## See Also  
  [Passing Arguments by Value and by Reference](../../visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference.md)  
- [Parameter Passing Mechanism for Visual Basic 6.0 Users](http://msdn.microsoft.com/en-us/0fa2b0dc-aa1c-4797-bbd6-aa13c611cab2)
+

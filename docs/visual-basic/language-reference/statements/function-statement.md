@@ -1,12 +1,6 @@
 ---
 title: "Function Statement (Visual Basic)"
-ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
+ms.date: 05/12/2018
 f1_keywords: 
   - "vb.Function"
 helpviewer_keywords: 
@@ -34,9 +28,6 @@ helpviewer_keywords:
   - "End keyword [Visual Basic], Function statements"
   - "Handles keyword [Visual Basic], Function statements"
 ms.assetid: a4497077-0f46-4ede-a27f-9e8670df52b9
-caps.latest.revision: 62
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Function Statement (Visual Basic)
 Declares the name, parameters, and code that define a `Function` procedure.  
@@ -70,7 +61,9 @@ End Function
   
     -   [Private](../../../visual-basic/language-reference/modifiers/private.md)  
   
-    -   `Protected Friend`  
+    -   [Protected Friend](../../language-reference/modifiers/protected-friend.md)
+
+    - [Private Protected](../../language-reference/modifiers/private-protected.md)  
   
      See [Access levels in Visual Basic](../../../visual-basic/programming-guide/language-features/declared-elements/access-levels.md).  
   
@@ -236,7 +229,7 @@ End Function
   
  The return type of an iterator function can be <xref:System.Collections.IEnumerable>, <xref:System.Collections.Generic.IEnumerable%601>, <xref:System.Collections.IEnumerator>, or <xref:System.Collections.Generic.IEnumerator%601>.  
   
- For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ For more information, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## Example  
  The following example uses the `Function` statement to declare the name, parameters, and code that form the body of a `Function` procedure. The `ParamArray` modifier enables the function to accept a variable number of arguments.  

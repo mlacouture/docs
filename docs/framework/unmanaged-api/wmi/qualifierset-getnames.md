@@ -2,10 +2,6 @@
 title: QualifierSet_GetNames function (Unmanaged API Reference)
 description: The QualifierSet_GetNames function retrieves the names of qualifiers from an object or property.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "QualifierSet_GetNames"
 api_location: 
@@ -20,7 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # QualifierSet_GetNames function
 Retrieves the names of all the qualifiers or of certain qualifiers that are available from the current object or property. 

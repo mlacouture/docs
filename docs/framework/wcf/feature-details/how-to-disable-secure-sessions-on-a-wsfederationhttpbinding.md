@@ -1,24 +1,14 @@
 ---
 title: "How to: Disable Secure Sessions on a WSFederationHttpBinding"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "WCF, federation"
   - "federation"
 ms.assetid: 675fa143-6a4e-4be3-8afc-673334ab55ec
-caps.latest.revision: 16
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # How to: Disable Secure Sessions on a WSFederationHttpBinding

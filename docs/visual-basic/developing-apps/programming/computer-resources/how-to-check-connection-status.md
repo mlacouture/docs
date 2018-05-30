@@ -1,25 +1,15 @@
 ---
 title: "How to: Check Connection Status in Visual Basic"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 helpviewer_keywords: 
   - "Web connections [Visual Basic]"
   - "IsAvailable property [Visual Basic], about IsAvailable"
   - "connections [Visual Basic], checking status"
   - "connection status [Visual Basic]"
 ms.assetid: 4d9ee8ab-9a6f-4279-ace4-b75afc976a74
-caps.latest.revision: 26
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # How to: Check Connection Status in Visual Basic
-The <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property can be used to determine whether the computer has a working network or Internet connection.  
+The <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable> property can be used to determine whether the computer has a working network or Internet connection.  
   
 [!INCLUDE[note_settings_general](~/includes/note-settings-general-md.md)]  
   
@@ -33,4 +23,4 @@ The <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A> property can be 
   
 ## See Also  
  <xref:Microsoft.VisualBasic.Devices.Network?displayProperty=nameWithType>  
- <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable%2A>
+ <xref:Microsoft.VisualBasic.Devices.Network.IsAvailable>

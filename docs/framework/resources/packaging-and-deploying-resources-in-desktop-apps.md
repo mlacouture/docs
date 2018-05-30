@@ -1,17 +1,9 @@
 ---
 title: "Packaging and Deploying Resources in Desktop Apps"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "deploying applications [.NET Framework], resources"
   - "resource files, deploying"
@@ -34,10 +26,8 @@ helpviewer_keywords:
   - "localizing resources"
   - "neutral cultures"
 ms.assetid: b224d7c0-35f8-4e82-a705-dd76795e8d16
-caps.latest.revision: 26
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Packaging and Deploying Resources in Desktop Apps
 Applications rely on the .NET Framework Resource Manager, represented by the <xref:System.Resources.ResourceManager> class, to retrieve localized resources. The Resource Manager assumes that a hub and spoke model is used to package and deploy resources. The hub is the main assembly that contains the nonlocalizable executable code and the resources for a single culture, called the neutral or default culture. The default culture is the fallback culture for the application; it is the culture whose resources are used if localized resources cannot be found. Each spoke connects to a satellite assembly that contains the resources for a single culture, but does not contain any code.  
@@ -124,7 +114,7 @@ Applications rely on the .NET Framework Resource Manager, represented by the <xr
 </configuration>  
 ```  
   
- The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in the [The Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:  
+ The optimized probe for satellite assemblies is an opt-in feature. That is, the runtime follows the steps documented in [The Resource Fallback Process](../../../docs/framework/resources/packaging-and-deploying-resources-in-desktop-apps.md#cpconpackagingdeployingresourcesanchor1) unless the [\<relativeBindForResources>](../../../docs/framework/configure-apps/file-schema/runtime/relativebindforresources-element.md) element is present in the application's configuration file and its `enabled` attribute is set to `true`. If this is the case, the process of probing for a satellite assembly is modified as follows:  
   
 -   The runtime uses the location of the parent code assembly to probe for the satellite assembly. If the parent assembly is installed in the global assembly cache, the runtime probes in the cache but not in the application's directory. If the parent assembly is installed in an application directory, the runtime probes in the application directory but not in the global assembly cache.  
   
@@ -170,11 +160,15 @@ Greeting=Добрый день
   
  You can then compile C# source code from the command line as follows:  
   
- **csc Example1.cs**  
+```console 
+csc Example1.cs
+```
   
  The command for the Visual Basic compiler is very similar:  
   
- **vbc Example1.vb**  
+```console
+vbc Example1.vb
+```  
   
  Because there are no resources embedded in the main assembly, you do not have to compile by using the `/resource` switch.  
   

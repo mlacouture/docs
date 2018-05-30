@@ -1,16 +1,10 @@
 ---
 title: .NET Core Tutorials
 description: Follow tutorials for learning .NET Core to build apps and libraries on Mac, Linux, and Windows.
-keywords: .NET, .NET Core
 author: richlander
 ms.author: mairaw
 ms.date: 03/16/2017
-ms.topic: article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: f6f654b1-1d2c-4105-8376-7c1959e23803
 ---
-
 # .NET Core Tutorials
 
 The following tutorials are available for learning about .NET Core.
@@ -25,7 +19,7 @@ The following tutorials are available for learning about .NET Core.
 - [Testing a class library](testing-library-with-visual-studio.md)
 - [Consuming a class library](consuming-library-with-visual-studio.md)
 - [Building a complete C# .NET Core solution on Windows](using-on-windows-full-solution.md)
-- [NoSQL tutorial: Build a DocumentDB C# console application on .NET Core](/azure/documentdb/documentdb-dotnetcore-get-started)
+- [Azure Cosmos DB: Getting started with the SQL API and .NET Core](/azure/cosmos-db/sql-api-dotnetcore-get-started)
 
 ## Building applications with Visual Studio Code
 

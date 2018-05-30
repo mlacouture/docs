@@ -1,17 +1,12 @@
 ---
 title: Native interoperability
 description: Learn how to interface with native components in .NET.
-keywords: .NET, .NET Core
 author: blackdwarf
 ms.author: ronpet
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
 ms.technology: dotnet-standard
-ms.devlang: dotnet
 ms.assetid: 3c357112-35fb-44ba-a07b-6a1c140370ac
 ---
-
 # Native Interoperability
 
 In this document, we will dive a little bit deeper into all three ways of doing "native interoperability" that are available using .NET.
@@ -19,7 +14,7 @@ In this document, we will dive a little bit deeper into all three ways of doing 
 There are a few of reasons why you would want to call into native code:
 
 *   Operating Systems come with a large volume of APIs that are not present in the managed class libraries. A prime example for this would be access to hardware or operating system management functions.
-*   Communicating with other components that have or can produce C-style ABIs (native ABIs). This covers, for example, Java code that is exposed via [Java Native Interface (JNI)](http://docs.oracle.com/javase/8/docs/technotes/guides/jni/) or any other managed language that could produce a native component.
+*   Communicating with other components that have or can produce C-style ABIs (native ABIs). This covers, for example, Java code that is exposed via [Java Native Interface (JNI)](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/) or any other managed language that could produce a native component.
 *   On Windows, most of the software that gets installed, such as Microsoft Office suite, registers COM components that represent their programs and allow developers to automate them or use them. This also requires native interoperability.
 
 Of course, the list above does not cover all of the potential situations and scenarios in which the developer would want/like/need to interface with native components. .NET class library, for instance, uses the native interoperability support to implement a fair number of its APIs, like console support and manipulation, file system access and others. However, it is important to note that there is an option, should one need it.
@@ -67,7 +62,7 @@ using System.Runtime.InteropServices;
 namespace PInvokeSamples {
     public static class Program {
 
-        // Import the libc and define the method corresponding to the native function.
+        // Import the libSystem shared library and define the method corresponding to the native function.
         [DllImport("libSystem.dylib")]
         private static extern int getpid();
 
@@ -80,7 +75,7 @@ namespace PInvokeSamples {
 }
 ```
 
-It is similar on Linux, of course. The function name is same, since `getpid(2)` is [POSIX](https://en.wikipedia.org/wiki/POSIX) system call.
+It is also similar on Linux. The function name is the same, since `getpid(2)` is a standard [POSIX](https://en.wikipedia.org/wiki/POSIX) system call.
 
 ```csharp
 using System;
@@ -89,7 +84,7 @@ using System.Runtime.InteropServices;
 namespace PInvokeSamples {
     public static class Program {
 
-        // Import the libc and define the method corresponding to the native function.
+        // Import the libc shared library and define the method corresponding to the native function.
         [DllImport("libc.so.6")]
         private static extern int getpid();
 
@@ -259,7 +254,7 @@ Both of the above examples depend on parameters, and in both cases, the paramete
 
 **Marshalling** is the process of transforming types when they need to cross the managed boundary into native and vice versa.
 
-The reason marshalling is needed is because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode ("wide"), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on [MSDN](https://msdn.microsoft.com/library/zah6xy75.aspx). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
+The reason marshalling is needed is because the types in the managed and unmanaged code are different. In managed code, for instance, you have a `String`, while in the unmanaged world strings can be Unicode ("wide"), non-Unicode, null-terminated, ASCII, etc. By default, the P/Invoke subsystem will try to do the Right Thing based on the default behavior which you can see on [MSDN](../../docs/framework/interop/default-marshaling-behavior.md). However, for those situations where you need extra control, you can employ the `MarshalAs` attribute to specify what is the expected type on the unmanaged side. For instance, if we want the string to be sent as a null-terminated ANSI string, we could do it like this:
 
 ```csharp
 [DllImport("somenativelibrary.dll")]
@@ -333,6 +328,6 @@ The `StatClass` class represents a structure that is returned by the `stat` syst
 
 ## More resources
 
-*   [PInvoke.net wiki](http://www.pinvoke.net) an excellent Wiki with information on common Win32 APIs and how to call them.
+*   [PInvoke.net wiki](https://www.pinvoke.net/) an excellent Wiki with information on common Win32 APIs and how to call them.
 *   [P/Invoke on MSDN](https://msdn.microsoft.com/library/zbz07712.aspx)
-*   [Mono documentation on P/Invoke](http://www.mono-project.com/docs/advanced/pinvoke/)
+*   [Mono documentation on P/Invoke](https://www.mono-project.com/docs/advanced/pinvoke/)

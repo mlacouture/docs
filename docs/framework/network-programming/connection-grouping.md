@@ -1,12 +1,6 @@
 ---
 title: "Connection Grouping"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Internet, connections"
   - "connections [.NET Framework], grouping"
@@ -14,7 +8,6 @@ helpviewer_keywords:
   - "network resources, connections"
   - "connection pooling"
 ms.assetid: 2ec502e8-4ba0-4c22-9410-f28eaf4eee63
-caps.latest.revision: 7
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -1,14 +1,6 @@
 ---
 title: "&lt;legacyImpersonationPolicy&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#legacyImpersonationPolicy"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/runtime/legacyImpersonationPolicy"
@@ -16,10 +8,8 @@ helpviewer_keywords:
   - "<legacyImpersonationPolicy> element"
   - "legacyImpersonationPolicy element"
 ms.assetid: 6e00af10-42f3-4235-8415-1bb2db78394e
-caps.latest.revision: 15
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # &lt;legacyImpersonationPolicy&gt; Element
 Specifies that the Windows identity does not flow across asynchronous points, regardless of the flow settings for the execution context on the current thread.  
@@ -88,8 +78,8 @@ Specifies that the Windows identity does not flow across asynchronous points, re
   
  ASP.NET by default disables the impersonation flow in the aspnet.config file by using the following configuration settings:  
   
-```  
-configuration>  
+``` xml
+<configuration>  
    <runtime>  
       <legacyImpersonationPolicy enabled="true"/>  
       <alwaysFlowImpersonationPolicy enabled="false"/>  

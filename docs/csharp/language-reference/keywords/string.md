@@ -1,10 +1,6 @@
 ---
 title: "string (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "string"
   - "string_CSharpKeyword"
@@ -14,12 +10,9 @@ helpviewer_keywords:
   - "string literals [C#]"
   - "string keyword [C#]"
 ms.assetid: 3037e558-fb22-494d-bca1-a15ade11b11a
-caps.latest.revision: 31
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # string (C# Reference)
-The `string` type represents a sequence of zero or more Unicode characters. `string` is an alias for <xref:System.String> in the .NET Framework.  
+The `string` type represents a sequence of zero or more Unicode characters. `string` is an alias for <xref:System.String> in .NET.  
   
  Although `string` is a reference type, the equality operators (`==` and `!=`) are defined to compare the values of `string` objects, not references. This makes testing for string equality more intuitive. For example:  
   
@@ -64,7 +57,7 @@ char x = str[2];  // x = 's';
   
  String literals can contain any character literal. Escape sequences are included. The following example uses escape sequence `\\` for backslash, `\u0066` for the letter f, and `\n` for newline.  
   
-```  
+```csharp  
 string a = "\\\u0066\n";  
 Console.WriteLine(a);  
 ```  
@@ -72,7 +65,7 @@ Console.WriteLine(a);
 > [!NOTE]
 >  The escape code `\udddd` (where `dddd` is a four-digit number) represents the Unicode character U+`dddd`. Eight-digit Unicode escape codes are also recognized: `\Udddddddd`.  
   
- Verbatim string literals start with @ and are also enclosed in double quotation marks. For example:  
+ Verbatim string literals start with `@` and are also enclosed in double quotation marks. For example:  
   
 ```csharp  
 @"good morning"  // a string literal  
@@ -90,7 +83,7 @@ Console.WriteLine(a);
 @"""Ahoy!"" cried the captain." // "Ahoy!" cried the captain.  
 ```  
   
- Another use of the @ symbol is to use referenced ([/reference](../../../csharp/language-reference/compiler-options/reference-compiler-option.md)) identifiers that are C# keywords.  
+ For other uses of the `@` special character, see [@ -- verbatim identifier](../tokens/verbatim.md).  
   
  For more information about strings in C#, see [Strings](../../../csharp/programming-guide/strings/index.md).  
   

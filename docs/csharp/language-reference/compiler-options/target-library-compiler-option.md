@@ -1,10 +1,6 @@
 ---
 title: "-target:library (C# Compiler Options)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "/dll"
 helpviewer_keywords: 
@@ -12,25 +8,22 @@ helpviewer_keywords:
   - "target compiler options [C#], /target:library"
   - "/target compiler options [C#], /target:library"
 ms.assetid: c5670e88-2126-47c1-8d1c-217923837d17
-caps.latest.revision: 12
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
-# /target:library (C# Compiler Options)
-The **/target:library** option causes the compiler to create a dynamic-link library (DLL) rather than an executable file (EXE).  
+# -target:library (C# Compiler Options)
+The **-target:library** option causes the compiler to create a dynamic-link library (DLL) rather than an executable file (EXE).  
   
 ## Syntax  
   
 ```console  
-/target:library  
+-target:library  
 ```  
   
 ## Remarks  
  The DLL will be created with the .dll extension.  
   
- Unless otherwise specified with the [/out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the first input file.  
+ Unless otherwise specified with the [-out](../../../csharp/language-reference/compiler-options/out-compiler-option.md) option, the output file name takes the name of the first input file.  
   
- When specified at the command line, all files up to the next **/out** or **/target:module** option are used to create the .dll file.  
+ When specified at the command line, all files up to the next **-out** or **-target:module** option are used to create the .dll file.  
   
  When building a .dll file, a [Main](../../../csharp/programming-guide/main-and-command-args/index.md) method is not required.  
   
@@ -48,9 +41,9 @@ The **/target:library** option causes the compiler to create a dynamic-link libr
  Compile `in.cs`, creating `in.dll`:  
   
 ```console  
-csc /target:library in.cs  
+csc -target:library in.cs  
 ```  
   
 ## See Also  
- [/target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
+ [-target (C# Compiler Options)](../../../csharp/language-reference/compiler-options/target-compiler-option.md)  
  [C# Compiler Options](../../../csharp/language-reference/compiler-options/index.md)

@@ -1,14 +1,6 @@
 ---
 title: "ListView Control (Windows Forms)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "lists"
   - "checked list items [Windows Forms], Windows Forms controls"
@@ -19,10 +11,6 @@ helpviewer_keywords:
   - "ListView control [Windows Forms]"
   - "list controls [Windows Forms], List view"
 ms.assetid: 9f71cf5c-82da-488a-a04e-ef52c0817187
-caps.latest.revision: 15
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # ListView Control (Windows Forms)
 The Windows Forms `ListView` control displays a list of items with icons. You can use a list view to create a user interface like the right pane of Windows Explorer.  
@@ -88,7 +76,7 @@ The Windows Forms `ListView` control displays a list of items with icons. You ca
  [How to: Create a Multipane User Interface with Windows Forms](../../../../docs/framework/winforms/controls/how-to-create-a-multipane-user-interface-with-windows-forms.md)  
  Gives instructions for laying out a Windows Form with multiple panes.  
   
- [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/en-us/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
+ [Windows XP Features and Windows Forms Controls](http://msdn.microsoft.com/library/bc7fab94-fce9-4bf1-a8ad-a5837c91c3c0)  
  Explains how to take advantage of Windows XP-specific features that apply to the <xref:System.Windows.Forms.ListView> control.  
   
 ## See Also  

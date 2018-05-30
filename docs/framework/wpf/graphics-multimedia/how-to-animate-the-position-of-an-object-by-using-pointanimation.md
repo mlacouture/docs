@@ -1,14 +1,6 @@
 ---
 title: "How to: Animate the Position of an Object by Using PointAnimation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -16,10 +8,6 @@ helpviewer_keywords:
   - "graphics [WPF], animation"
   - "animation [WPF], PointAnimation"
 ms.assetid: 42310977-cc90-438a-8a47-0345898e01be
-caps.latest.revision: 10
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # How to: Animate the Position of an Object by Using PointAnimation
 This example shows how to use the <xref:System.Windows.Media.Animation.PointAnimation> class to animate an object along a <xref:System.Windows.Shapes.Path>.  
@@ -38,5 +26,5 @@ This example shows how to use the <xref:System.Windows.Media.Animation.PointAnim
  [Animation Overview](../../../../docs/framework/wpf/graphics-multimedia/animation-overview.md)  
  [Graphics and Multimedia](../../../../docs/framework/wpf/graphics-multimedia/index.md)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/graphics-how-to-topics.md)  
- [Animation and Timing](http://msdn.microsoft.com/en-us/7d83765b-d5ae-41b1-b423-80206e1124aa)  
+ [Animation and Timing](http://msdn.microsoft.com/library/7d83765b-d5ae-41b1-b423-80206e1124aa)  
  [How-to Topics](../../../../docs/framework/wpf/graphics-multimedia/animation-and-timing-how-to-topics.md)

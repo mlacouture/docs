@@ -1,16 +1,10 @@
 ---
 title: "How to: Read and Write to Files in Isolated Storage"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "files, isolated storage"
   - "reading data"
@@ -22,10 +16,8 @@ helpviewer_keywords:
   - "data stores, reading and writing to files"
   - "stores, reading and writing to files"
 ms.assetid: f977ebdc-1b55-475a-bc3d-3376470b08ae
-caps.latest.revision: 15
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # How to: Read and Write to Files in Isolated Storage
 To read from, or write to, a file in an isolated store, use an <xref:System.IO.IsolatedStorage.IsolatedStorageFileStream> object with a stream reader (<xref:System.IO.StreamReader> object) or stream writer (<xref:System.IO.StreamWriter> object).  
@@ -43,5 +35,5 @@ To read from, or write to, a file in an isolated store, use an <xref:System.IO.I
  <xref:System.IO.FileAccess?displayProperty=nameWithType>  
  <xref:System.IO.StreamReader?displayProperty=nameWithType>  
  <xref:System.IO.StreamWriter?displayProperty=nameWithType>  
- [File and Stream I-O](../../../docs/standard/io/index.md)  
+ [File and Stream I/O](../../../docs/standard/io/index.md)  
  [Isolated Storage](../../../docs/standard/io/isolated-storage.md)

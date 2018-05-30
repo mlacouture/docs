@@ -1,12 +1,6 @@
 ---
 title: "IPv6 Addressing"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "Internet Protocol version 6, addresses in"
   - "Neighbor Discovery"
@@ -32,7 +26,6 @@ helpviewer_keywords:
   - "IPv6, addresses in"
   - "IPv6, disabling"
 ms.assetid: 20a104ae-1649-4649-a005-531a5cf74c93
-caps.latest.revision: 10
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -2,10 +2,6 @@
 title: GetPropertyQualifierSet function (Unmanaged API Reference)
 description: The GetPropertyQualifierSet function retrieves the qualifier set for a property.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "GetPropertyQualifierSet"
 api_location: 
@@ -20,7 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # GetPropertyQualifierSet function
 Retrieves the qualifier set for a particular property.

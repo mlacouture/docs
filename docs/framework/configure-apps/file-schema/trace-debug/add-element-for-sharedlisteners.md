@@ -1,14 +1,6 @@
 ---
 title: "&lt;add&gt; Element for &lt;sharedListeners&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sharedListeners/add"
 helpviewer_keywords: 
@@ -16,7 +8,6 @@ helpviewer_keywords:
   - "<add> element for <sharedListeners>"
   - "add element for <sharedListeners>"
 ms.assetid: 1595e1bc-2492-421f-8384-7f382eb8eb57
-caps.latest.revision: 13
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

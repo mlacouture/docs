@@ -1,23 +1,14 @@
 ---
 title: "Add Content to a Text Box Using UI Automation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "adding content to text boxes"
   - "text boxes, adding content"
   - "UI Automation, adding content to text boxes"
 ms.assetid: 8bdd1a73-1ecb-4a05-a891-a7827ebb767f
-caps.latest.revision: 13
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
@@ -35,4 +26,4 @@ manager: "markl"
  [!code-vb[InsertText#InsertText](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InsertText/VisualBasic/Window1.xaml.vb#inserttext)]  
   
 ## See Also  
- [TextPattern Insert Text Sample](http://msdn.microsoft.com/en-us/67353f93-7ee2-42f2-ab76-5c078cf6ca16)
+ [TextPattern Insert Text Sample](http://msdn.microsoft.com/library/67353f93-7ee2-42f2-ab76-5c078cf6ca16)

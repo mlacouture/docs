@@ -1,14 +1,6 @@
 ---
 title: "How to: Make Thread-Safe Calls to Windows Forms Controls"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -24,10 +16,6 @@ helpviewer_keywords:
   - "threading [Windows Forms], cross-thread calls"
   - "controls [Windows Forms], multithreading"
 ms.assetid: 138f38b6-1099-4fd5-910c-390b41cbad35
-caps.latest.revision: 20
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # How to: Make Thread-Safe Calls to Windows Forms Controls
 If you use multithreading to improve the performance of your Windows Forms applications, you must make sure that you make calls to your controls in a thread-safe way.  
@@ -411,7 +399,7 @@ private:
  The following code example is a complete Windows Forms application that consists of a form with three buttons and one text box. The first button demonstrates unsafe cross-thread access, the second button demonstrates safe access by using <xref:System.Windows.Forms.Control.Invoke%2A>, and the third button demonstrates safe access by using <xref:System.ComponentModel.BackgroundWorker>.  
   
 > [!NOTE]
->  For instructions on how to run the example, see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/en-us/cc447f7e-4c3b-4397-9d05-aeba3ca49416). This example requires references to the System.Drawing and System.Windows.Forms assemblies.  
+>  For instructions on how to run the example, see [How to: Compile and Run a Complete Windows Forms Code Example Using Visual Studio](http://msdn.microsoft.com/library/cc447f7e-4c3b-4397-9d05-aeba3ca49416). This example requires references to the System.Drawing and System.Windows.Forms assemblies.  
   
 ```csharp  
 using System;  

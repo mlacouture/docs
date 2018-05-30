@@ -1,22 +1,13 @@
 ---
 title: "Create a Client-Side UI Automation Provider"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "UI Automation, creating client-side provider"
   - "client-side UI Automation provider, creating"
 ms.assetid: d91edaf2-be28-41ec-a508-af421cb43c3d
-caps.latest.revision: 11
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"

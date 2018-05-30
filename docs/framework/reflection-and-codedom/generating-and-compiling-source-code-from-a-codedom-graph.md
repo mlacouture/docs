@@ -1,18 +1,10 @@
 ---
 title: "Generating and Compiling Source Code from a CodeDOM Graph"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "code compilers"
   - "CodeDOM, generating source code"
@@ -34,10 +26,8 @@ helpviewer_keywords:
   - "compiling source code, multiple languages"
   - "CodeDOM, graphs"
 ms.assetid: 6c864c8e-6dd3-4a65-ace0-36879d9a9c42
-caps.latest.revision: 20
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Generating and Compiling Source Code from a CodeDOM Graph
 The <xref:System.CodeDom.Compiler> namespace provides interfaces for generating source code from CodeDOM object graphs and for managing compilation with supported compilers. A code provider can produce source code in a particular programming language according to a CodeDOM graph. A class that derives from <xref:System.CodeDom.Compiler.CodeDomProvider> can typically provide methods for generating and compiling code for the language the provider supports.  
@@ -101,4 +91,4 @@ The <xref:System.CodeDom.Compiler> namespace provides interfaces for generating 
  <xref:System.CodeDom>  
  <xref:System.CodeDom.Compiler>  
  [Dynamic Source Code Generation and Compilation](../../../docs/framework/reflection-and-codedom/dynamic-source-code-generation-and-compilation.md)  
- [CodeDOM Quick Reference](http://msdn.microsoft.com/en-us/c77b8bfd-0a32-4e36-b59a-4f687f32c524)
+ [CodeDOM Quick Reference](http://msdn.microsoft.com/library/c77b8bfd-0a32-4e36-b59a-4f687f32c524)

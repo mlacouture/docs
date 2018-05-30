@@ -1,24 +1,16 @@
 ---
 title: "Best Practices for Exceptions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "exceptions, best practices"
 ms.assetid: f06da765-235b-427a-bfb6-47cd219af539
-caps.latest.revision: 28
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # Best practices for exceptions
 

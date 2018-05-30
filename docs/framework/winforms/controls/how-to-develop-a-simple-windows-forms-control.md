@@ -1,14 +1,6 @@
 ---
 title: "How to: Develop a Simple Windows Forms Control"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +9,6 @@ helpviewer_keywords:
   - "custom controls [Windows Forms], creating simple controls using code"
   - "Control class [Windows Forms], Windows Forms"
 ms.assetid: 86cbe435-45b7-4cb4-9b5a-47418369758d
-caps.latest.revision: 17
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # How to: Develop a Simple Windows Forms Control
 This section walks you through the key steps for authoring a custom Windows Forms control. The simple control developed in this walkthrough allows the alignment of its <xref:System.Windows.Forms.Control.Text%2A> property to be changed. It does not raise or handle events.  
@@ -65,12 +53,12 @@ This section walks you through the key steps for authoring a custom Windows Form
   
     2.  Compile the source code into an assembly and save it in your application's directory. To accomplish this, execute the following command from the directory that contains the source file.  
   
-        ```vb  
-        vbc /t:library /out:[path to your application's directory]/CustomWinControls.dll /r:System.dll /r:System.Windows.Forms.dll /r:System.Drawing.dll FirstControl.vb  
+        ```console  
+        vbc -t:library -out:[path to your application's directory]/CustomWinControls.dll -r:System.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll FirstControl.vb  
         ```  
   
-        ```csharp  
-        csc /t:library /out:[path to your application's directory]/CustomWinControls.dll /r:System.dll /r:System.Windows.Forms.dll /r:System.Drawing.dll FirstControl.cs  
+        ```console 
+        csc -t:library -out:[path to your application's directory]/CustomWinControls.dll -r:System.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll FirstControl.cs  
         ```  
   
          The `/t:library` compiler option tells the compiler that the assembly you are creating is a library (and not an executable). The `/out` option specifies the path and name of the assembly. The`/r` option provides the name of the assemblies that are referenced by your code. In this example, you create a private assembly that only your applications can use. Hence, you have to save it in your application's directory. For more information about packaging and deploying a control for distribution, see [Deployment](../../../../docs/framework/deployment/index.md).  
@@ -89,19 +77,19 @@ This section walks you through the key steps for authoring a custom Windows Form
   
 2.  Compile the source code into an executable assembly by executing the following command from the directory that contains the source file.  
   
-    ```vb  
-    vbc /r:CustomWinControls.dll /r:System.dll /r:System.Windows.Forms.dll /r:System.Drawing.dll SimpleForm.vb  
+    ```console  
+    vbc -r:CustomWinControls.dll -r:System.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll SimpleForm.vb  
     ```  
   
-    ```csharp  
-    csc /r:CustomWinControls.dll /r:System.dll /r:System.Windows.Forms.dll /r:System.Drawing.dll SimpleForm.cs  
+    ```console 
+    csc -r:CustomWinControls.dll -r:System.dll -r:System.Windows.Forms.dll -r:System.Drawing.dll SimpleForm.cs  
     ```  
   
      CustomWinControls.dll is the assembly that contains the class `FirstControl`. This assembly must be in the same directory as the source file for the form that accesses it (SimpleForm.cs or SimpleForms.vb).  
   
 3.  Execute SimpleForm.exe using the following command.  
   
-    ```  
+    ```console
     SimpleForm  
     ```  
   

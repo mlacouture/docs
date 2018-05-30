@@ -1,14 +1,6 @@
 ---
 title: "&lt;requiredRuntime&gt; Element"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#requiredRuntime"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/startup/requiredRuntime"
@@ -17,7 +9,6 @@ helpviewer_keywords:
   - "<requiredRuntime> element"
   - "container tags, <requiredRuntime> element"
 ms.assetid: 9fa1639e-beb8-43be-b7a4-12f7b229c34b
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -89,4 +80,4 @@ safemode="true|false"/>
 ## See Also  
  [Startup Settings Schema](../../../../../docs/framework/configure-apps/file-schema/startup/index.md)  
  [Configuration File Schema](../../../../../docs/framework/configure-apps/file-schema/index.md)  
- [\<PaveOver> Specifying Which Runtime Version to Use](http://msdn.microsoft.com/en-us/c376208d-980d-42b4-865b-fbe0d9cc97c2)
+ [\<PaveOver> Specifying Which Runtime Version to Use](http://msdn.microsoft.com/library/c376208d-980d-42b4-865b-fbe0d9cc97c2)

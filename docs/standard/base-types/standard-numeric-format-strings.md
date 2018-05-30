@@ -1,13 +1,11 @@
 ---
 title: "Standard Numeric Format Strings"
 ms.date: "09/10/2017"
-ms.prod: ".net"
 ms.technology: dotnet-standard
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
-- "cpp"
+dev_langs: 
+  - "csharp"
+  - "vb"
+  - "cpp"
 helpviewer_keywords: 
   - "numeric format strings [.NET Framework]"
   - "formatting [.NET Framework], numbers"
@@ -20,7 +18,6 @@ helpviewer_keywords:
   - "format specifiers, standard numeric format strings"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # Standard Numeric Format Strings
 Standard numeric format strings are used to format common numeric types. A standard numeric format string takes the form `Axx`, where:  
@@ -40,10 +37,10 @@ Standard numeric format strings are supported by:
  
 - The .NET [composite formatting feature](../../../docs/standard/base-types/composite-formatting.md), which is used by some `Write` and `WriteLine` methods of the <xref:System.Console> and <xref:System.IO.StreamWriter> classes, the <xref:System.String.Format%2A?displayProperty=nameWithType> method, and the <xref:System.Text.StringBuilder.AppendFormat%2A?displayProperty=nameWithType> method. The composite format feature allows you to include the string representation of multiple data items in a single string, to specify field width, and to align numbers in a field. For more information, see [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md).  
 
-- [Interpolated strings](../../csharp/language-reference/keywords/interpolated-strings.md) in C# and Visual Basic, which provide a simplified syntax when compared to composite format strings.
+- [Interpolated strings](../../csharp/language-reference/tokens/interpolated.md) in C# and Visual Basic, which provide a simplified syntax when compared to composite format strings.
  
 > [!TIP]
->  You can download the [Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.  
+>  You can download the [Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d), an application that enables you to apply format strings to either numeric or date and time values and displays the result string.  
   
 <a name="table"></a> The following table describes the standard numeric format specifiers and displays sample output produced by each format specifier. See the [Notes](#NotesStandardFormatting) section for additional information about using standard numeric format strings, and the [Example](#example) section for a comprehensive illustration of their use.  
   
@@ -81,6 +78,8 @@ Standard numeric format strings are supported by:
      [!code-cpp[Formatting.Numeric.Standard#12](../../../samples/snippets/cpp/VS_Snippets_CLR/Formatting.Numeric.Standard/cpp/standardusage1.cpp#12)]
      [!code-csharp[Formatting.Numeric.Standard#12](../../../samples/snippets/csharp/VS_Snippets_CLR/Formatting.Numeric.Standard/cs/standardusage1.cs#12)]
      [!code-vb[Formatting.Numeric.Standard#12](../../../samples/snippets/visualbasic/VS_Snippets_CLR/Formatting.Numeric.Standard/vb/standardusage1.vb#12)]  
+  
+-   It can be supplied as the `formatString` argument in an interpolated expression item of an interpolated string. For more information, see the [String interpolation](../../csharp/language-reference/tokens/interpolated.md) topic in the C# reference or the [Interpolated strings](../../visual-basic/programming-guide/language-features/strings/interpolated-strings.md) topic in the Visual Basic reference.  
   
  The following sections provide detailed information about each of the standard numeric format strings.  
   
@@ -351,5 +350,5 @@ For <xref:System.Double> and <xref:System.Single> values, the "R" format specifi
  [Custom Numeric Format Strings](../../../docs/standard/base-types/custom-numeric-format-strings.md)  
  [Formatting Types](../../../docs/standard/base-types/formatting-types.md)  
  [How to: Pad a Number with Leading Zeros](../../../docs/standard/base-types/how-to-pad-a-number-with-leading-zeros.md)  
- [Sample: .NET Framework 4 Formatting Utility](http://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)  
+ [Sample: .NET Framework 4 Formatting Utility](https://code.msdn.microsoft.com/NET-Framework-4-Formatting-9c4dae8d)  
  [Composite Formatting](../../../docs/standard/base-types/composite-formatting.md)

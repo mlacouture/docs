@@ -1,14 +1,7 @@
 ---
 title: "Iterators (C#)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: c93f6dd4-e72a-4a06-be1c-a98b3255b734
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # Iterators (C#)
 An *iterator* can be used to step through collections such as lists and arrays.  
@@ -340,7 +333,7 @@ public class Stack<T> : IEnumerable<T>
   
  An implicit conversion must exist from the expression type in the `yield return` statement to the return type of the iterator.  
   
- In C#, an iterator method cannot have any `ref` or `out` parameters.  
+ In C#, an iterator method cannot have any `in`, `ref`, or `out` parameters.  
   
  In C#, "yield" is not a reserved word and has special meaning only when it is used before a `return` or `break` keyword.  
   

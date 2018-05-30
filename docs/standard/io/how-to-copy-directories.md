@@ -1,16 +1,10 @@
 ---
 title: "How to: Copy Directories"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "directory copying"
   - "I/O [.NET Framework], copying directories"
@@ -18,10 +12,8 @@ helpviewer_keywords:
   - "copying directories"
   - "directories [.NET Framework], copying"
 ms.assetid: 5a969765-e5f8-4b4e-977e-90e2b0a1fe3c
-caps.latest.revision: 11
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # How to: Copy Directories
 This example demonstrates how to use I/O classes to synchronously copy the contents of a directory to another location. In this example, the user can specify whether to also copy the subdirectories. If the subdirectories are copied, the method in this example recursively copies them by calling itself on each subsequent subdirectory until there are no more to copy.  

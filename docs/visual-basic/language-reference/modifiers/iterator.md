@@ -1,19 +1,11 @@
 ---
 title: "Iterator (Visual Basic)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.suite: ""
-ms.technology: 
-  - "devlang-visual-basic"
-ms.topic: "article"
 f1_keywords: 
   - "vb.Iterator"
 helpviewer_keywords: 
   - "Iterator keyword [Visual Basic]"
 ms.assetid: 69cb0b04-ac87-49d0-bcfe-810c0d60daff
-caps.latest.revision: 11
-author: dotnet-bot
-ms.author: dotnetcontent
 ---
 # Iterator (Visual Basic)
 Specifies that a function or `Get` accessor is an iterator.  
@@ -31,9 +23,7 @@ Specifies that a function or `Get` accessor is an iterator.
   
  An iterator cannot occur in an event, instance constructor, static constructor, or static destructor.  
   
- An iterator can be an anonymous function. For more information, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
-  
- For more information about iterators, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ An iterator can be an anonymous function. For more information, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## Usage  
  The `Iterator` modifier can be used in these contexts:  
@@ -52,9 +42,9 @@ Specifies that a function or `Get` accessor is an iterator.
   
  [!code-vb[VbVbalrStatements#99](../../../visual-basic/language-reference/error-messages/codesnippet/VisualBasic/iterator_2.vb)]  
   
- For additional examples, see [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7).  
+ For additional examples, see [Iterators](../../programming-guide/concepts/iterators.md).  
   
 ## See Also  
  <xref:System.Runtime.CompilerServices.IteratorStateMachineAttribute>  
- [Iterators](http://msdn.microsoft.com/library/f45331db-d595-46ec-9142-551d3d1eb1a7)  
+ [Iterators](../../programming-guide/concepts/iterators.md)  
  [Yield Statement](../../../visual-basic/language-reference/statements/yield-statement.md)

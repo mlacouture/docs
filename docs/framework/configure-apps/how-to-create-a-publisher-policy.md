@@ -1,21 +1,12 @@
 ---
 title: "How to: Create a Publisher Policy"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "publisher policy assembly"
   - "publisher policy files"
   - "GAC (global assembly cache), publisher policy assembly"
   - "global assembly cache, publisher policy assembly"
 ms.assetid: 8046bc5d-2fa9-4277-8a5e-6dcc96c281d9
-caps.latest.revision: 15
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"
@@ -110,7 +101,7 @@ Vendors of assemblies can state that applications should use a newer version of 
  [Programming with Assemblies](../../../docs/framework/app-domains/programming-with-assemblies.md)  
  [How the Runtime Locates Assemblies](../../../docs/framework/deployment/how-the-runtime-locates-assemblies.md)  
  [Configuring Apps](../../../docs/framework/configure-apps/index.md)  
- [Configuring .NET Framework Apps](http://msdn.microsoft.com/en-us/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)  
+ [Configuring .NET Framework Apps](http://msdn.microsoft.com/library/d789b592-fcb5-4e3d-8ac9-e0299adaaa42)  
  [Runtime Settings Schema](../../../docs/framework/configure-apps/file-schema/runtime/index.md)  
  [Configuration File Schema](../../../docs/framework/configure-apps/file-schema/index.md)  
  [Redirecting Assembly Versions](../../../docs/framework/configure-apps/redirect-assembly-versions.md)

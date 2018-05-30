@@ -1,19 +1,7 @@
 ---
 title: "&lt;mexNamedPipeBinding&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 193412fa-3260-414c-92c6-b32ed3b94a34
-caps.latest.revision: 8
-author: "dotnet-bot"
-ms.author: "dotnetcontent"
-manager: "wpickett"
 ---
 # &lt;mexNamedPipeBinding&gt;
 Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) message exchange over named pipe.  
@@ -66,5 +54,5 @@ Specifies the settings for a binding used for the WS-MetadataExchange (WS-MEX) m
  [Metadata](../../../../../docs/framework/wcf/feature-details/metadata.md)  
  [Bindings](../../../../../docs/framework/wcf/bindings.md)  
  [Configuring System-Provided Bindings](../../../../../docs/framework/wcf/feature-details/configuring-system-provided-bindings.md)  
- [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/en-us/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
+ [Using Bindings to Configure Windows Communication Foundation Services and Clients](http://msdn.microsoft.com/library/bd8b277b-932f-472f-a42a-b02bb5257dfb)  
  [\<binding>](../../../../../docs/framework/misc/binding.md)

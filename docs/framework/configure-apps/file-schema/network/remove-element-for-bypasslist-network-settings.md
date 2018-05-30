@@ -1,14 +1,6 @@
 ---
 title: "&lt;remove&gt; Element for bypasslist (Network Settings)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.net/defaultProxy/bypasslist/remove"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#remove"
@@ -18,7 +10,6 @@ helpviewer_keywords:
   - "bypasslist, remove element"
   - "remove element, bypasslist"
 ms.assetid: 61dcfb4a-e3d9-4abf-a2cd-7d685fe2f64b
-caps.latest.revision: 16
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

@@ -1,16 +1,10 @@
 ---
 title: Getting started with .NET Core on macOS
 description: This document provides the steps and workflow to create a .NET Core Solution using Visual Studio Code.
-keywords: .NET, .NET Core, Mac, macOS, Visual Studio Code
 author: bleroy
 ms.author: mairaw
 ms.date: 03/23/2017
-ms.topic: get-started-article
-ms.prod: .net-core
-ms.devlang: dotnet
-ms.assetid: 8ad82148-dac8-4b31-9128-b0e9610f4d9b
 ---
-
 # Getting started with .NET Core on macOS
 
 This document provides the steps and workflow to create a .NET Core solution for macOS. Learn how to create projects, unit tests, use the debugging tools, and incorporate third-party libraries via [NuGet](https://www.nuget.org/).
@@ -28,7 +22,7 @@ Install the Visual Studio Code C# extension by opening Visual Studio Code and pr
 
 ## Getting started
 
-In this tutorial, you create three projects: a library project, tests for that library project, and a console application that makes use of the library. You can [view or download the source](https://github.com/dotnet/docs/tree/master/samples/core/getting-started/golden) for this topic at the dotnet/docs repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+In this tutorial, you create three projects: a library project, tests for that library project, and a console application that makes use of the library. You can [view or download the source](https://github.com/dotnet/samples/tree/master/core/getting-started/golden) for this topic at the dotnet/samples repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 Start Visual Studio Code. Press <kbd>Ctrl</kbd>+<kbd>\`</kbd> (the backquote or backtick character) or select **View > Integrated Terminal** from the menu to open an embedded terminal in Visual Studio Code. You can still open an external shell with the Explorer **Open in Command Prompt** command (**Open in Terminal** on Mac or Linux) if you prefer to work outside of Visual Studio Code.
 
@@ -97,7 +91,7 @@ namespace Library
 }
 ```
 
-The `Thing` class contains one public method, `Get`, which returns the sum of two numbers but does so by converting the sum into a string and then deserializing it into an integer. This makes use of a number of modern C# features, such as [`using static` directives](../../csharp/language-reference/keywords/using-static.md), [expression-bodied members](../../csharp/whats-new/csharp-7.md#more-expression-bodied-members), and [interpolated strings](../../csharp/language-reference/keywords/interpolated-strings.md).
+The `Thing` class contains one public method, `Get`, which returns the sum of two numbers but does so by converting the sum into a string and then deserializing it into an integer. This makes use of a number of modern C# features, such as [`using static` directives](../../csharp/language-reference/keywords/using-static.md), [expression-bodied members](../../csharp/whats-new/csharp-7.md#more-expression-bodied-members), and [string interpolation](../../csharp/language-reference/tokens/interpolated.md).
 
 Build the library with the [`dotnet build`](../tools/dotnet-build.md) command. This produces a *library.dll* file under *golden/library/bin/Debug/netstandard1.4*:
 

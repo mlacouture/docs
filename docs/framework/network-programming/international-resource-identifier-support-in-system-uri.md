@@ -1,14 +1,7 @@
 ---
 title: "International Resource Identifier Support in System.Uri"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: b5e994c3-3535-4aff-8e1b-b69be22e9a22
-caps.latest.revision: 9
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

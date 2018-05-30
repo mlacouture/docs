@@ -1,18 +1,8 @@
 ---
 title: "&lt;issuerNameRegistry&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 58b39d12-c953-40c4-88af-d7eb3343ca28
-caps.latest.revision: 13
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;issuerNameRegistry&gt;

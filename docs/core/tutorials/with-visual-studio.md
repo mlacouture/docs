@@ -1,24 +1,17 @@
 ---
 title: Building a Hello World application with .NET Core and C# in Visual Studio 2017
 description: Learn how to build a simple .NET Core console application with C# using Visual Studio 2017.
-keywords: .NET Core, .NET Core console application, Visual Studio 2017
 author: BillWagner
 ms.author: wiwagn
 ms.date: 09/13/2017
-ms.topic: article
-ms.prod: .net-core
-ms.technology: devlang-csharp
-ms.devlang: csharp
-ms.assetid: 97aa50bf-bdf8-416d-a56c-ac77504c14ea
 ---
-
 # Build a C# Hello World application with .NET Core in Visual Studio 2017
 
 This topic provides a step-by-step introduction to building, debugging, and publishing a simple .NET Core console application using C# in Visual Studio 2017. Visual Studio 2017 provides a full-featured development environment for building .NET Core applications. As long as the application doesn't have platform-specific dependencies, the application can run on any platform that .NET Core targets and on any system that has .NET Core installed.
 
 ## Prerequisites
 
-[Visual Studio 2017](https://www.visualstudio.com/downloads/) with the ".NET Core cross-platform development" workload installed. You can develop your app with either .NET Core 1.1 or .NET Core 2.0.
+[Visual Studio 2017](https://aka.ms/vsdownload?utm_source=mscom&utm_campaign=msdocs) with the ".NET Core cross-platform development" workload installed. You can develop your app with either .NET Core 1.1 or .NET Core 2.0.
 
 For more information, see the [Prerequisites for .NET Core on Windows](../../core/windows-prerequisites.md) topic.
 
@@ -64,7 +57,7 @@ Enhance your application to prompt the user for their name and display it along 
 
    ![Visual Studio Program c-sharp file with updated Main method](./media/with-visual-studio/codewindow.png)
 
-   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../csharp/language-reference/keywords/interpolated-strings.md) to display these values in the console window.
+   This code displays "What is your name?" in the console window and waits until the user enters a string followed by the Enter key. It stores this string into a variable named `name`. It also retrieves the value of the <xref:System.DateTime.Now?displayProperty=nameWithType> property, which contains the current local time, and assigns it to a variable named `date`. Finally, it uses an [interpolated string](../../csharp/language-reference/tokens/interpolated.md) to display these values in the console window.
 
 1. Compile the program by choosing **Build** > **Build Solution**.
 

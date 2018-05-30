@@ -1,14 +1,6 @@
 ---
 title: "Walkthrough: Updating Status Bar Information at Run Time"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-winforms"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -19,10 +11,6 @@ helpviewer_keywords:
   - "StatusBar control [Windows Forms], refreshing panels"
   - "panels [Windows Forms], refreshing status bar"
 ms.assetid: cc2abb06-c082-49f7-a5a3-2fd1bbcb58d1
-caps.latest.revision: 18
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Walkthrough: Updating Status Bar Information at Run Time
 > [!IMPORTANT]
@@ -45,7 +33,7 @@ manager: "wpickett"
 5.  Add a Windows Forms <xref:System.Windows.Forms.Timer> component to the form.  
   
     > [!NOTE]
-    >  The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](http://msdn.microsoft.com/en-us/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
+    >  The Windows Forms <xref:System.Windows.Forms.Timer?displayProperty=nameWithType> component is designed for a Windows Forms environment. If you need a timer that is suitable for a server environment, see [Introduction to Server-Based Timers](http://msdn.microsoft.com/library/adc0bc0a-a519-4812-bafc-fb9d1a5801fc).  
   
 6.  Set the <xref:System.Windows.Forms.Timer.Enabled%2A> property to `true`.  
   

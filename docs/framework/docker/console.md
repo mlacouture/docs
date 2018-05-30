@@ -2,13 +2,7 @@
 title: Running Console applications in Docker
 description: Learn how to take an existing .NET Framework console application and run it in a Windows Docker container.
 author: spboyer
-keywords: .NET, Container, Console, Applications
-
 ms.date: 09/28/2016
-ms.topic: article
-ms.prod: .net-framework
-ms.technology: vs-ide-deployment
-ms.devlang: dotnet
 ms.assetid: 85cca1d5-c9a4-4eb2-93e6-4f878de07fd7
 ---
 
@@ -22,7 +16,7 @@ The sample console application is a simple example which takes an argument, a qu
 
 In addition to the answer, the `Environment.MachineName` has been added to the response to show the difference between running the application locally and in a Windows container. When running the application locally, your local machine name should be returned and when running in a Windows Container; the container session id is returned.
 
-The [complete example](https://github.com/dotnet/docs/tree/master/samples/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/docs repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+The [complete example](https://github.com/dotnet/samples/tree/master/framework/docker/ConsoleRandomAnswerGenerator) is available in the dotnet/samples repository on GitHub. For download instructions, see [Samples and Tutorials](../../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 You need to be familiar with some Docker terms before you begin working
 on moving your application to a container.
@@ -64,7 +58,7 @@ You need to have Docker for Windows, version 1.12 Beta 26 or higher to support W
 ## Building the application
 Typically console applications are distributed through an installer, FTP, or File Share deployment. When deploying to a container, the assets need to be compiled and staged to a location that can be used when the Docker image is created.
 
-In *build.ps1*, the script uses [MSBuild](https://msdn.microsoft.com/library/dd393574.aspx) to compile the application to complete the task of building the assets. There are a few parameters passed to MSBuild to finalize the needed assets. The name of the project file or solution to be compiled, the location for the output and finally the configuration (Release or Debug).
+In *build.ps1*, the script uses [MSBuild](/visualstudio/msbuild/msbuild) to compile the application to complete the task of building the assets. There are a few parameters passed to MSBuild to finalize the needed assets. The name of the project file or solution to be compiled, the location for the output and finally the configuration (Release or Debug).
 
 In the call to `Invoke-MSBuild` the `OutputPath` is set to **publish** and  `Configuration` set to **Release**. 
 

@@ -1,10 +1,6 @@
 ---
 title: "&lt;source&gt; Element"
 ms.date: "09/29/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "article"
 f1_keywords: 
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#configuration/system.diagnostics/sources/source"
   - "http://schemas.microsoft.com/.NetConfiguration/v2.0#source"

@@ -1,19 +1,12 @@
 ---
 title: "explicit (C# Reference)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 f1_keywords: 
   - "explicit_CSharpKeyword"
   - "explicit"
 helpviewer_keywords: 
   - "explicit keyword [C#]"
 ms.assetid: cfb8f42a-e411-4db2-af9b-796b05644846
-caps.latest.revision: 21
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # explicit (C# Reference)
 The `explicit` keyword declares a user-defined type conversion operator that must be invoked with a cast. For example, this operator converts from a class called Fahrenheit to a class called Celsius:  
@@ -50,4 +43,4 @@ The `explicit` keyword declares a user-defined type conversion operator that mus
  [implicit](../../../csharp/language-reference/keywords/implicit.md)  
  [operator (C# Reference)](../../../csharp/language-reference/keywords/operator.md)  
  [How to: Implement User-Defined Conversions Between Structs](../../../csharp/programming-guide/statements-expressions-operators/how-to-implement-user-defined-conversions-between-structs.md)  
- [Chained user-defined explicit conversions in C#](http://go.microsoft.com/fwlink/?LinkId=112384)
+ [Chained user-defined explicit conversions in C#](https://blogs.msdn.microsoft.com/ericlippert/2007/04/16/chained-user-defined-explicit-conversions-in-c/)

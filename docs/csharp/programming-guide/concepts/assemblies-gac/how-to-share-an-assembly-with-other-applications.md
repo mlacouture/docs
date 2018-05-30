@@ -1,17 +1,7 @@
 ---
 title: "How to: Share an Assembly with Other Applications (C#)"
-ms.custom: ""
 ms.date: 07/20/2015
-ms.prod: .net
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 ms.assetid: c30e972b-1693-4e05-b115-c31831fdf9f2
-caps.latest.revision: 3
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Share an Assembly with Other Applications (C#)
 Assemblies can be private or shared: by default, most simple programs consist of a private assembly because they are not intended to be used by other applications.  
@@ -24,7 +14,7 @@ Assemblies can be private or shared: by default, most simple programs consist of
   
 2.  Assign a strong name to your assembly. For more information, see [How to: Sign an Assembly with a Strong Name](../../../../framework/app-domains/how-to-sign-an-assembly-with-a-strong-name.md).  
   
-3.  Assign version information to your assembly. For more information, see [Assembly Versioning](https://msdn.microsoft.com/library/51ket42z).  
+3.  Assign version information to your assembly. For more information, see [Assembly Versioning](../../../../../docs/framework/app-domains/assembly-versioning.md).  
   
 4.  Add your assembly to the Global Assembly Cache. For more information, see [How to: Install an Assembly into the Global Assembly Cache](../../../../framework/app-domains/how-to-install-an-assembly-into-the-gac.md).  
   

@@ -1,25 +1,13 @@
 ---
 title: "Deactivate Function (WPF Unmanaged API Reference)"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "cpp"
+dev_langs: 
+  - "cpp"
 api_name: 
   - "Deactivate"
 api_location: 
   - "PresentationHost_v0400.dll"
 ms.assetid: 3e81be16-24c7-4399-b242-6268feaa49d7
-caps.latest.revision: 3
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Deactivate Function (WPF Unmanaged API Reference)
 This API supports the Windows Presentation Foundation (WPF) infrastructure and is not intended to be used directly from your code.  

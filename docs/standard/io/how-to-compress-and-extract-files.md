@@ -1,25 +1,17 @@
 ---
 title: "How to: Compress and Extract Files"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "I/O [.NET Framework], compression"
   - "compression"
   - "compress files"
 ms.assetid: e9876165-3c60-4c84-a272-513e47acf579
-caps.latest.revision: 19
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # How to: Compress and Extract Files
 The <xref:System.IO.Compression> namespace contains the following types for compressing and decompressing files and streams. You can also use these types to read and modify the contents of a compressed file:  
@@ -66,4 +58,4 @@ The <xref:System.IO.Compression> namespace contains the following types for comp
  <xref:System.IO.Compression.ZipArchiveEntry>  
  <xref:System.IO.Compression.DeflateStream>  
  <xref:System.IO.Compression.GZipStream>  
- [File and Stream I-O](../../../docs/standard/io/index.md)
+ [File and Stream I/O](../../../docs/standard/io/index.md)

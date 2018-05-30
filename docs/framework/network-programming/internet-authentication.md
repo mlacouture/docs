@@ -1,12 +1,6 @@
 ---
 title: "Internet Authentication"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "authentication [.NET Framework], classes"
   - "IAuthenticationModule interface"
@@ -21,7 +15,6 @@ helpviewer_keywords:
   - "NetworkCredential class, about NetworkCredential class"
   - "client authentication, classes for authentication"
 ms.assetid: d342e87c-f672-4660-a513-41a2f2b80c4a
-caps.latest.revision: 11
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

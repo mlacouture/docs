@@ -1,86 +1,48 @@
 ---
-title: Getting Started with F# in Visual Studio Code with Ionide
+title: Get Started with F# in Visual Studio Code
 description: Learn how to use F# with Visual Studio Code and the Ionide plugin suite.
-keywords: visual f#, f#, functional programming, .NET, Visual Studio Code, vscode, Ionide
-author: cartermp
-ms.author: phcart
-ms.date: 09/28/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-fsharp
-ms.devlang: fsharp
-ms.assetid: 49775139-082e-442f-b5a2-dd402399b5d2
+ms.date: 02/28/2018
 ---
+# Get Started with F# in Visual Studio Code
 
-# Getting Started with F# in Visual Studio Code with Ionide
-
-You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin suite.
+You can write F# in [Visual Studio Code](https://code.visualstudio.com) with the [Ionide plugin](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp), to get a great cross-platform, lightweight IDE (Integrade Development Enivronment) experience with IntelliSense and basic code refactorings.  Visit [Ionide.io](http://ionide.io) to learn more about the plugin suite.
 
 ## Prerequisites
 
-F# 4.0 or higher must be installed on your machine to use Ionide.
+You must have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates in Ionide.  You can verify that it is installed correctly by typing `git --version` at a command prompt and pressing **Enter**.
 
-You must also have [git installed](https://git-scm.com/download) and available on your PATH to make use of project templates in Ionide.  You can verify that it is installed correctly by typing `git` at a command prompt.and pressing **Enter**.
+### [macOS](#tab/macos)
 
-### Windows
-
-If you're on Windows, you have two options for installing F#.
-
-If you've already installed Visual Studio and don't have F#, you can [Install the Visual F# Tools](get-started-visual-studio.md#installing-f).  This will install all the necessary components to write, compile, and execute F# code.
-
-If you prefer not to install Visual Studio, use the following instructions:
-
-1. Install [.NET Framework 4.5 or higher](https://www.microsoft.com/en-US/download/details.aspx?id=30653) if you're running Windows 7.  If you're using Windows 8 or higher, you do not need to do this.
-
-2. Install the Windows SDK for your OS:
-
-    * [Windows 10 SDK](https://dev.windows.com/en-US/downloads/windows-10-sdk)
-    * [Windows 8.1 SDK](http://msdn.microsoft.com/windows/desktop/bg162891)
-    * [Windows 8 SDK](http://msdn.microsoft.com/windows/hardware/hh852363.aspx)
-    * [Windows 7 SDK](http://www.microsoft.com/download/details.aspx?id=8279)
-
-3. Install the [Microsoft Build Tools 2015](https://www.microsoft.com/en-us/download/details.aspx?id=48159).  You may also need to install [Microsoft Build Tools 2013](https://www.microsoft.com/en-us/download/details.aspx?id=40760).
-
-4. Install the [Visual F# Tools](https://www.microsoft.com/en-us/download/details.aspx?id=48179).
-
-On 64-bit Windows, the compiler and tools are located here:
-
-```
-C:\Program Files (x86)\Microsoft SDKs\F#\4.0\Framework\v4.0\fsc.exe
-C:\Program Files (x86)\Microsoft SDKs\F#\4.0\Framework\v4.0\fsi.exe
-C:\Program Files (x86)\Microsoft SDKs\F#\4.0\Framework\v4.0\fsiAnyCpu.exe
-```
-
-On 32-bit Windows, the compiler tools are located here:
-
-```
-C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsc.exe
-C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsi.exe
-C:\Program Files\Microsoft SDKs\F#\4.0\Framework\v4.0\fsiAnyCpu.exe
-```
-
-Ionide automatically detects the compiler and tools, but if it doesn't for some reason (for example, the Visual F# Tools were installed to a different directory), you can manually add the containing folder (`...\Microsoft SDKs\F#\4.0`) to your PATH.
-
-### macOS
-
-On macOS, Ionide uses [Mono](http://www.mono-project.com).  The easiest way to install Mono on macOS is via Homebrew.  Simply type the following into your terminal:
+Ionide uses [Mono](http://www.mono-project.com).  The easiest way to install Mono on macOS is via Homebrew.  Simply type the following into your terminal:
 
 ```
 brew install mono
 ```
 
-### Linux
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download).
 
-On Linux, Ionide also uses [Mono](http://www.mono-project.com).  If you're on Debian or Ubuntu, you can use the following:
+### [Linux](#tab/linux)
+
+On Linux, Ionide also uses [Mono](https://www.mono-project.com). If you're on Debian or Ubuntu, you can use the following:
 
 ```
 sudo apt-get update
 sudo apt-get install mono-complete fsharp
 ```
 
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download).
+
+### [Windows](#tab/windows)
+
+If you're on Windows, you must [install Visual Studio with F# support](get-started-visual-studio.md#installing-f). This installs all the necessary components to write, compile, and execute F# code.
+
+You must also install the [.NET Core SDK](https://www.microsoft.com/net/download/).
+
+---
+
 ## Installing Visual Studio Code and the Ionide plugin
 
-You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website.  After that, there are two ways to find the Ionide plugin:
+You can install Visual Studio Code from the [code.visualstudio.com](https://code.visualstudio.com) website. After that, there are two ways to find the Ionide plugin:
 
 1. Use the Command Palette (Ctrl+Shift+P on Windows, ⌘+Shift+P on macOS, Ctrl+Shift+P on Linux) and type the following:
 
@@ -92,7 +54,7 @@ You can install Visual Studio Code from the [code.visualstudio.com](https://code
 
     ![](media/getting-started-vscode/vscode-ext.png)
 
-The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp).  However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](http://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support.  FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
+The only plugin required for F# support in Visual Studio Code is [Ionide-fsharp](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp). However, you can also install [Ionide-FAKE](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-FAKE) and to get [FAKE](https://fsharp.github.io/FAKE/) support and [Ionide-Paket](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-Paket) to get [Paket](https://fsprojects.github.io/Paket/) support. FAKE and Paket are additonal F# community tools for building projects and managing dependencies, respectively.
 
 ## Creating your first project with Ionide
 
@@ -117,7 +79,7 @@ Select "F#: New Project" by hitting **Enter**, which will take you to this step:
 
 ![](media/getting-started-vscode/vscode-proj-type.png)
 
-This will select a template for a specific type of project.  There are quite a few options here, such as an [FsLab](http://fslab.org) template for Data Science or [Suave](https://suave.io) template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach the following step:
+This will select a template for a specific type of project.  There are quite a few options here, such as an [FsLab](https://fslab.org) template for Data Science or [Suave](https://suave.io) template for Web Programming.  This article uses the `classlib` template, so highlight that and hit **Enter**.  You will then reach the following step:
 
 ![](media/getting-started-vscode/vscode-new-dir.png)
 
@@ -134,8 +96,8 @@ If you followed the previous step steps, you should get the Visual Studio Code W
 This template generates a few things you'll find useful:
 
 1. The F# project itself, underneath the `ClassLibraryDemo` folder.
-2. The correct directory structure for adding packages via [`Paket`](http://fsprojects.github.io/Paket/).
-3. A cross-platform build script with [`FAKE`](http://fsharp.github.io/FAKE/).
+2. The correct directory structure for adding packages via [`Paket`](https://fsprojects.github.io/Paket/).
+3. A cross-platform build script with [`FAKE`](https://fsharp.github.io/FAKE/).
 4. The `paket.exe` executable which can fetch packages and resolve dependencies for you.
 5. A `.gitignore` file if you wish to add this project to Git-based source control.
 
@@ -144,7 +106,7 @@ This template generates a few things you'll find useful:
 Open the *ClassLibraryDemo* folder.  You should see the following files:
 
 1. `ClassLibraryDemo.fs`, an F# implementation file with a class defined.
-2. `CassLibraryDemo.fsproj`, an F# project file used to build this project.
+2. `ClassLibraryDemo.fsproj`, an F# project file used to build this project.
 3. `Script.fsx`, an F# script file which loads the source file.
 4. `paket.references`, a Paket file which specifies the project dependencies.
 

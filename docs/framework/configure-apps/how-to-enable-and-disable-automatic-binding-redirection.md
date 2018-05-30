@@ -1,19 +1,10 @@
 ---
 title: "How to: Enable and Disable Automatic Binding Redirection"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "side-by-side execution, assembly binding redirection"
   - "assemblies [.NET Framework], binding redirection"
 ms.assetid: 5fca42f3-bdce-4b81-a704-61e42c89d3ba
-caps.latest.revision: 17
 author: "mcleblanc"
 ms.author: "markl"
 manager: "markl"

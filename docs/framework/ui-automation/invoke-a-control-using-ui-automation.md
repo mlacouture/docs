@@ -1,23 +1,14 @@
 ---
 title: "Invoke a Control Using UI Automation"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
- - "csharp"
- - "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "invoking controls"
   - "UI Automation, invoking controls"
   - "controls, invoking"
 ms.assetid: 5ee2de3f-256c-43ec-b64c-62ace91f9983
-caps.latest.revision: 15
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
@@ -45,4 +36,4 @@ manager: "markl"
 [!code-vb[InvokePatternApp#1102](../../../samples/snippets/visualbasic/VS_Snippets_Wpf/InvokePatternApp/VisualBasic/Client.vb#1102)]  
   
 ## See Also  
- [InvokePattern and ExpandCollapsePattern Menu Item Sample](http://msdn.microsoft.com/en-us/b7fa141c-e2d1-4da2-a27f-81a7d1172210)
+ [InvokePattern and ExpandCollapsePattern Menu Item Sample](http://msdn.microsoft.com/library/b7fa141c-e2d1-4da2-a27f-81a7d1172210)

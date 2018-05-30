@@ -1,14 +1,7 @@
 ---
 title: Indexers
 description: Learn about C# indexers and how they implement indexed properties, which are properties referenced using one or more arguments.
-keywords: .NET, .NET Core
-author: BillWagner
-ms.author: wiwagn
 ms.date: 06/20/2016
-ms.topic: article
-ms.prod: .net
-ms.technology: devlang-csharp
-ms.devlang: csharp
 ms.assetid: 0e9496da-e766-45a9-b92b-91820d4a350e
 ---
 
@@ -72,7 +65,7 @@ Indexers enable you to provide the API that matches your type's abstraction
 without exposing the inner details of how the values for that abstraction
 are stored or computed.
 
-Let's walk through some of the common scenarios for using *indexers*. You can access the [sample folder for indexers](https://github.com/dotnet/docs/tree/master/samples/csharp/indexers). For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
+Let's walk through some of the common scenarios for using *indexers*. You can access the [sample folder for indexers](https://github.com/dotnet/samples/tree/master/csharp/indexers). For download instructions, see [Samples and Tutorials](../samples-and-tutorials/index.md#viewing-and-downloading-samples).
 
 ### Arrays and Vectors
 

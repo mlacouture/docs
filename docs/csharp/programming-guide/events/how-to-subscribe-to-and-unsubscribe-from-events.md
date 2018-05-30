@@ -1,18 +1,11 @@
 ---
 title: "How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)"
 ms.date: 07/20/2015
-ms.prod: .net
-ms.technology: 
-  - "devlang-csharp"
-ms.topic: "article"
 helpviewer_keywords: 
   - "event handlers [C#], creating"
   - "Code Editor, event handlers"
   - "events [C#], creating using the IDE"
 ms.assetid: 6319f39f-282c-4173-8a62-6c4657cf51cd
-caps.latest.revision: 15
-author: "BillWagner"
-ms.author: "wiwagn"
 ---
 # How to: Subscribe to and Unsubscribe from Events (C# Programming Guide)
 You subscribe to an event that is published by another class when you want to write custom code that is called when that event is raised. For example, you might subscribe to a button's `click` event in order to make your application do something useful when the user clicks the button.  
@@ -25,13 +18,13 @@ You subscribe to an event that is published by another class when you want to wr
   
 3.  Double-click the event that you want to create, for example the `Load` event.  
   
-     [!INCLUDE[csprcs](~/includes/csprcs-md.md)] creates an empty event handler method and adds it to your code. Alternatively you can add the code manually in **Code** view. For example, the following lines of code declare an event handler method that will be called when the `Form` class raises the `Load` event.  
+     Visual C# creates an empty event handler method and adds it to your code. Alternatively you can add the code manually in **Code** view. For example, the following lines of code declare an event handler method that will be called when the `Form` class raises the `Load` event.  
   
      [!code-csharp[csProgGuideEvents#11](../../../csharp/programming-guide/events/codesnippet/CSharp/how-to-subscribe-to-and-unsubscribe-from-events_1.cs)]  
   
      The line of code that is required to subscribe to the event is also automatically generated in the `InitializeComponent` method in the Form1.Designer.cs file in your project. It resembles this:  
   
-    ```  
+    ```csharp
     this.Load += new System.EventHandler(this.Form1_Load);  
     ```  
   
@@ -39,7 +32,7 @@ You subscribe to an event that is published by another class when you want to wr
   
 1.  Define an event handler method whose signature matches the delegate signature for the event. For example, if the event is based on the <xref:System.EventHandler> delegate type, the following code represents the method stub:  
   
-    ```  
+    ```csharp
     void HandleCustomEvent(object sender, CustomEventArgs a)  
     {  
        // Do something useful here.  
@@ -48,19 +41,19 @@ You subscribe to an event that is published by another class when you want to wr
   
 2.  Use the addition assignment operator (`+=`) to attach your event handler to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent`. Note that the subscriber class needs a reference to the publisher class in order to subscribe to its events.  
   
-    ```  
+    ```csharp
     publisher.RaiseCustomEvent += HandleCustomEvent;  
     ```  
   
      Note that the previous syntax is new in C# 2.0. It is exactly equivalent to the C# 1.0 syntax in which the encapsulating delegate must be explicitly created by using the `new` keyword:  
   
-    ```  
+    ```csharp
     publisher.RaiseCustomEvent += new CustomEventHandler(HandleCustomEvent);  
     ```  
   
      An event handler can also be added by using a lambda expression:  
   
-    ```  
+    ```csharp
     public Form1()  
     {  
         InitializeComponent();  
@@ -76,7 +69,7 @@ You subscribe to an event that is published by another class when you want to wr
   
 -   If you will not have to unsubscribe to an event later, you can use the addition assignment operator (`+=`) to attach an anonymous method to the event. In the following example, assume that an object named `publisher` has an event named `RaiseCustomEvent` and that a `CustomEventArgs` class has also been defined to carry some kind of specialized event information. Note that the subscriber class needs a reference to `publisher` in order to subscribe to its events.  
   
-    ```  
+    ```csharp
     publisher.RaiseCustomEvent += delegate(object o, CustomEventArgs e)  
     {  
       string s = o.ToString() + " " + e.ToString();  
@@ -93,7 +86,7 @@ You subscribe to an event that is published by another class when you want to wr
   
 -   Use the subtraction assignment operator (`-=`) to unsubscribe from an event:  
   
-    ```  
+    ```csharp
     publisher.RaiseCustomEvent -= HandleCustomEvent;  
     ```  
   

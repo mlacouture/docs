@@ -2,10 +2,6 @@
 title: SpawnInstance function (Unmanaged API Reference)
 description: The SpawnInstance function creates a new instance of a class.
 ms.date: "11/06/2017"
-ms.prod: ".net-framework"
-ms.technology: 
-  - "dotnet-clr"
-ms.topic: "reference"
 api_name: 
   - "SpawnInstance"
 api_location: 
@@ -20,7 +16,6 @@ topic_type:
   - "Reference"
 author: "rpetrusha"
 ms.author: "ronpet"
-manager: "wpickett"
 ---
 # SpawnInstance function
 Creates a new instance of a class.    

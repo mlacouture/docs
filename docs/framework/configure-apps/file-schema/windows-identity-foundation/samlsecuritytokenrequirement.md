@@ -1,18 +1,8 @@
 ---
 title: "&lt;samlSecurityTokenRequirement&gt;"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-clr"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 ms.assetid: 09202d12-88d3-49cc-953b-703bcc1690eb
-caps.latest.revision: 4
 author: "BrucePerlerMS"
-ms.author: "bruceper"
 manager: "mbaldwin"
 ---
 # &lt;samlSecurityTokenRequirement&gt;

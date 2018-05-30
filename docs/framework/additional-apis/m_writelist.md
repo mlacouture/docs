@@ -1,21 +1,17 @@
 ---
 title: "Connection.m_WriteList Field"
 ms.date: "05/01/2017"
-ms.prod: ".net-framework"
-ms.technology: ""
-ms.topic: "reference"
 topic_type: 
   - "apiref"
-api_name:
+api_name: 
   - "System.Net.Connection.m_WriteList"
-api_location:
+api_location: 
   - "System.dll"
 api_type: 
   - "Assembly"
 ms.assetid: 235503c1-1d01-4f59-895f-ae2cf15b3345
 author: "guardrex"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 
 # Connection.m\_WriteList Field

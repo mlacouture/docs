@@ -1,14 +1,6 @@
 ---
 title: "Property Animation Techniques Overview"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-wpf"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 dev_langs: 
   - "csharp"
   - "vb"
@@ -17,10 +9,6 @@ helpviewer_keywords:
   - "animation [WPF], properties [WPF], methods for"
   - "properties [WPF], methods for animating"
 ms.assetid: 74f61413-f8c0-4e75-bf04-951886426c8b
-caps.latest.revision: 12
-author: dotnet-bot
-ms.author: dotnetcontent
-manager: "wpickett"
 ---
 # Property Animation Techniques Overview
 This topic describes the different approaches for animating properties: storyboards, local animations, clocks, and per-frame animations.  
@@ -64,7 +52,7 @@ This topic describes the different approaches for animating properties: storyboa
 |--------------------------------|-------------------|-----------|----------------------|-------------------|-------------|  
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and an <xref:System.Windows.EventTrigger>|Yes|Yes|Yes|Yes|[Animate a Property by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)|  
 |<xref:System.Windows.Media.Animation.BeginStoryboard> and a property <xref:System.Windows.Trigger>|No|Yes|Yes|Yes|[Trigger an Animation When a Property Value Changes](../../../../docs/framework/wpf/graphics-multimedia/how-to-trigger-an-animation-when-a-property-value-changes.md)|  
-|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](http://msdn.microsoft.com/en-us/a736bb3a-2ae5-479a-a33a-75a27055d863)|  
+|<xref:System.Windows.Media.Animation.BeginStoryboard> and a <xref:System.Windows.DataTrigger>|No|Yes|Yes|Yes|[How to: Trigger an Animation When Data Changes](http://msdn.microsoft.com/library/a736bb3a-2ae5-479a-a33a-75a27055d863)|  
 |<xref:System.Windows.Media.Animation.Storyboard.Begin%2A> method|Yes|No|No|No|[Animate a Property by Using a Storyboard](../../../../docs/framework/wpf/graphics-multimedia/how-to-animate-a-property-by-using-a-storyboard.md)|  
   
  For more information about <xref:System.Windows.Media.Animation.Storyboard> objects, see the [Storyboards Overview](../../../../docs/framework/wpf/graphics-multimedia/storyboards-overview.md).  

@@ -1,26 +1,18 @@
 ---
 title: "Security and Race Conditions"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net"
-ms.reviewer: ""
-ms.suite: ""
 ms.technology: dotnet-standard
-ms.tgt_pltfrm: ""
-ms.topic: "article"
-dev_langs:
-- "csharp"
-- "vb"
+dev_langs: 
+  - "csharp"
+  - "vb"
 helpviewer_keywords: 
   - "security [.NET Framework], race conditions"
   - "race conditions"
   - "secure coding, race conditions"
   - "code security, race conditions"
 ms.assetid: ea3edb80-b2e8-4e85-bfed-311b20cb59b6
-caps.latest.revision: 9
 author: "mairaw"
 ms.author: "mairaw"
-manager: "wpickett"
 ---
 # Security and Race Conditions
 Another area of concern is the potential for security holes exploited by race conditions. There are several ways in which this might happen. The subtopics that follow outline some of the major pitfalls that the developer must avoid.  

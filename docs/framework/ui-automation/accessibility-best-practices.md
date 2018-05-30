@@ -1,19 +1,10 @@
 ---
 title: "Accessibility Best Practices"
-ms.custom: ""
 ms.date: "03/30/2017"
-ms.prod: ".net-framework"
-ms.reviewer: ""
-ms.suite: ""
-ms.technology: 
-  - "dotnet-bcl"
-ms.tgt_pltfrm: ""
-ms.topic: "article"
 helpviewer_keywords: 
   - "best practices for accessibility"
   - "accessibility, best practices for"
 ms.assetid: e6d5cd98-21a3-4b01-999c-fb953556d0e6
-caps.latest.revision: 16
 author: "Xansky"
 ms.author: "mhopkins"
 manager: "markl"
@@ -138,5 +129,5 @@ manager: "markl"
   
 ## See Also  
  <xref:System.Windows.Automation.Peers>  
- [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://msdn.microsoft.com/en-us/9aed3c10-68eb-419e-a57f-1d2af15a8253)  
+ [NumericUpDown Custom Control with Theme and UI Automation Support Sample](http://msdn.microsoft.com/library/9aed3c10-68eb-419e-a57f-1d2af15a8253)  
  [Guidelines for Keyboard User Interface Design](http://msdn2.microsoft.com/library/ms971323.aspx)
